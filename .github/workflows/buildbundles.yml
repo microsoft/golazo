@@ -39,9 +39,7 @@ jobs:
     # Only create a release, on a push (not a PR), into main.  Push into mains are
     #    something only github can do, as users may only issue a PR (which,
     #    when completed, will issue the push). Also execute on tag pushes
-    if: github.event_name == 'push' && (
-      github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v')
-    )
+    if: github.event_name == 'push' && ( github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v') )
 
     steps:
       - uses: actions/checkout@v4
