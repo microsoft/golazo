@@ -1,0 +1,12 @@
+{
+  "name": "golazo",
+  "version": "1.0.0",
+  "description": "Golazo development methodology documentation",
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  }
+}
