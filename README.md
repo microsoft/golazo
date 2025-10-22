@@ -1,8 +1,11 @@
 # Golazo Documentation
 
-A comprehensive documentation repository for the Golazo development methodology - a minimal team
-development process that excels in hybrid, asynchronous work environments while maximizing value
-delivery and team morale.
+This is a comprehensive documentation repository for the Golazo development methodology - a minimal
+team development process that excels in hybrid, asynchronous work environments while maximizing
+value delivery and team morale.
+
+You're at the main GitHub location hosting the unrendered markdownTelemetry. If you'd prefer to read
+more polished, rendered HTML, please visit https://microsoft.github.io/golazo/.
 
 ## Purpose
 
@@ -17,9 +20,8 @@ development methodology that enables teams to:
 
 ## Repository State
 
-This repository is **active** and contains the authoritative documentation for the Golazo
-methodology. Though not the most common team process by far, this documentation is used by multiple
-teams across Microsoft.
+This repository contains the authoritative documentation for the Golazo methodology. This
+documentation is used by multiple teams across Microsoft.
 
 ## Documentation Generation
 
