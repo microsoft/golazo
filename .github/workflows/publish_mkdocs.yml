@@ -30,7 +30,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: "3.9"
-      - name: Install mmkdocs
+      - name: Install mkdocs
         run:
           pip install mkdocs mkdocs-mermaid2-plugin mkdocs-material mkdocs-minify-plugin mkdocs-include-markdown-plugin
           mkdocs-macros-plugin mkdocs-video mkdocs-redirects
