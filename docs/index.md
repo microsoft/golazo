@@ -1,17 +1,39 @@
-# Welcome to MkDocs
+# Golazo: Lean Team Flow
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+> Status: Scaffold (Phase 1) — Content to be migrated per `information-architecture.md`.
 
-## Commands
+## Summary
 
-- `mkdocs new [dir-name]` - Create a new project.
-- `mkdocs serve` - Start the live-reloading docs server.
-- `mkdocs build` - Build the documentation site.
-- `mkdocs -h` - Print help message and exit.
+Concise public landing page introducing Golazo, its value proposition, and how to start. (TODO: add
+40–50 word pitch.)
 
-## Project layout
+## Quick Start
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- (TODO) Link to 10‑Minute Overview video
+- (TODO) Link to 1‑Hour Presentation
+- (TODO) One-paragraph "Quick Version" summary
+
+## Choose Your Path
+
+1. Why Golazo (`why-golazo.md`)
+2. Principles (`principles.md`)
+3. Workflow Overview (`workflow-overview.md`)
+4. Tickets (`tickets.md`)
+5. Design Docs (`design-docs.md`)
+6. Meetings (`meetings-and-ceremonies.md`)
+7. Planning (`planning-and-prioritization.md`)
+8. Measuring Success (`measuring-success.md`)
+
+## Highlights (Teasers)
+
+- (TODO) 3–5 bullet outcome claims linking to deeper pages.
+
+## Related
+
+- Why Golazo → `why-golazo.md`
+- Adoption Guide → `adoption-guide.md`
+- FAQ → `faq.md`
+
+---
+
+_Internal content placeholders will be replaced during migration._

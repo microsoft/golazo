@@ -24,3 +24,24 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+
+nav:
+  - Home: index.md
+  - Why Golazo: why-golazo.md
+  - Principles & Mindset: principles.md
+  - Workflow:
+      - Workflow Overview: workflow-overview.md
+      - WIP & Flow: wip-and-flow.md
+      - Tickets & Sizing: tickets.md
+      - Design Docs: design-docs.md
+  - Operation:
+      - Meetings & Cadence: meetings-and-ceremonies.md
+      - Planning & Prioritization: planning-and-prioritization.md
+      - Communication Patterns: communication.md
+      - Adoption Guide: adoption-guide.md
+  - Measurement:
+      - Measuring Success: measuring-success.md
+  - Reference:
+      - FAQ: faq.md
+      - Glossary: glossary.md
+      - Templates & Examples: templates.md
