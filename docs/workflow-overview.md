@@ -13,71 +13,25 @@ urgent? What's blocked? Who needs help next?
 
 ## Board Diagram
 
-<table style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid black; padding: 8px;">&nbsp;</th>
-      <th style="border: 1px solid black; padding: 8px;">Backlog</th>
-      <th style="border: 1px solid black; padding: 8px;">Ready</th>
-      <th style="border: 1px solid black; padding: 8px;">Analyze</th>
-      <th style="border: 1px solid black; padding: 8px;">Engineer</th>
-      <th style="border: 1px solid black; padding: 8px;">Release</th>
-      <th style="border: 1px solid black; padding: 8px;">Customer Validation</th>
-      <th style="border: 1px solid black; padding: 8px;">Done</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid black; padding: 8px;"><strong>Swarm</strong></td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid black; padding: 8px;"><strong>Interrupt</strong></td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid black; padding: 8px;"><strong>Planned</strong></td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
-    </tr>
-  </tbody>
-</table>
+![Sample board showing the columns and rails described below along with tickets of various colors indicating which workstream they belong to](assets/images/board-example.png)
 
 ## Columns
 
 Columns reflect state changes in learning and validation—not just coding steps. Suggested baseline:
 
-1. \*\*Backlog– Candidate items with potential value but not yet committed. Anyone can propose.
+1. Backlog– Candidate items with potential value but not yet committed. Anyone can propose.
    Acceptance criteria not guaranteed complete.
-2. \*\*Ready– Highest‑priority, well‑understood items with clear acceptance criteria and initial
-   sizing. Pull from here when you start new work. Coach filles this column with tickets from the
-   Backlog.
-3. \*\*Analyze– Shepherd prepares or updates a lightweight design doc, confirms assumptions, and
-   obtains 2 or more peer signoffs.
-4. \*\*Engineer– Implementation and tests and instrumentation. Peer reviews (2 or more) required
-   before moving forward.
-5. \*\*Release– Code merges/deploys; feature flags or incremental rollout if applicable.
+2. Ready– Highest‑priority, well‑understood items with clear acceptance criteria and initial sizing.
+   Pull from here when you start new work. Coach filles this column with tickets from the Backlog.
+3. Analyze– Shepherd prepares or updates a lightweight design doc, confirms assumptions, and obtains
+   2 or more peer signoffs.
+4. Engineer– Implementation and tests and instrumentation. Peer reviews (2 or more) required before
+   moving forward.
+5. Release– Code merges/deploys; feature flags or incremental rollout if applicable.
    Monitoring/observability verified.
-6. \*\*Customer Validation– Stakeholder / user confirms value delivered or provides immediate
-   feedback loop.
-7. \*\*Done– Definition of Done fully met; learnings captured for retrospective.
+6. Customer Validation– Stakeholder / user confirms value delivered or provides immediate feedback
+   loop.
+7. Done– Definition of Done fully met; learnings captured for retrospective.
 
 ## Rails
 
