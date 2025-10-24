@@ -78,6 +78,6 @@ Design encourages equitable access to impactful work:
 
 ## Related
 
-- Meetings → `meetings-and-ceremonies.md`
-- Tickets → `tickets.md`
-- Communication → `communication.md`
+- Meetings → [Meetings & Cadence](meetings-and-ceremonies.md)
+- Tickets → [Tickets & Sizing](tickets.md)
+- Communication → [Communication Patterns](communication.md)

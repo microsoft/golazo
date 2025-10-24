@@ -35,6 +35,7 @@ nav:
       - Tickets & Sizing: tickets.md
       - Design Docs: design-docs.md
   - Operation:
+    - Roles & Responsibilities: roles.md
       - Meetings & Cadence: meetings-and-ceremonies.md
       - Planning & Prioritization: planning-and-prioritization.md
       - Communication Patterns: communication.md
@@ -42,4 +43,5 @@ nav:
   - Reference:
       - FAQ: faq.md
       - Glossary: glossary.md
+      - Measuring Success: measuring-success.md
       - Templates & Examples: templates.md

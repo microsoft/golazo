@@ -84,6 +84,6 @@ actions.
 
 ## Related
 
-- Planning → `planning-and-prioritization.md`
-- Measuring Success → `measuring-success.md`
-- Communication → `communication.md`
+- Planning → [Planning & Prioritization](planning-and-prioritization.md)
+- Measuring Success → [Measuring Success](measuring-success.md)
+- Communication → [Communication Patterns](communication.md)

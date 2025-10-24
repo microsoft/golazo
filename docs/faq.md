@@ -1,8 +1,8 @@
 # Frequently Asked Questions
 
 > Public draft – answers scoped to topics not already covered in depth elsewhere. For foundational
-> context see: `why-golazo.md`, `adoption-guide.md`, `design-docs.md`,
-> `planning-and-prioritization.md`.
+> context see: [Why Golazo](why-golazo.md), [Adoption Guide](adoption-guide.md),
+> [Design Docs](design-docs.md), [Planning & Prioritization](planning-and-prioritization.md).
 
 ## Using This FAQ
 
@@ -22,8 +22,8 @@ to identify hidden dependencies, over‑sizing, or unclear definition of done.
 
 ## Adoption & Transition
 
-**How long is the trial?** A focused 90‑day period (see `adoption-guide.md`). Shorter trials rarely
-expose the compounding benefits.
+**How long is the trial?** A focused 90‑day period (see [Adoption Guide](adoption-guide.md)).
+Shorter trials rarely expose the compounding benefits.
 
 **Do we customize early?** Not unless there is a real blocker. Measure first; adapt after Phase 3
 with explicit rationale and rollback criteria.
@@ -54,7 +54,8 @@ and maintains consistency; small tickets keep review load reasonable.
 ## Metrics & Success
 
 **How do we know it’s working?** Improvements in cycle time, reduced interrupt ratio, lower incident
-frequency, broader Shepherd distribution, and positive pulse survey trends (`measuring-success.md`).
+frequency, broader Shepherd distribution, and positive pulse survey trends (see
+[Measuring Success](measuring-success.md)).
 
 **What if metrics improve but morale drops?** Re‑examine WIP pressure, review load, and meeting
 hygiene. Principle application may have become dogmatic; engage team in a Starfish Retro.
@@ -73,4 +74,4 @@ criteria, then WSJF rank. Avoid side channels creating invisible work.
 ## Still Have Questions?
 
 Open an issue (include context + what you’ve already tried) or propose an addition via PR following
-`contribution.md`.
+[Contribution Guidelines](contribution.md).

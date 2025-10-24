@@ -21,7 +21,8 @@ expensive late PR debates with quick, high‑quality implementation and review c
 
 ## Minimal Template
 
-Keep it lean—optimize for clarity, not prose. (Full copyable version: `templates.md`.)
+Keep it lean—optimize for clarity, not prose. (Full copyable version: see
+[Templates & Examples](templates.md).)
 
 1. Elevator Pitch (value, for whom, why now)
 2. Definition of Done (quality & outcome bullets)
@@ -73,6 +74,6 @@ diagram.
 
 ## Related
 
-- Tickets → `tickets.md`
-- Templates → `templates.md`
-- Reviews (Communication) → `communication.md`
+- Tickets → [Tickets & Sizing](tickets.md)
+- Templates → [Templates & Examples](templates.md)
+- Reviews (Communication) → [Communication Patterns](communication.md)

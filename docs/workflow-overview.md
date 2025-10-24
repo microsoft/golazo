@@ -1,7 +1,5 @@
 # Workflow & Board Anatomy
 
-> Public draft – adapted from legacy Task Board section.
-
 ## Summary
 
 The board (physical or digital) is the single shared model of current work. It makes flow,
@@ -10,17 +8,67 @@ bottlenecks, priorities, and collaboration needs obvious at a glance.
 ## Board Concept
 
 Each ticket advances left → right through clearly defined stages (columns). Horizontal lanes (rails)
-categorize urgency or work type. A healthy board lets any observer answer: What’s most urgent?
-What’s blocked? Who needs help next?
+categorize urgency or work type. A healthy board lets any observer answer: What's most urgent?
+What's blocked? Who needs help next?
 
-## Columns (Lifecycle Stages)
+## Board Diagram
+
+<table style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid black; padding: 8px;">&nbsp;</th>
+      <th style="border: 1px solid black; padding: 8px;">Backlog</th>
+      <th style="border: 1px solid black; padding: 8px;">Ready</th>
+      <th style="border: 1px solid black; padding: 8px;">Analyze</th>
+      <th style="border: 1px solid black; padding: 8px;">Engineer</th>
+      <th style="border: 1px solid black; padding: 8px;">Release</th>
+      <th style="border: 1px solid black; padding: 8px;">Customer Validation</th>
+      <th style="border: 1px solid black; padding: 8px;">Done</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>Swarm</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>Interrupt</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>Planned</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid black; padding: 8px;">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+## Columns
 
 Columns reflect state changes in learning and validation—not just coding steps. Suggested baseline:
 
 1. **Backlog** – Candidate items with potential value but not yet committed. Anyone can propose.
    Acceptance criteria not guaranteed complete.
 2. **Ready** – Highest‑priority, well‑understood items with clear acceptance criteria and initial
-   sizing. Pull from here when you start new work.
+   sizing. Pull from here when you start new work. Coach filles this column with tickets from the
+   Backlog.
 3. **Analyze** – Shepherd prepares or updates a lightweight design doc, confirms assumptions, and
    obtains ≥2 peer signoffs.
 4. **Engineer** – Implementation + tests + instrumentation. Peer reviews (≥2) required before moving
@@ -29,12 +77,9 @@ Columns reflect state changes in learning and validation—not just coding steps
    Monitoring/observability verified.
 6. **Customer Validation** – Stakeholder / user confirms value delivered or provides immediate
    feedback loop.
-7. **Done** – Definition of Done fully met; learnings & any metrics captured for retrospective.
+7. **Done** – Definition of Done fully met; learnings captured for retrospective.
 
-Teams may add a short "QA" or "Staging" column only if that validation cannot practically happen
-inside Engineer or Release; avoid fragmenting the flow.
-
-## Rails (Priority / Work Type Lanes)
+## Rails
 
 Rails (aka swimlanes) categorize tickets by urgency or intent without mixing them visually.
 
@@ -45,17 +90,18 @@ Rails (aka swimlanes) categorize tickets by urgency or intent without mixing the
 - **Planned** – The steady value stream of intentionally prioritized work. Most capacity should live
   here.
 
-Optional rails (use sparingly):
+Optional rails:
 
-- **OOF / Time Off** – Visualize availability, not work.
+- **OOF / Time Off** – Visualize availability.
 - **Tracking** – Items mostly waiting on external parties. Use retrospectives to reduce reliance on
-  this lane—it can hide flow debt.
+  this lane because it can hide flow debt. Ideally all external depenencies are resolved before a
+  ticket is moved to Ready.
 - **Lead / Manager** – Long‑tail tasks owned by roles with fragmented time; isolates their slower
   cadence from standard WIP metrics.
 
 ## Flow Example
 
-1. Backlog item is refined during planning; moves to Ready.
+1. Backlog item is refined during planning; Coach moves it to Ready.
 2. Engineer pulls it into Analyze, drafts design doc, gets two signoffs.
 3. Moves to Engineer; implementation + tests + two PR reviews.
 4. Deployed under Release; monitoring shows healthy.
@@ -68,17 +114,17 @@ Backlog → Ready → Analyze → Engineer → Release → Customer Validation �
 ## Backward Movement Policy
 
 Tickets should almost never move left. When they do (e.g., from Release back to Engineer due to a
-defect) the team records it and reviews the root cause in the next retrospective—treat it as an
-optimization signal, not blame.
+defect) the team records it and reviews the root cause in the next retrospective. It is treated as
+an optimization signal, not blame.
 
-## Visual Cues (Recommended)
+## Visual Cues
 
 - Distinct tag or color per major workstream.
-- Icons/labels for blocked items (e.g., ⛔) with short reason in description.
+- Ticket icons/labels/tags for blocked items (e.g., ⛔) with short reason in description.
 - Avatars or initials for active collaborators beyond the Shepherd.
 
 ## Related
 
-- WIP & Flow → `wip-and-flow.md`
-- Tickets → `tickets.md`
-- Planning → `planning-and-prioritization.md`
+- WIP & Flow → [WIP & Flow](wip-and-flow.md)
+- Tickets → [Tickets & Sizing](tickets.md)
+- Planning → [Planning & Prioritization](planning-and-prioritization.md)

@@ -1,6 +1,4 @@
-# Principles & Mindset
-
-> Public draft – migrated from legacy "Fundamentals" with minor editing for external readers.
+# Principles
 
 ## Summary
 
@@ -26,8 +24,8 @@ never be needed while still preparing enough to move fast when the time comes.
 
 ### Build Quality In
 
-Quality is created upstream, not inspected in. Tests, observability, design clarity, and peer review
-are integrated into the normal flow so rework and defect queues stay near zero.
+Quality is created upstream, not added at teh end. Tests, observability, design clarity, and peer
+review are integrated into the normal flow so rework and defect queues stay near zero.
 
 ### Create Knowledge
 
@@ -37,19 +35,18 @@ conversations, and ticket ownership rotation spread context and reduce single‑
 ### Respect People
 
 Protect focused time, limit multitasking, and assume good intent. A predictable, humane system
-outperforms a heroic one—and sustains long‑term velocity.
+outperforms a heroic one and sustains long‑term velocity.
+
+### Succeed & Fail Together
+
+Wins belong to the team; setbacks trigger shared learning, not blame. We swarm problems, rotate
+work, and make decisions in the open so no single person absorbs disproportionate risk or credit.
+Collective ownership builds psychological safety and sustained improvement.
 
 ### Optimize the Whole
 
-Favor overall throughput of valuable work over local busy‑ness. Sometimes the highest leverage
-action is helping someone else finish rather than starting something new.
-
-## Influences
-
-Golazo synthesizes ideas from Lean (flow efficiency, waste reduction), Kanban (visualization, WIP
-limits), and Agile (iterative delivery, feedback loops) while emphasizing lightweight documentation
-as a knowledge engine. It is intentionally minimal—each practice survives only if it demonstrably
-improves flow and learning.
+Prioritize total team throughput of valuable work over individual activity. The highest leverage
+move is often helping someone finish, not starting something new.
 
 ## Applying the Principles
 
@@ -64,11 +61,13 @@ improves flow and learning.
 - Create Knowledge → Two design signoffs + two PR reviews ensure context is shared, not siloed.
 - Respect People → Enforce individual WIP limits (usually ≤2 active tickets) to reduce cognitive
   load.
+- Succeed & Fail Together → Share credit; swarm issues; treat failures as inputs to learning, not
+  blame.
 - Optimize the Whole → Swarm urgent issues collectively; idle capacity goes first to finishing, not
   starting.
 
 ## Related
 
-- Workflow Overview → `workflow-overview.md`
-- Tickets → `tickets.md`
-- Design Docs → `design-docs.md`
+- Workflow Overview → [Workflow Overview](workflow-overview.md)
+- Tickets → [Tickets & Sizing](tickets.md)
+- Design Docs → [Design Docs](design-docs.md)

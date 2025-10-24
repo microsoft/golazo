@@ -44,8 +44,9 @@ When a limit blocks movement:
 ## Detecting Bottlenecks
 
 Look for: columns consistently at or over limit; aging tickets (high cycle time) compared to
-neighbors; repeated backward movement; spike in blocked markers. See `measuring-success.md` for
-quantitative signals (e.g., WIP Age, Cycle Time trends).
+neighbors; repeated backward movement; spike in blocked markers. See
+[Measuring Success](measuring-success.md) for quantitative signals (e.g., WIP Age, Cycle Time
+trends).
 
 ## Flow Theory (Lightweight)
 
@@ -68,6 +69,6 @@ more.
 
 ## Related
 
-- Workflow Overview → `workflow-overview.md`
-- Tickets → `tickets.md`
-- Measuring Success → `measuring-success.md`
+- Workflow Overview → [Workflow Overview](workflow-overview.md)
+- Tickets → [Tickets & Sizing](tickets.md)
+- Measuring Success → [Measuring Success](measuring-success.md)

@@ -73,6 +73,6 @@ by the _ratio_ depending on definition—be explicit and consistent.
 
 ## Related
 
-- Tickets → `tickets.md`
-- Measuring Success → `measuring-success.md`
-- Adoption Guide → `adoption-guide.md`
+- Tickets → [Tickets & Sizing](tickets.md)
+- Measuring Success → [Measuring Success](measuring-success.md)
+- Adoption Guide → [Adoption Guide](adoption-guide.md)

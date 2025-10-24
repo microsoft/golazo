@@ -73,6 +73,6 @@ Week 1 guidance for newcomers:
 
 ## Related
 
-- Design Docs → `design-docs.md`
-- Meetings → `meetings-and-ceremonies.md`
-- Templates → `templates.md`
+- Design Docs → [Design Docs](design-docs.md)
+- Meetings → [Meetings & Cadence](meetings-and-ceremonies.md)
+- Templates → [Templates & Examples](templates.md)

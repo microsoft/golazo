@@ -75,5 +75,5 @@ Optional: :hourglass_flowing_sand: Waiting on external dependency / data.
 
 ## Related
 
-- Design Docs → `design-docs.md`
-- Communication → `communication.md`
+- Design Docs → [Design Docs](design-docs.md)
+- Communication → [Communication Patterns](communication.md)

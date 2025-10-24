@@ -68,6 +68,6 @@ across ingest cost, retention, query latency; recommend one" is actionable.
 
 ## Related
 
-- Design Docs → `design-docs.md`
-- Planning → `planning-and-prioritization.md`
-- WIP & Flow → `wip-and-flow.md`
+- Design Docs → [Design Docs](design-docs.md)
+- Planning → [Planning & Prioritization](planning-and-prioritization.md)
+- WIP & Flow → [WIP & Flow](wip-and-flow.md)

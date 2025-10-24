@@ -95,6 +95,6 @@ Goals: evaluate impact; identify _informed_ adaptations.
 
 ## Related
 
-- Why Golazo → `why-golazo.md`
-- Measuring Success → `measuring-success.md`
-- Communication → `communication.md`
+- Why Golazo → [Why Golazo](why-golazo.md)
+- Measuring Success → [Measuring Success](measuring-success.md)
+- Communication → [Communication Patterns](communication.md)
