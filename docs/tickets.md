@@ -1,6 +1,6 @@
-# Tickets & Sizing
+# Tickets and Sizing
 
-> Public draft – adapted from legacy Tickets section (fields & spike guidance).
+> Public draft – adapted from legacy Tickets section (fields and spike guidance).
 
 ## Summary
 
@@ -16,25 +16,25 @@ validated. It includes clear acceptance criteria and a definition of done coveri
 
 ## Core Fields
 
-| Field               | Purpose                                                     | Notes                                                 |
-| ------------------- | ----------------------------------------------------------- | ----------------------------------------------------- |
-| Title               | Crisp outcome phrased as value ("Enable X so Y")            | Avoid vague verbs ("improve", "handle stuff")         |
-| Shepherd            | Primary facilitator ensuring flow & quality                 | Not required to do all implementation                 |
-| Acceptance Criteria | Observable conditions proving value delivered               | Written before significant engineering starts         |
-| Cost Estimate       | Effort assuming focused work (e.g., ideal days / Fibonacci) | Used to spot outliers, not to micromanage             |
-| Start / End Dates   | Actual flow timing for metrics & retros                     | Set explicitly when leaving Ready / entering Done     |
-| Tags / Color        | Group by workstream/domain                                  | Avoid over‑tagging; supports dashboard & WIP insights |
-| Definition of Done  | Quality checklist (tests, docs, monitors)                   | Can be templated or global + ticket specifics         |
+| Field               | Purpose                                                     | Notes                                                   |
+| ------------------- | ----------------------------------------------------------- | ------------------------------------------------------- |
+| Title               | Crisp outcome phrased as value ("Enable X so Y")            | Avoid vague verbs ("improve", "handle stuff")           |
+| Shepherd            | Primary facilitator ensuring flow and quality               | Not required to do all implementation                   |
+| Acceptance Criteria | Observable conditions proving value delivered               | Written before significant engineering starts           |
+| Cost Estimate       | Effort assuming focused work (e.g., ideal days / Fibonacci) | Used to spot outliers, not to micromanage               |
+| Start / End Dates   | Actual flow timing for metrics and retros                   | Set explicitly when leaving Ready / entering Done       |
+| Tags / Color        | Group by workstream/domain                                  | Avoid over‑tagging; supports dashboard and WIP insights |
+| Definition of Done  | Quality checklist (tests, docs, monitors)                   | Can be templated or global and ticket specifics         |
 
 ## Sizing Rules (Checklist)
 
 All must be true:
 
 - Delivers standalone value (stakeholder can validate it in isolation).
-- Fits within SLA (< 2 weeks; many teams aim for 2–5 days).
+- Fits within SLA (less than 2 weeks; many teams aim for 2–5 days).
 - Acceptance criteria and DoD can be unambiguously verified.
-- Quality built in (tests + observability planned up front).
-- Minimal design complexity (excess ambiguity → consider spike).
+- Quality built in (tests and observability planned up front).
+- Minimal design complexity (excess ambiguity means consider spike).
 
 If any item fails, break the ticket down _before_ starting.
 
@@ -44,9 +44,9 @@ Use a spike when uncertainty prevents meaningful acceptance criteria (e.g., unfa
 algorithm feasibility). Characteristics:
 
 - Goal: answer specific, enumerated questions.
-- Output: documented findings + follow‑on concrete tickets.
-- Time‑boxed: small (often ≤ 2–3 days). If answers expand scope, create a new spike rather than
-  sprawling.
+- Output: documented findings and follow‑on concrete tickets.
+- Time‑boxed: small (often 2 to 3 days or less). If answers expand scope, create a new spike rather
+  than sprawling.
 - Closure: team reviews answers; confirms next steps.
 
 Scope spikes tightly. "Research database options" is weak; "Compare 3 time‑series storage options
@@ -68,6 +68,6 @@ across ingest cost, retention, query latency; recommend one" is actionable.
 
 ## Related
 
-- Design Docs → [Design Docs](design-docs.md)
-- Planning → [Planning & Prioritization](planning-and-prioritization.md)
-- WIP & Flow → [WIP & Flow](wip-and-flow.md)
+- Design Docs - [Design Docs](design-docs.md)
+- Planning - [Planning & Prioritization](planning-and-prioritization.md)
+- WIP and Flow - [WIP & Flow](wip-and-flow.md)

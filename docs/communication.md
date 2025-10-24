@@ -21,9 +21,9 @@ written, searchable, lightweight artifacts over private chats and meetings.
 | Channel              | Purpose                                             | Notes                                        |
 | -------------------- | --------------------------------------------------- | -------------------------------------------- |
 | Dev General          | Everyday technical discussion, questions, decisions | Prefer here over 1:1 DMs for discoverability |
-| Review               | Each design doc & PR gets a thread                  | Status signaled via emoji + short text       |
-| Release              | Deployment coordination & approvals                 | Include links + expected impact summary      |
-| Social               | Non‑work bonding & quick availability notes         | Optional notifications                       |
+| Review               | Each design doc and PR gets a thread                | Status signaled via emoji and short text     |
+| Release              | Deployment coordination and approvals               | Include links and expected impact summary    |
+| Social               | Non‑work bonding and quick availability notes       | Optional notifications                       |
 | (Optional) Incidents | High‑noise real‑time response (if volume justifies) | Summarize resolution in ticket after         |
 
 ## Review Signaling
@@ -39,11 +39,11 @@ Use both emoji and short text for accessibility (screen readers may not convey i
 
 | Instead of                   | Prefer                                                  |
 | ---------------------------- | ------------------------------------------------------- |
-| "hi" (wait)                  | Immediate full question + context                       |
+| "hi" (wait)                  | Immediate full question and context                     |
 | Private DM for general issue | Public channel for shared learning                      |
 | Vague bug report             | Steps, expected vs actual, logs, environment            |
 | Large design debate in chat  | Summarize options in design doc; request focused review |
-| Unstructured status update   | Board + concise delta notes                             |
+| Unstructured status update   | Board and concise delta notes                           |
 
 When asking: include links (ticket, PR, logs), reproduction steps, and what you’ve already tried.
 
@@ -59,8 +59,8 @@ Week 1 guidance for newcomers:
 
 ## Healthy Information Radiators
 
-- Board columns & WIP limits (current flow state).
-- Design docs (approach & rationale).
+- Board columns and WIP limits (current flow state).
+- Design docs (approach and rationale).
 - Review channel threads (work needing attention).
 - Metrics dashboard (trend insights, not immediate alerts).
 
@@ -73,6 +73,6 @@ Week 1 guidance for newcomers:
 
 ## Related
 
-- Design Docs → [Design Docs](design-docs.md)
-- Meetings → [Meetings & Cadence](meetings-and-ceremonies.md)
-- Templates → [Templates & Examples](templates.md)
+- Design Docs - [Design Docs](design-docs.md)
+- Meetings - [Meetings & Cadence](meetings-and-ceremonies.md)
+- Templates - [Templates & Examples](templates.md)

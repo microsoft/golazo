@@ -1,7 +1,5 @@
 # Roles & Responsibilities
 
-> Public draft – adapted from legacy Roles section + relevant FAQ guidance.
-
 ## Summary
 
 Golazo keeps formal roles to a minimum. A small set of clearly defined responsibilities sustains
@@ -16,9 +14,9 @@ team when drift appears.
 
 **Key Responsibilities**
 
-- Facilitate standup (ticket‑first order) and retrospectives.
-- Enforce WIP limits & highlight bottlenecks rather than silently adjusting.
-- Guard the integrity of design doc + review practices.
+- Facilitate standup (top-right to bottom-left order on the board) and retrospectives.
+- Enforce WIP limits and highlight bottlenecks rather than silently adjusting.
+- Guard the integrity of design doc and review practices.
 - Ensure planning cadence and backlog hygiene.
 - Prompt root‑cause exploration for backward ticket movement.
 - Mentor emerging coaches to distribute facilitation skill.
@@ -36,8 +34,8 @@ proper response without becoming a bottleneck.
 - Triage new incidents / interrupts; create or update tickets.
 - Ensure Swarm tickets exist _before_ standup with context.
 - Perform lightweight first‑pass investigation (many items resolved in minutes).
-- Communicate status & handoff cleanly to next DRI.
-- Capture repetitive tasks → propose automation or documentation improvements.
+- Communicate status and handoff cleanly to next DRI.
+- Capture repetitive tasks then propose automation or documentation improvements.
 
 **Time Expectation**: Mature teams often spend < 30–60 mins/day on DRI tasks; excess time signals
 upstream quality or monitoring issues.
@@ -50,7 +48,7 @@ documentation.
 Golazo optimizes for _team_ ownership. Any engineer can pick any Ready ticket. The **Shepherd**
 listed is the facilitator ensuring:
 
-- Design doc prepared & signed off.
+- Design doc prepared and signed off.
 - Reviews happen promptly.
 - Definition of Done fully met (tests, monitoring, docs).
 - Customer validation step closes the loop.
@@ -58,11 +56,11 @@ listed is the facilitator ensuring:
 Shepherd ≠ solo implementer; pairing and micro‑swarming encouraged. Knowledge rotates naturally as
 interests vary and coaches watch for area monopolies.
 
-## Growth & Equity
+## Growth and Equity
 
 Design encourages equitable access to impactful work:
 
-- Rotating DRI + open ticket selection prevents gatekeeping.
+- Rotating DRI and open ticket selection prevents gatekeeping.
 - Junior engineers gain confidence through design doc signoffs—shared responsibility, not isolation.
 - Senior engineers demonstrate leadership by refining backlog items, mentoring during Analyze,
   enforcing quality fundamentals, and shaping architectural consistency.
@@ -72,12 +70,12 @@ Design encourages equitable access to impactful work:
 ## Optional Roles (Lightweight Stewardships)
 
 - **Metrics Steward** – Maintains dashboard queries / scripts; surfaces trends for retros.
-- **Documentation Steward** – Curates glossary & templates; ensures new patterns recorded.
-- **Quality Champion** (rotating) – Focuses sprint/period on test debt & observability gaps. These
+- **Documentation Steward** – Curates glossary and templates; ensures new patterns recorded.
+- **Quality Champion** (rotating) – Focuses sprint/period on test debt and observability gaps. These
   roles should not create silos—authority remains distributed.
 
 ## Related
 
-- Meetings → [Meetings & Cadence](meetings-and-ceremonies.md)
-- Tickets → [Tickets & Sizing](tickets.md)
-- Communication → [Communication Patterns](communication.md)
+- Meetings - [Meetings & Cadence](meetings-and-ceremonies.md)
+- Tickets - [Tickets & Sizing](tickets.md)
+- Communication - [Communication Patterns](communication.md)

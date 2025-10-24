@@ -1,4 +1,4 @@
-# Templates & Examples
+# Templates and Examples
 
 > Status: Scaffold — provide copy/paste starting points.
 
@@ -22,7 +22,7 @@
 ## Assumptions / Out of Scope
 - (TODO)
 
-## Design & Testing Approach
+## Design and Testing Approach
 (TODO)
 
 ## Task List
@@ -47,11 +47,11 @@
 Use before pulling a ticket from Ready or when splitting.
 
 - Delivers standalone, demonstrable value (stakeholder can say ✅ / ❌).
-- Fits within SLA (< 2 weeks, ideally a few days).
-- Acceptance criteria are concrete & testable.
+- Fits within SLA (less than 2 weeks, ideally a few days).
+- Acceptance criteria are concrete and testable.
 - Quality signals (tests, monitoring, docs) identified.
 - Design complexity understood or a spike precedes it.
-- Dependencies known & minimal; external waiting minimized.
+- Dependencies known and minimal; external waiting minimized.
 - Can be shepherded by a single person (pairing allowed) without blocking others.
 
 ## Retro Action Item Format
@@ -75,5 +75,5 @@ Optional: :hourglass_flowing_sand: Waiting on external dependency / data.
 
 ## Related
 
-- Design Docs → [Design Docs](design-docs.md)
-- Communication → [Communication Patterns](communication.md)
+- Design Docs - [Design Docs](design-docs.md)
+- Communication - [Communication Patterns](communication.md)

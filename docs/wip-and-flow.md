@@ -1,4 +1,4 @@
-# WIP, Flow & Limits
+# WIP, Flow and Limits
 
 > Public draft – adapted from legacy WIP section with additional flow theory context.
 
@@ -69,6 +69,6 @@ more.
 
 ## Related
 
-- Workflow Overview → [Workflow Overview](workflow-overview.md)
-- Tickets → [Tickets & Sizing](tickets.md)
-- Measuring Success → [Measuring Success](measuring-success.md)
+- Workflow Overview - [Workflow Overview](workflow-overview.md)
+- Tickets - [Tickets & Sizing](tickets.md)
+- Measuring Success - [Measuring Success](measuring-success.md)

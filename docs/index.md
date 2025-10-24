@@ -22,11 +22,11 @@ working in different timezones.
 
 ## What Makes It Different
 
-- "Think Together Early": Lightweight design doc + 2 signoffs before implementation
+- "Think Together Early": Lightweight design doc and 2 signoffs before implementation
 - WIP limits to maximize focus and completion rate
 - Visual flow board with priority rails (Swarm / Interrupt / Planned) for instant situational
   awareness
-- Small, value‑sliced tickets + WSJF planning enable rapid adaptation mid-cycle
+- Small, value‑sliced tickets and WSJF planning enable rapid adaptation mid-cycle
 - Integrated review loop: smaller PRs focused on detail, not architecture debates
 - Shared ownership: Anyone can pull any Ready ticket—knowledge spreads naturally
 - Living library of concise design docs builds durable, searchable team context which accelerates
@@ -50,16 +50,17 @@ working in different timezones.
 
 ## Highlights (Outcomes You Can Expect)
 
-- Faster merges: upfront design eliminates architectural debate inside PRs → See
+- Faster merges: upfront design eliminates architectural debate inside PRs - See
   [Design Docs](design-docs.md)
-- Lower defect rate: quality built in + swarm discipline → See [Tickets](tickets.md) &
+- Lower defect rate: quality built in and swarm discipline - See [Tickets](tickets.md) and
   [WIP & Flow](wip-and-flow.md)
-- Adaptable planning: WSJF + small slices let you pivot as needed → See
+- Adaptable planning: WSJF and small slices let you pivot as needed - See
   [Planning & Prioritization](planning-and-prioritization.md)
-- Distributed knowledge: ticket queue + rotation fights silos → See
+- Distributed knowledge: ticket queue and rotation fights silos - See
   [Workflow Overview](workflow-overview.md)
-- Predictable review latency: limited WIP + smaller changes → See [Principles](principles.md)
-- Higher morale & quicker ramp: autonomy + shared docs + pairing → See [Why Golazo](why-golazo.md)
+- Predictable review latency: limited WIP and smaller changes - See [Principles](principles.md)
+- Higher morale and quicker ramp: autonomy and shared docs and pairing - See
+  [Why Golazo](why-golazo.md)
 
 ## Related
 

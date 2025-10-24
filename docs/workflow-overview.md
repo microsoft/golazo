@@ -7,9 +7,9 @@ bottlenecks, priorities, and collaboration needs obvious at a glance.
 
 ## Board Concept
 
-Each ticket advances left → right through clearly defined stages (columns). Horizontal lanes (rails)
-categorize urgency or work type. A healthy board lets any observer answer: What's most urgent?
-What's blocked? Who needs help next?
+Each ticket advances left to right through clearly defined stages (columns). Horizontal lanes
+(rails) categorize urgency or work type. A healthy board lets any observer answer: What's most
+urgent? What's blocked? Who needs help next?
 
 ## Board Diagram
 
@@ -70,9 +70,9 @@ Columns reflect state changes in learning and validation—not just coding steps
    sizing. Pull from here when you start new work. Coach filles this column with tickets from the
    Backlog.
 3. **Analyze** – Shepherd prepares or updates a lightweight design doc, confirms assumptions, and
-   obtains ≥2 peer signoffs.
-4. **Engineer** – Implementation + tests + instrumentation. Peer reviews (≥2) required before moving
-   forward.
+   obtains 2 or more peer signoffs.
+4. **Engineer** – Implementation and tests and instrumentation. Peer reviews (2 or more) required
+   before moving forward.
 5. **Release** – Code merges/deploys; feature flags or incremental rollout if applicable.
    Monitoring/observability verified.
 6. **Customer Validation** – Stakeholder / user confirms value delivered or provides immediate
@@ -103,12 +103,12 @@ Optional rails:
 
 1. Backlog item is refined during planning; Coach moves it to Ready.
 2. Engineer pulls it into Analyze, drafts design doc, gets two signoffs.
-3. Moves to Engineer; implementation + tests + two PR reviews.
+3. Moves to Engineer; implementation and tests and two PR reviews.
 4. Deployed under Release; monitoring shows healthy.
-5. Customer validates; feedback minor → Done.
+5. Customer validates; feedback minor then Done.
 
 ```
-Backlog → Ready → Analyze → Engineer → Release → Customer Validation → Done
+Backlog to Ready to Analyze to Engineer to Release to Customer Validation to Done
 ```
 
 ## Backward Movement Policy
@@ -125,6 +125,6 @@ an optimization signal, not blame.
 
 ## Related
 
-- WIP & Flow → [WIP & Flow](wip-and-flow.md)
-- Tickets → [Tickets & Sizing](tickets.md)
-- Planning → [Planning & Prioritization](planning-and-prioritization.md)
+- WIP and Flow - [WIP & Flow](wip-and-flow.md)
+- Tickets - [Tickets & Sizing](tickets.md)
+- Planning - [Planning & Prioritization](planning-and-prioritization.md)

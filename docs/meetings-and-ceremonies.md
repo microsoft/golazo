@@ -1,4 +1,4 @@
-# Meetings & Cadence
+# Meetings and Cadence
 
 > Public draft – adapted from legacy Meetings, Planning, Starfish, and Value Stream Mapping
 > sections.
@@ -10,7 +10,8 @@ learning, or adapt priorities—never to recite status already visible on the bo
 
 ## Standup (Daily – ~10–15 min)
 
-Order: board right→left, top (Swarm) → bottom (Planned). Discussion is by _ticket_, not by person.
+Order: board right to left, top (Swarm) to bottom (Planned). Discussion is by _ticket_, not by
+person.
 
 For each in‑progress ticket the Shepherd answers:
 
@@ -23,7 +24,7 @@ finish work before starting new. Long design debates are explicitly parked.
 
 ## Retrospective (Every 1–2 weeks – 60 min)
 
-Goal: celebrate wins + identify waste + choose improvement experiments.
+Goal: celebrate wins and identify waste and choose improvement experiments.
 
 Suggested Agenda:
 
@@ -32,7 +33,7 @@ Suggested Agenda:
 3. Review actions from previous retro
 4. New observations (group similar items)
 5. Select 1–3 actionable changes (small, testable)
-6. Owners + review date
+6. Owners and review date
 
 Waste heuristic: If you wouldn’t do more of it if you had time, can you reduce or remove it?
 
@@ -51,8 +52,8 @@ monitoring…).
 ## Planning Session (Often paired with Retro)
 
 - Review unestimated backlog items.
-- Clarify acceptance criteria & effort assumptions.
-- Assign Effort, Cost of Delay, Business Value (Fibonacci scale) → compute WSJF.
+- Clarify acceptance criteria and effort assumptions.
+- Assign Effort, Cost of Delay, Business Value (Fibonacci scale) then compute WSJF.
 - Reorder backlog (only top items need perfect ordering).
 - Pull highest priority items into Ready (Coach gates quality).
 
@@ -70,20 +71,20 @@ actions.
 | Ceremony             | Target Duration | Cadence   | Primary Outcomes                     |
 | -------------------- | --------------- | --------- | ------------------------------------ |
 | Standup              | 10–15 min       | Daily     | Unblocked flow; staffed urgent work  |
-| Retro + Planning     | 60 min          | 1–2 weeks | Improvements chosen; backlog groomed |
+| Retro and Planning   | 60 min          | 1–2 weeks | Improvements chosen; backlog groomed |
 | Starfish Retro       | 60–75 min       | Quarterly | Strategic adjustments                |
-| Value Stream Mapping | 15–25 min       | Ad hoc    | Waste sources & fixes                |
+| Value Stream Mapping | 15–25 min       | Ad hoc    | Waste sources and fixes              |
 
 ## Meeting Anti‑Patterns
 
 - Status recital (info already visible on board).
 - Design debates in standup instead of small focused follow‑ups.
-- Silent standup (lack of questions → missed collaboration).
+- Silent standup (lack of questions means missed collaboration).
 - Carrying unresolved retro actions from session to session.
 - Planning inflation wars (arguing numbers vs clarifying assumptions).
 
 ## Related
 
-- Planning → [Planning & Prioritization](planning-and-prioritization.md)
-- Measuring Success → [Measuring Success](measuring-success.md)
-- Communication → [Communication Patterns](communication.md)
+- Planning - [Planning & Prioritization](planning-and-prioritization.md)
+- Measuring Success - [Measuring Success](measuring-success.md)
+- Communication - [Communication Patterns](communication.md)

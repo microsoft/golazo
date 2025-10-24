@@ -9,15 +9,15 @@ Metrics inform improvement experiments; they are never used as blunt performance
 
 ## Core Quantitative Metrics
 
-| Metric                 | What It Shows                                   | Collection Notes                                  |
-| ---------------------- | ----------------------------------------------- | ------------------------------------------------- |
-| Cycle Time             | Speed from Ready → Done                         | Median & 75th percentile over last 4 weeks        |
-| WIP Age                | Aging items risk & hidden delays                | Highlight tickets > 2x median cycle time          |
-| Review Latency         | Time from PR ready → first substantive feedback | Separate design doc vs PR latency if tracked      |
-| Interrupt %            | Reactive load (Swarm + Interrupt vs total)      | Target: Interrupt + Swarm ≤ ~30% of capacity      |
-| Defect / Incident Rate | Quality & stability                             | Track by severity category                        |
-| Ticket Size Compliance | % tickets within SLA (< 2 weeks)                | Outliers trigger sizing discussion                |
-| Shepherd Distribution  | Knowledge spread & ownership equity             | Distinct Shepherds per workstream trending upward |
+| Metric                 | What It Shows                                    | Collection Notes                                     |
+| ---------------------- | ------------------------------------------------ | ---------------------------------------------------- |
+| Cycle Time             | Speed from Ready to Done                         | Median & 75th percentile over last 4 weeks           |
+| WIP Age                | Aging items risk and hidden delays               | Highlight tickets > 2x median cycle time             |
+| Review Latency         | Time from PR ready to first substantive feedback | Separate design doc vs PR latency if tracked         |
+| Interrupt %            | Reactive load (Swarm and Interrupt vs total)     | Target: Interrupt and Swarm at most ~30% of capacity |
+| Defect / Incident Rate | Quality & stability                              | Track by severity category                           |
+| Ticket Size Compliance | % tickets within SLA (< 2 weeks)                 | Outliers trigger sizing discussion                   |
+| Shepherd Distribution  | Knowledge spread & ownership equity              | Distinct Shepherds per workstream trending upward    |
 
 ## Qualitative Signals
 
@@ -52,10 +52,10 @@ minimal—opt for clarity over aesthetics.
 
 ## Related
 
-- WIP & Flow → [WIP & Flow](wip-and-flow.md)
-- Tickets & Sizing → [Tickets & Sizing](tickets.md)
-- Why Golazo → [Why Golazo](why-golazo.md)
-- Adoption Guide → [Adoption Guide](adoption-guide.md)
+- WIP and Flow - [WIP & Flow](wip-and-flow.md)
+- Tickets and Sizing - [Tickets & Sizing](tickets.md)
+- Why Golazo - [Why Golazo](why-golazo.md)
+- Adoption Guide - [Adoption Guide](adoption-guide.md)
 
 ---
 

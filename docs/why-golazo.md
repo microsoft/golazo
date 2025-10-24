@@ -30,10 +30,10 @@ accelerates value delivery while improving quality and morale.
 Without upfront alignment, PRs become the venue for architectural debates. Golazo shifts those
 discussions earlier, reducing rewrite cycles.
 
-### Incident & Bug Backlog
+### Incident and Bug Backlog
 
 Every defect takes one of two paths: fix now (Swarm) or consciously defer after we decide the impact
-doesn’t justify the fix. Quality practices (tests, monitoring, clear design) reduce how many arrive
+doesn't justify the fix. Quality practices (tests, monitoring, clear design) reduce how many arrive
 in the first place. If there are high incoming rates, that is a flag for the team to pause to
 investigate the cause whether technical or procedural.
 
@@ -49,16 +49,16 @@ perpetual firefighting. Automation and documentation improvements compound.
 
 ### Review Latency
 
-Smaller, well‑scoped changes + explicit review signaling reduce the psychological barrier to jumping
-into a review. Reviewers can quickly gain needed context via the design document that accompanies
-the task.
+Smaller, well‑scoped changes and explicit review signaling reduce the psychological barrier to
+jumping into a review. Reviewers can quickly gain needed context via the design document that
+accompanies the task.
 
-### Knowledge Silos & Ramp
+### Knowledge Silos and Ramp
 
 Rotational picking of diverse tickets along with living design doc archive distribute context. New
 engineers learn by doing, not by prolonged observation and reading endless documentation.
 
-### Focus & Multitasking Stress
+### Focus and Multitasking Stress
 
 WIP limits and right‑to‑left standup focus the team on finishing. Context switching declines;
 predictable throughput rises.
@@ -68,7 +68,7 @@ predictable throughput rises.
 Decomposing into validated slices ensures feasibility and value checkpoints. Weak approaches are
 discovered after days, not months.
 
-### Motivation & Ownership
+### Motivation and Ownership
 
 Autonomy in ticket selection together with collaborative completion fosters intrinsic motivation;
 success is shared, not isolated.
@@ -89,5 +89,5 @@ improves flow and learning.
 
 ## Related
 
-- Adoption Guide → [Adoption Guide](adoption-guide.md)
-- Principles → [Principles & Mindset](principles.md)
+- Adoption Guide - [Adoption Guide](adoption-guide.md)
+- Principles - [Principles & Mindset](principles.md)

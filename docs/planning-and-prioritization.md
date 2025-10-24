@@ -14,7 +14,7 @@ pre‑groomed with draft acceptance criteria.
 
 ## Inputs
 
-- Candidate tickets (clear problem + acceptance criteria draft).
+- Candidate tickets (clear problem and acceptance criteria draft).
 - Updated metrics (interrupt load, incident trends, cycle time).
 - Strategic / stakeholder inputs (new opportunities, deadlines).
 - Deferred follow‑ups from retros or design docs.
@@ -73,6 +73,6 @@ by the _ratio_ depending on definition—be explicit and consistent.
 
 ## Related
 
-- Tickets → [Tickets & Sizing](tickets.md)
-- Measuring Success → [Measuring Success](measuring-success.md)
-- Adoption Guide → [Adoption Guide](adoption-guide.md)
+- Tickets - [Tickets & Sizing](tickets.md)
+- Measuring Success - [Measuring Success](measuring-success.md)
+- Adoption Guide - [Adoption Guide](adoption-guide.md)

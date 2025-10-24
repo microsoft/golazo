@@ -37,7 +37,7 @@ conversations, and ticket ownership rotation spread context and reduce single‑
 Protect focused time, limit multitasking, and assume good intent. A predictable, humane system
 outperforms a heroic one and sustains long‑term velocity.
 
-### Succeed & Fail Together
+### Succeed and Fail Together
 
 Wins belong to the team; setbacks trigger shared learning, not blame. We swarm problems, rotate
 work, and make decisions in the open so no single person absorbs disproportionate risk or credit.
@@ -50,24 +50,24 @@ move is often helping someone finish, not starting something new.
 
 ## Applying the Principles
 
-- Deliver Quickly → Keep ticket scope < 2 weeks and release slices that a user or stakeholder can
-  validate.
-- Eliminate Waste → Visualize blockers and backward ticket movement; discuss root causes in
+- Deliver Quickly - Keep ticket scope less than 2 weeks and release slices that a user or
+  stakeholder can validate.
+- Eliminate Waste - Visualize blockers and backward ticket movement; discuss root causes in
   retrospectives.
-- Defer Commitment → Capture emerging ideas in the backlog without prematurely designing or
+- Defer Commitment - Capture emerging ideas in the backlog without prematurely designing or
   estimating deeply.
-- Build Quality In → Require definition of done (tests, monitoring, docs) before starting
+- Build Quality In - Require definition of done (tests, monitoring, docs) before starting
   engineering work.
-- Create Knowledge → Two design signoffs + two PR reviews ensure context is shared, not siloed.
-- Respect People → Enforce individual WIP limits (usually ≤2 active tickets) to reduce cognitive
-  load.
-- Succeed & Fail Together → Share credit; swarm issues; treat failures as inputs to learning, not
+- Create Knowledge - Two design signoffs and two PR reviews ensure context is shared, not siloed.
+- Respect People - Enforce individual WIP limits (usually 2 or fewer active tickets) to reduce
+  cognitive load.
+- Succeed and Fail Together - Share credit; swarm issues; treat failures as inputs to learning, not
   blame.
-- Optimize the Whole → Swarm urgent issues collectively; idle capacity goes first to finishing, not
+- Optimize the Whole - Swarm urgent issues collectively; idle capacity goes first to finishing, not
   starting.
 
 ## Related
 
-- Workflow Overview → [Workflow Overview](workflow-overview.md)
-- Tickets → [Tickets & Sizing](tickets.md)
-- Design Docs → [Design Docs](design-docs.md)
+- Workflow Overview - [Workflow Overview](workflow-overview.md)
+- Tickets - [Tickets & Sizing](tickets.md)
+- Design Docs - [Design Docs](design-docs.md)
