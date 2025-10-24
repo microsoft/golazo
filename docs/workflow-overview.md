@@ -19,39 +19,40 @@ urgent? What's blocked? Who needs help next?
 
 Columns reflect state changes in learning and validation—not just coding steps. Suggested baseline:
 
-1. Backlog– Candidate items with potential value but not yet committed. Anyone can propose.
+1. Backlog – Candidate items with potential value but not yet committed. Anyone can propose.
    Acceptance criteria not guaranteed complete.
-2. Ready– Highest‑priority, well‑understood items with clear acceptance criteria and initial sizing.
-   Pull from here when you start new work. Coach filles this column with tickets from the Backlog.
-3. Analyze– Shepherd prepares or updates a lightweight design doc, confirms assumptions, and obtains
-   2 or more peer signoffs.
-4. Engineer– Implementation and tests and instrumentation. Peer reviews (2 or more) required before
+2. Ready – Highest‑priority, well‑understood items with clear acceptance criteria and initial
+   sizing. Pull from here when you start new work. Coach filles this column with tickets from the
+   Backlog.
+3. Analyze – Shepherd prepares or updates a lightweight design doc, confirms assumptions, and
+   obtains 2 or more peer signoffs.
+4. Engineer – Implementation and tests and instrumentation. Peer reviews (2 or more) required before
    moving forward.
-5. Release– Code merges/deploys; feature flags or incremental rollout if applicable.
+5. Release – Code merges/deploys; feature flags or incremental rollout if applicable.
    Monitoring/observability verified.
-6. Customer Validation– Stakeholder / user confirms value delivered or provides immediate feedback
+6. Customer Validation – Stakeholder / user confirms value delivered or provides immediate feedback
    loop.
-7. Done– Definition of Done fully met; learnings captured for retrospective.
+7. Done – Definition of Done fully met; learnings captured for retrospective.
 
 ## Rails
 
 Rails (aka swimlanes) categorize tickets by urgency or intent without mixing them visually.
 
-- Swarm– Highest priority customer‑impacting issues. The team stops and collaborates. Target
+- Swarm – Highest priority customer‑impacting issues. The team stops and collaborates. Target
   turnaround typically < 24 business hours.
-- Interrupt– Unexpected but important asks (e.g., compliance request, executive demo). Limit active
+- Interrupt – Unexpected but important asks (e.g., compliance request, executive demo). Limit active
   count (often 1) to protect focus.
-- Planned– The steady value stream of intentionally prioritized work. Most capacity should live
+- Planned – The steady value stream of intentionally prioritized work. Most capacity should live
   here.
 
 Optional rails:
 
-- OOF / Time Off– Visualize availability.
-- Tracking– Items mostly waiting on external parties. Use retrospectives to reduce reliance on this
+- Time Off – Visualize availability.
+- Tracking – Items mostly waiting on external parties. Use retrospectives to reduce reliance on this
   lane because it can hide flow debt. Ideally all external depenencies are resolved before a ticket
   is moved to Ready.
-- Lead / Manager– Long‑tail tasks owned by roles with fragmented time; isolates their slower cadence
-  from standard WIP metrics.
+- Lead / Manager – Long‑tail tasks owned by roles with fragmented time; isolates their slower
+  cadence from standard WIP metrics.
 
 ## Flow Example
 
