@@ -1,21 +1,12 @@
 # Frequently Asked Questions
 
-> Public draft – answers scoped to topics not already covered in depth elsewhere. For foundational
-> context see: [Why Golazo](why-golazo.md), [Adoption Guide](adoption-guide.md),
-> [Design Docs](design-docs.md), [Planning & Prioritization](planning-and-prioritization.md).
-
-## Using This FAQ
-
-Scan section headings first; each answer links to deeper material. If a question seems missing, it
-may now have its own dedicated page.
-
 ## Team Operation
 
 **How big should a team be?** 6–8 engineers is a sweet spot: enough diversity for collaboration,
 small enough for shared context. Larger groups can split boards and sync leads periodically.
 
-**Can a single engineer use Golazo practices?** Yes—visualize work, draft mini design docs, enforce
-personal WIP, and request external peer reviews for key changes.
+**Can a single engineer use Golazo practices?** Yes! It's a great way to visualize work, draft mini
+design docs, enforce personal WIP, and request external peer reviews for key changes.
 
 **What if a ticket stalls?** Raise in standup immediately. If aging continues, Value Stream Map it
 to identify hidden dependencies, over‑sizing, or unclear definition of done.
@@ -25,15 +16,18 @@ to identify hidden dependencies, over‑sizing, or unclear definition of done.
 **How long is the trial?** A focused 90‑day period (see [Adoption Guide](adoption-guide.md)).
 Shorter trials rarely expose the compounding benefits.
 
-**Do we customize early?** Not unless there is a real blocker. Measure first; adapt after Phase 3
-with explicit rationale and rollback criteria.
+**Do we customize Golazo early?** Resist customization unless there is a real blocker. Give it a
+full try first and only change with explicit rationale and rollback criteria. Consider discussing
+the change with someone more experienced with Golazo. Teams changing the core process is one of the
+biggest reasons for process failure.
 
 **What if leadership pressures for more simultaneous work?** Show impact projections: increasing WIP
-tends to increase cycle time. Use current metrics to illustrate trade‑offs.
+tends to increase cycle time. Discuss relative priority of projects. Show metrics to demonstrate
+high ticket throughput, no bug backlog, and higher team morale.
 
 ## Roles and Ownership
 
-**What happens if someone picks a ticket beyond their current expertise?** Pair or micro‑swarm
+**What happens if someone picks a ticket beyond their current expertise?** That's encouraged! Pair
 early. Slower single ticket now accelerates future velocity via knowledge spread.
 
 **How do senior engineers show growth?** Through architectural stewardship (design reviews), backlog
@@ -43,7 +37,8 @@ retros.
 ## Quality and Design Docs
 
 **Aren't design docs overhead for tiny changes?** Keep them proportional. Even a 5‑bullet doc for a
-small change catches missing tests or existing abstractions to reuse.
+small change catches missing tests or existing abstractions to reuse. Five or ten minutes spent
+writing a design doc while the context is fresh can pay enormous dividends in the future.
 
 **What if reviewers disagree?** Capture the options and trade‑offs succinctly in the doc; if
 consensus still fails, timebox a focused huddle, then document the decision and reasoning.
@@ -54,8 +49,9 @@ and maintains consistency; small tickets keep review load reasonable.
 ## Metrics and Success
 
 **How do we know it’s working?** Improvements in cycle time, reduced interrupt ratio, lower incident
-frequency, broader Shepherd distribution, and positive pulse survey trends (see
-[Measuring Success](measuring-success.md)).
+frequency, broader Shepherd distribution, and positive pulse survey trends. Mature Golazo teams will
+also fight hard to keep the Golazo process becuse they've lived the benefits both for productivity
+and morale.
 
 **What if metrics improve but morale drops?** Re‑examine WIP pressure, review load, and meeting
 hygiene. Principle application may have become dogmatic; engage team in a Starfish Retro.
@@ -73,5 +69,4 @@ criteria, then WSJF rank. Avoid side channels creating invisible work.
 
 ## Still Have Questions?
 
-Open an issue (include context and what you've already tried) or propose an addition via PR
-following [Contribution Guidelines](contribution.md).
+Open a GitHub issue or discussion item includeing context and what you've already tried.

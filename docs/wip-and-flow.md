@@ -1,6 +1,4 @@
-# WIP, Flow and Limits
-
-> Public draft – adapted from legacy WIP section with additional flow theory context.
+# Work in Progress Limits
 
 ## Summary
 
@@ -9,48 +7,44 @@ finishing the most valuable work sooner instead of diluting focus across many pa
 
 ## Why Limit WIP
 
-- **Faster Completion** – Partially done work delivers zero value; finishing earlier accelerates
-  feedback loops.
-- **Lower Context Switching Cost** – Humans pay a heavy cognitive tax when juggling many threads;
-  fewer active tickets = higher sustained quality.
-- **Expose Bottlenecks** – When a column hits its limit you must _improve flow_ (help upstream)
-  instead of silently starting more work.
-- **Enable Swarming** – Reserved capacity makes it cheap to swarm critical incidents without
-  derailing weeks of in‑flight work.
-- **Reduce Stress** – Predictable small queues beat long hidden backlogs of half‑finished tasks.
+- Faster Completion: Partially done work delivers zero value; finishing earlier accelerates feedback
+  loops.
+- Lower Context Switching Cost: Humans pay a heavy cognitive tax when juggling many threads; fewer
+  active tickets = higher sustained quality.
+- Expose Bottlenecks: When a column hits its limit you must _improve flow_ (help upstream) instead
+  of silently starting more work.
+- Enable Swarming: Reserved capacity makes it cheap to swarm critical incidents without derailing
+  weeks of in‑flight work.
+- Reduce Stress: Predictable small queues beat long hidden backlogs of half‑finished tasks.
 
-## Policies (Baseline Recommendations)
+## Policies
 
-- **Individual Limit** – A person’s name should appear as active Shepherd on at most 2 tickets
-  (often 1 for new team members).
-- **Column Limits** – All intermediate columns (Ready optional) have numeric limits sized to team
-  capacity. If the next column is full you _stop starting_ and help finish.
-- **Interrupt Rail Limit** – Only one active Interrupt at a time. Others wait in Ready; protects the
-  Planned rail.
-- **Swarm Handling** – Swarm items temporarily override individual limits. Once stabilized, excess
+- Individual Limit: A person’s name should appear as active Shepherd on at most 2 tickets.
+- Column Limits: All intermediate columns have numeric limits sized to team capacity. If the next
+  column is full you _stop_ and help a ticket ahead of you finish. The execution columns should sum
+  to 1.5 \* Team Size as a starting point.
+- Interrupt Rail Limit: Only one active Interrupt at a time. Others wait in Ready; protects the
+  Planned rail from interruptions.
+- Swarm Handling: Swarm items temporarily override individual limits. Once stabilized, excess
   helpers peel off.
-- **Ticket Size** – Tickets must be small enough to fit under the SLA (commonly < 2 weeks) so WIP
-  represents near‑term deliverables, not projects.
+- Ticket Size: Tickets must be small enough to fit under the SLA (commonly < 2 weeks) so WIP
+  represents near‑term deliverables, not projects. Small tickets mean that someone is frequently
+  becoming idle and free to work on Swarms, etc.
 
 ## Managing Flow in Practice
 
+Look for columns consistently at or over limit, aging tickets compared to neighbors, repeated
+backward movement, and spikes in blocked markers.
+
 When a limit blocks movement:
 
-1. Highlight blockage in standup (or async channel if discovered mid‑day).
-2. Redirect available capacity to tickets closest to Done (right‑most first).
-3. If chronic, adjust process—not just the number (e.g., reduce Analyze batching, add template
-   guidance).
-
-## Detecting Bottlenecks
-
-Look for: columns consistently at or over limit; aging tickets (high cycle time) compared to
-neighbors; repeated backward movement; spike in blocked markers. See
-[Measuring Success](measuring-success.md) for quantitative signals (e.g., WIP Age, Cycle Time
-trends).
+1. Highlight the blockage in standup.
+2. Redirect available capacity to tickets closest to Done.
+3. If this is a chronic condition, adjust the process and culture not just the WIP number.
 
 ## Flow Theory (Lightweight)
 
-Little’s Law (informally):
+[Little’s Law](https://www.bing.com/search?q=little%27s+law):
 
 ```
 Average Throughput ≈ WIP / Average Cycle Time
@@ -62,10 +56,10 @@ more.
 
 ## Anti‑Patterns
 
-- Increasing limits instead of solving root causes.
+- Increasing WIP limits instead of solving root causes.
 - Large tickets that “camp” in Engineer for weeks.
-- Hidden parallel work (side branches) not visualized on the board.
-- Interrupt rail frequently >1 or treated as a parking lot.
+- Hidden parallel work and side branches not visualized on the board.
+- Interrupt rail frequently with more than one active ticket.
 
 ## Related
 

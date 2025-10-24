@@ -42,20 +42,19 @@ working in different timezones.
 4. [Roles & Responsibilities](roles.md)
 5. [Tickets](tickets.md)
 6. [Design Docs](design-docs.md)
-7. [Meetings & Ceremonies](meetings-and-ceremonies.md)
-8. [Planning & Prioritization](planning-and-prioritization.md)
-9. [WIP & Flow](wip-and-flow.md)
+7. [Meetings](meetings.md)
+8. [WIP & Flow](wip-and-flow.md)
+9. [Communication](communication.md)
 10. [Adoption Guide](adoption-guide.md)
 11. [FAQ](faq.md)
 
-## Highlights (Outcomes You Can Expect)
+## Expedted Outcomes
 
 - Faster merges: upfront design eliminates architectural debate inside PRs - See
   [Design Docs](design-docs.md)
 - Lower defect rate: quality built in and swarm discipline - See [Tickets](tickets.md) and
   [WIP & Flow](wip-and-flow.md)
-- Adaptable planning: WSJF and small slices let you pivot as needed - See
-  [Planning & Prioritization](planning-and-prioritization.md)
+- Adaptable planning: WSJF and small slices let you pivot as needed - See [Meetings](meetings.md)
 - Distributed knowledge: ticket queue and rotation fights silos - See
   [Workflow Overview](workflow-overview.md)
 - Predictable review latency: limited WIP and smaller changes - See [Principles](principles.md)

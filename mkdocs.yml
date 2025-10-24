@@ -36,7 +36,7 @@ nav:
       - Design Docs: design-docs.md
   - Operation:
     - Roles & Responsibilities: roles.md
-      - Meetings & Cadence: meetings-and-ceremonies.md
+      - Meetings: meetings.md
       - Planning & Prioritization: planning-and-prioritization.md
       - Communication Patterns: communication.md
       - Adoption Guide: adoption-guide.md

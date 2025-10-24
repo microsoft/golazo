@@ -1,39 +1,37 @@
 # Communication Patterns
 
-> Public draft – adapted from legacy FAQ + Asynchronous Communication guidance.
-
 ## Summary
 
-Intentional, transparent communication keeps flow moving across time zones and schedules. Favor
-written, searchable, lightweight artifacts over private chats and meetings.
+Intentional, transparent communication keeps flow moving across time zones and schedules. Golazo
+favors written, searchable, lightweight asynchronous artifacts over private chats and meetings.
 
 ## Principles
 
-- **Default to Public** – Use shared team channels so others can learn passively.
-- **Context over Pings** – Provide enough detail so someone returning later can answer without a
+- Default to Public Conversation: Use shared team channels so others can learn passively.
+- Context over Pings: Provide enough detail so someone returning later can answer without a
   back‑and‑forth.
-- **Async Friendly** – Assume recipients may respond hours later; batch questions.
-- **Signal Review States** – Make design / PR status legible at a glance.
-- **Avoid Notification Fatigue** – High‑signal channels only; thread conversations.
+- Async Friendly: Assume recipients may respond hours later; batch questions.
+- Signal Review States: Make design / PR status legible at a glance.
+- Avoid Notification Fatigue: Thread conversations and avoid tagging the entire channel.
 
-## Recommended Channels (Tool Agnostic)
+## Recommended Channels
 
-| Channel              | Purpose                                             | Notes                                        |
-| -------------------- | --------------------------------------------------- | -------------------------------------------- |
-| Dev General          | Everyday technical discussion, questions, decisions | Prefer here over 1:1 DMs for discoverability |
-| Review               | Each design doc and PR gets a thread                | Status signaled via emoji and short text     |
-| Release              | Deployment coordination and approvals               | Include links and expected impact summary    |
-| Social               | Non‑work bonding and quick availability notes       | Optional notifications                       |
-| (Optional) Incidents | High‑noise real‑time response (if volume justifies) | Summarize resolution in ticket after         |
+| Channel     | Purpose                                             | Notes                                        |
+| ----------- | --------------------------------------------------- | -------------------------------------------- |
+| Dev General | Everyday technical discussion, questions, decisions | Prefer here over 1:1 DMs for discoverability |
+| Review      | Each design doc and PR gets a thread                | Status signaled via emoji and short text     |
+| Release     | Deployment coordination and approvals               | Include links and expected impact summary    |
+| Social      | Non‑work bonding and quick availability notes       | Encourage fun!                               |
 
-## Review Signaling
+## Review and Release Signaling
 
-Use both emoji and short text for accessibility (screen readers may not convey intent):
+Define a team culture around communicating status of reaction to posts in the Review and Release
+channels. For example, the team could use common emojis:
 
 - :eyes: "Reviewing" – Someone actively reading.
 - :speech_balloon: "Comments posted" – Feedback awaiting author response.
-- :thumbsup: "Approved" – Signoff given. If stale > a few hours, politely re‑ping or tag a likely
-  reviewer.
+- :thumbsup: "Approved" – Signoff given. If stale for more than a few hours, politely re‑ping or tag
+  a likely reviewer.
 
 ## Async Best Practices
 
@@ -47,32 +45,14 @@ Use both emoji and short text for accessibility (screen readers may not convey i
 
 When asking: include links (ticket, PR, logs), reproduction steps, and what you’ve already tried.
 
-## Onboarding Communication
-
-Week 1 guidance for newcomers:
-
-- Lurk in Dev General to absorb norms; upgrade to asking clarifying questions by day 2–3.
-- Shadow one review thread end‑to‑end.
-- Post a first design doc or PR thread with explicit request: “Looking for two reviewers; focusing
-  on X risk.”
-- Practice writing a full context question instead of a DM; get feedback from Coach.
-
-## Healthy Information Radiators
-
-- Board columns and WIP limits (current flow state).
-- Design docs (approach and rationale).
-- Review channel threads (work needing attention).
-- Metrics dashboard (trend insights, not immediate alerts).
-
 ## Anti‑Patterns
 
-- Important decisions only in meetings (no written record).
-- DM reliance creating knowledge silos.
-- Review threads with only emoji (no explanatory text for later readers).
-- Channel sprawl: too many low‑usage channels diluting attention.
+- Important decisions only in meetings with no written record.
+- Direct message reliance creating knowledge silos.
+- Too many low‑usage channels diluting attention.
 
 ## Related
 
 - Design Docs - [Design Docs](design-docs.md)
-- Meetings - [Meetings & Cadence](meetings-and-ceremonies.md)
+- Meetings - [Meetings](meetings.md)
 - Templates - [Templates & Examples](templates.md)
