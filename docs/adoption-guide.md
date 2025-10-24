@@ -42,7 +42,7 @@ Goals: stabilize flow and reinforce habits.
 - Enforce WIP limits rigorously.
 - Require design doc and 2 signoffs before engineering (except true Swarm).
 - Weekly Retros (or bi‑weekly if stable) with action items.
-- DRI rotation weekly; capture repetitive toil for automation proposals.
+- On call engineer rotation weekly; capture repetitive toil for automation proposals.
 - Track cycle time, review latency, interrupt %.
 - Encourage cross‑area ticket selection to broaden knowledge.
 
@@ -90,7 +90,7 @@ Goals: evaluate impact; identify _informed_ adaptations.
 - [ ] Design doc template accessible
 - [ ] First 10 backlog items refined & prioritized
 - [ ] Metrics instrumentation (manual spreadsheet acceptable initially)
-- [ ] DRI runbook drafted
+- [ ] On call engineer runbook drafted
 - [ ] Pulse survey questions defined
 
 ## Related

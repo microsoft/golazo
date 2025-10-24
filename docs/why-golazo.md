@@ -13,7 +13,7 @@ accelerates value delivery while improving quality and morale.
 | PR churn over fundamental design questions | Pre‑implementation design doc + 2 signoffs           | Smaller PRs focused on details; faster merges         |
 | Large bug / incident backlog               | Immediate triage + Swarm rail + build quality in     | Lower incoming defect rate; faster resolution         |
 | Rigid semester planning blocking new asks  | Frequent WSJF planning; small ticket slices          | Adaptable backlog; opportunity capture                |
-| Overloaded on‑call / DRI                   | Upstream quality + rotation + automation focus       | DRI time shrinks; less burnout                        |
+| Overloaded on‑call / on call engineer      | Upstream quality + rotation + automation focus       | On call engineer time shrinks; less burnout           |
 | Slow or absent reviews                     | Visible Review channel + limited WIP + small tickets | Predictable review latency                            |
 | Isolation & silos                          | Anyone can pick any Ready ticket; shared design docs | Broader knowledge distribution                        |
 | Slow new‑hire ramp                         | Pairing + reading past design docs + small tickets   | Confidence from first contribution in days not months |
@@ -42,10 +42,10 @@ investigate the cause whether technical or procedural.
 Interruptions and plan changes are inevitable. WSJF plus short tickets means new high‑value work can
 enter the flow within days—not semesters—without derailing existing commitments.
 
-### DRI Overload
+### On Call Engineer Overload
 
-Because quality is built in and workstreams are shared, the DRI role becomes lightweight triage, not
-perpetual firefighting. Automation and documentation improvements compound.
+Because quality is built in and workstreams are shared, the on call engineer role becomes
+lightweight triage, not perpetual firefighting. Automation and documentation improvements compound.
 
 ### Review Latency
 

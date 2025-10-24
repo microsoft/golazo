@@ -21,10 +21,9 @@ team when drift appears.
 - Prompt root‑cause exploration for backward ticket movement.
 - Mentor emerging coaches to distribute facilitation skill.
 
-**Anti‑Patterns**: Owning all decisions; rewriting tickets; acting as a project manager assigning
-work.
+**Anti‑Patterns**: Owning all decisions; assigning work to specific people
 
-### DRI (Designated Responsible Individual)
+### On Call Engineer
 
 Rotating role (often weekly) monitoring inbound signals (incidents, urgent asks) and initiating the
 proper response without becoming a bottleneck.
@@ -34,11 +33,11 @@ proper response without becoming a bottleneck.
 - Triage new incidents / interrupts; create or update tickets.
 - Ensure Swarm tickets exist _before_ standup with context.
 - Perform lightweight first‑pass investigation (many items resolved in minutes).
-- Communicate status and handoff cleanly to next DRI.
+- Communicate status and handoff cleanly to next on call engineer.
 - Capture repetitive tasks then propose automation or documentation improvements.
 
-**Time Expectation**: Mature teams often spend < 30–60 mins/day on DRI tasks; excess time signals
-upstream quality or monitoring issues.
+**Time Expectation**: Mature teams often spend < 30–60 mins/day on on call engineer tasks; excess
+time signals upstream quality or monitoring issues.
 
 **Anti‑Patterns**: Hoarding all urgent fixes, becoming the de facto operations silo, deferring
 documentation.
@@ -60,7 +59,7 @@ interests vary and coaches watch for area monopolies.
 
 Design encourages equitable access to impactful work:
 
-- Rotating DRI and open ticket selection prevents gatekeeping.
+- Rotating on call engineer and open ticket selection prevents gatekeeping.
 - Junior engineers gain confidence through design doc signoffs—shared responsibility, not isolation.
 - Senior engineers demonstrate leadership by refining backlog items, mentoring during Analyze,
   enforcing quality fundamentals, and shaping architectural consistency.
