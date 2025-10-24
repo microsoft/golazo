@@ -65,4 +65,3 @@ more.
 
 - Workflow Overview - [Workflow Overview](workflow-overview.md)
 - Tickets - [Tickets & Sizing](tickets.md)
-- Measuring Success - [Measuring Success](measuring-success.md)

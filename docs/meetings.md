@@ -154,5 +154,4 @@ high‑count clusters first and extracts change actions. For more information, s
 
 ## Related
 
-- Measuring Success - [Measuring Success](measuring-success.md)
 - Communication - [Communication Patterns](communication.md)

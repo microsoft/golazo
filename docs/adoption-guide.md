@@ -1,6 +1,4 @@
-# Adopting Golazo: 90‑Day Trial
-
-> Public draft – integrates legacy FAQ transition guidance and downsides with a structured rollout.
+# Adopting Golazo
 
 ## Summary
 
@@ -52,5 +50,4 @@ maintain short validation cycles.
 ## Related
 
 - Why Golazo - [Why Golazo](why-golazo.md)
-- Measuring Success - [Measuring Success](measuring-success.md)
 - Communication - [Communication Patterns](communication.md)

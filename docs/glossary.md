@@ -1,18 +1,13 @@
 # Glossary
 
-> Public draft – canonical definitions. Keep alphabetized; link first occurrence in each page where
-> practical.
-
 | Term                               | Definition                                                                                                                                            | Link                                      |
 | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
 | Coach                              | Facilitator ensuring process integrity: guides standup and retros, highlights flow issues, champions quality practices—never a task assigner.         | [Roles & Responsibilities](roles.md)      |
 | Column                             | Vertical board stage representing a distinct state change in learning/validation (e.g., Analyze, Engineer, Release).                                  | [Workflow Overview](workflow-overview.md) |
-| Cycle Time                         | Elapsed time from ticket Start (leaving Ready) to Done (validated). Excludes time in Backlog.                                                         | [Measuring Success](measuring-success.md) |
 | On Call Engineer                   | Short rotation role triaging incidents/interrupts, creating Swarm/Interrupt tickets, and coordinating rapid response.                                 | [Roles & Responsibilities](roles.md)      |
 | Interrupt                          | Unexpected, non‑Swarm work that still needs tracking (e.g., compliance request). Limited to one active to protect focus.                              | [Workflow Overview](workflow-overview.md) |
 | Planned                            | Intentionally prioritized, value‑adding work forming the bulk of throughput.                                                                          | [Workflow Overview](workflow-overview.md) |
 | Rail                               | Horizontal swimlane grouping tickets by urgency or type (Swarm, Interrupt, Planned).                                                                  | [Workflow Overview](workflow-overview.md) |
-| Review Latency                     | Time from PR ready signal to first substantive reviewer feedback.                                                                                     | [Measuring Success](measuring-success.md) |
 | Shepherd                           | Person facilitating a ticket’s progress (design doc, reviews, validation) ensuring Definition of Done is met—may pair with others for implementation. | [Tickets & Sizing](tickets.md)            |
 | SLA (Service Level Agreement)      | Agreed maximum duration for a ticket (commonly < 2 weeks) after leaving Ready; drives small, testable scope.                                          | [Tickets & Sizing](tickets.md)            |
 | Spike                              | Time‑boxed research ticket answering specific questions; outputs decisions and follow‑on tickets, not production code.                                | [Tickets & Sizing](tickets.md)            |
