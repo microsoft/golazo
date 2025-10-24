@@ -27,21 +27,20 @@ theme:
 
 nav:
   - Home: index.md
-  - Why Golazo: why-golazo.md
-  - Principles & Mindset: principles.md
+  - Context:
+      - Why Golazo: why-golazo.md
+      - Principles: principles.md
   - Workflow:
       - Workflow Overview: workflow-overview.md
-      - WIP & Flow: wip-and-flow.md
+      - WIP Limits: wip-and-flow.md
       - Tickets & Sizing: tickets.md
       - Design Docs: design-docs.md
   - Operation:
-    - Roles & Responsibilities: roles.md
+      - Roles & Responsibilities: roles.md
       - Meetings: meetings.md
-      - Planning & Prioritization: planning-and-prioritization.md
       - Communication Patterns: communication.md
       - Adoption Guide: adoption-guide.md
   - Reference:
       - FAQ: faq.md
       - Glossary: glossary.md
-      - Measuring Success: measuring-success.md
       - Templates & Examples: templates.md
