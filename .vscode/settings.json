@@ -5,5 +5,7 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "prettier.proseWrap": "always"
+  "prettier.proseWrap": "always",
+  "cSpell.enabled": true,
+  "cSpell.showAutocompleteSuggestions": true
 }

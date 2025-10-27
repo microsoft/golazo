@@ -43,8 +43,8 @@ Prior to the retrospective meeting, the coach should identify the ticket where t
 for the ticket most exceeded the expected time. Prior to the meeting, the Shepherd can review what
 was done each day on the ticket. During the meeting, the Shepherd narrates a neutral, day‑by‑day
 timeline. Team treats Shepherd as _innocent_ and instead the team focuses on what they could have
-done to help the ticket close on time.. Dicsussions often revolve around system factors such as
-dependencies, multitasking, and unclear definition of done). The goal of the discussionare concrete
+done to help the ticket close on time.. Discussions often revolve around system factors such as
+dependencies, multitasking, and unclear definition of done). The goal of the discussion are concrete
 prevention ideas to help the team be more efficient in the future.
 
 ## Planning Session (Every 1–2 weeks – 30-60 min)
