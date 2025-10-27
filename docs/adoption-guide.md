@@ -3,8 +3,7 @@
 ## Summary
 
 A deliberate 90‑day, "by the book" trial lets a team experience full benefits—improved flow,
-quality, and learning—before deciding what to tailor. Partial adoption early almost always
-underdelivers.
+quality, and learning—before deciding what to tailor. Partial adoption almost always underdelivers.
 
 ## Team Size and Suitability
 
