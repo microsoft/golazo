@@ -52,7 +52,7 @@ navigation pane on the left to jump to a specific area.
 
 1. [Why Golazo](why-golazo.md)
 2. [Principles](principles.md)
-3. [Task Board](workflow-overview.md)
+3. [Task Board](task-board.md)
 4. [Roles \& Responsibilities](roles.md)
 5. [Tickets](tickets.md)
 6. [Design Docs](design-docs.md)

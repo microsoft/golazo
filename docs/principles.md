@@ -68,4 +68,4 @@ move is often helping someone finish, not starting something new.
 
 ## Navigation
 
-[← Step 1: Why Golazo](why-golazo.md) | [Step 3: Workflow Overview →](workflow-overview.md)
+[← Step 1: Why Golazo](why-golazo.md) | [Step 3: Workflow Overview →](task-board.md)
