@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - "**.md"
-      - "**.txt"
       - "**.yml"
       - "**.yaml"
 
