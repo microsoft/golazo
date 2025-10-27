@@ -67,7 +67,7 @@ and periodic planning typically yields smoother delivery.
 **How do we manage external stakeholder asks?** Capture as backlog items, clarify acceptance
 criteria, then WSJF rank. Avoid side channels creating invisible work.
 
-## Still Have Questions?
+## Still Have Questionds?
 
 Open a GitHub issue or discussion item including context and what you've already tried.
 
