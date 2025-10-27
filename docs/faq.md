@@ -50,7 +50,7 @@ and maintains consistency; small tickets keep review load reasonable.
 
 **How do we know it’s working?** Improvements in cycle time, reduced interrupt ratio, lower incident
 frequency, broader Shepherd distribution, and positive pulse survey trends. Mature Golazo teams will
-also fight hard to keep the Golazo process becuse they've lived the benefits both for productivity
+also fight hard to keep the Golazo process because they've lived the benefits both for productivity
 and morale.
 
 **What if metrics improve but morale drops?** Re‑examine WIP pressure, review load, and meeting
@@ -69,7 +69,7 @@ criteria, then WSJF rank. Avoid side channels creating invisible work.
 
 ## Still Have Questions?
 
-Open a GitHub issue or discussion item includeing context and what you've already tried.
+Open a GitHub issue or discussion item including context and what you've already tried.
 
 ## Navigation
 

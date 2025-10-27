@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Golazo development methodology documentation",
   "devDependencies": {
+    "cspell": "^8.0.0",
     "prettier": "^3.0.0"
   },
   "scripts": {
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "spellcheck": "cspell \"**/*.md\" \"**/*.yml\" \"**/*.yaml\" --no-progress"
   }
 }

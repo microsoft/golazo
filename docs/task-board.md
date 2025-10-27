@@ -49,7 +49,7 @@ Optional rails:
 
 - Time Off – Visualize availability.
 - Tracking – Items mostly waiting on external parties. Use retrospectives to reduce reliance on this
-  lane because it can hide flow debt. Ideally all external depenencies are resolved before a ticket
+  lane because it can hide flow debt. Ideally all external dependencies are resolved before a ticket
   is moved to Ready.
 - Lead / Manager – Long‑tail tasks owned by roles with fragmented time; isolates their slower
   cadence from standard WIP metrics.

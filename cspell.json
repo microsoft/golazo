@@ -1,0 +1,25 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "esbenp",
+    "github",
+    "golazo",
+    "mkdocs",
+    "opensource",
+    "pwsh",
+    "signoffs",
+    "timebox",
+    "timeboxed",
+    "underdelivers",
+    "unestimated",
+    "vscode",
+    "workstream",
+    "workstreams",
+    "zizmor"
+  ],
+  "ignorePaths": ["node_modules", ".git", "package-lock.json", ".vscode", "*.log"],
+  "ignoreRegExpList": ["/\\b[A-Z]{2,}\\b/g", "/\\b[a-f0-9]{32,}\\b/gi"],
+  "dictionaries": ["typescript", "node", "npm", "html", "css", "bash", "en-gb"],
+  "useGitignore": true
+}

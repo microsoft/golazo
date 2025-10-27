@@ -29,7 +29,7 @@ validated. It includes clear acceptance criteria and a definition of done coveri
 
 ## Colors
 
-Teams should establish 5-10 primary workstreams and assign each a distinct color for releated
+Teams should establish 5-10 primary workstreams and assign each a distinct color for related
 tickets. This visual system creates clarity and balance across the team's efforts.
 
 - Progress Visibility: At a glance, team members and stakeholders can see which workstreams are
