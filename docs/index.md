@@ -34,21 +34,7 @@ working in different timezones.
   high‑fidelity context
 - Customer Validation as a distinct stage; Done means value observed, not just code merged
 
-## Choose Your Path
-
-1. [Why Golazo](why-golazo.md)
-2. [Principles](principles.md)
-3. [Workflow Overview](workflow-overview.md)
-4. [Roles & Responsibilities](roles.md)
-5. [Tickets](tickets.md)
-6. [Design Docs](design-docs.md)
-7. [Meetings](meetings.md)
-8. [WIP & Flow](wip-and-flow.md)
-9. [Communication](communication.md)
-10. [Adoption Guide](adoption-guide.md)
-11. [FAQ](faq.md)
-
-## Expedted Outcomes
+## Expected Outcomes
 
 - Faster merges: upfront design eliminates architectural debate inside PRs - See
   [Design Docs](design-docs.md)
@@ -61,8 +47,16 @@ working in different timezones.
 - Higher morale and quicker ramp: autonomy and shared docs and pairing - See
   [Why Golazo](why-golazo.md)
 
-## Related
+## Suggested Reading Path
 
-- [Why Golazo](why-golazo.md)
-- [Adoption Guide](adoption-guide.md)
-- [FAQ](faq.md)
+1. [Why Golazo](why-golazo.md)
+2. [Principles](principles.md)
+3. [Workflow Overview](workflow-overview.md)
+4. [Roles & Responsibilities](roles.md)
+5. [Tickets](tickets.md)
+6. [Design Docs](design-docs.md)
+7. [Meetings](meetings.md)
+8. [WIP & Flow](wip-and-flow.md)
+9. [Communication](communication.md)
+10. [Adoption Guide](adoption-guide.md)
+11. [FAQ](faq.md)
