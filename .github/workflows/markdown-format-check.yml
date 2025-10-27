@@ -27,9 +27,10 @@ jobs:
 
       - name: Check markdown formatting
         run: |
-          if ! npx prettier --check "**/*.md" --list-different; then
-            echo "The following files need formatting:"
-            npx prettier --check "**/*.md" --list-different || true
+          echo "Checking markdown formatting..."
+          if ! npx prettier --list-different "**/*.md"; then
+            echo ""
+            echo "❌ Markdown formatting issues detected!"
             echo ""
             echo "To fix these issues locally, run:"
             echo "  npm run format"
@@ -38,3 +39,4 @@ jobs:
             echo "  npx prettier --write \"**/*.md\""
             exit 1
           fi
+          echo "✅ All markdown files are properly formatted!"
