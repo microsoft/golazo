@@ -44,4 +44,4 @@ documentation.
 
 ## Navigation
 
-[← Step 3: Workflow Overview](workflow-overview.md) | [Step 5: Tickets →](tickets.md)
+[← Step 3: Workflow Overview](task-board.md) | [Step 5: Tickets →](tickets.md)
