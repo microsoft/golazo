@@ -200,6 +200,88 @@ Symbols **may** be used in the following contexts:
    `WSJF = (Cost of Delay + Business Value) / Effort`)
 5. **HTML entities** - When using `&nbsp;` or similar for formatting
 
+## Code Quality Checks
+
+Pull requests are automatically checked for spelling errors and formatting issues. You can run these
+checks locally before submitting your PR to catch issues early.
+
+### Prerequisites
+
+Install the development dependencies:
+
+```sh
+npm install
+```
+
+### Manual Commands
+
+#### Spell Check
+
+Check for spelling errors:
+
+```sh
+npm run spellcheck
+```
+
+The spell checker scans all Markdown and YAML files using the dictionary and custom words defined in
+`cspell.json`. Common technical terms, project-specific vocabulary, and proper nouns are already
+included in the custom dictionary.
+
+**To add words to the dictionary:**
+
+Edit `cspell.json` and add new words to the `words` array in alphabetical order.
+
+#### Format Check
+
+Check if files are properly formatted:
+
+```sh
+npm run format:check
+```
+
+Automatically fix formatting issues:
+
+```sh
+npm run format
+```
+
+Prettier will format all Markdown, JSON, and YAML files according to the project's style guidelines.
+
+### VS Code Extensions
+
+For the best development experience, install these VS Code extensions:
+
+#### Code Spell Checker (cspell)
+
+- **Extension ID**: `streetsidesoftware.code-spell-checker`
+- **Install**: Search for "Code Spell Checker" in VS Code Extensions or
+  [view in marketplace](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+- **Benefits**:
+  - Real-time spell checking with squiggly underlines
+  - Quick fixes to add words to the project dictionary
+  - Automatically uses the project's `cspell.json` configuration
+
+#### Prettier - Code Formatter
+
+- **Extension ID**: `esbenp.prettier-vscode`
+- **Install**: Search for "Prettier - Code formatter" in VS Code Extensions or
+  [view in marketplace](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- **Benefits**:
+  - Format on save (configure in VS Code settings)
+  - Consistent formatting across all contributors
+  - Matches the project's formatting rules
+
+**To enable format on save:**
+
+Add to your VS Code settings (`.vscode/settings.json` or user settings):
+
+```json
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
+```
+
 ## Writing Style
 
 ### Be Clear and Concise
@@ -315,39 +397,4 @@ Use consistent alignment:
 | ------------ | ---------------------- | ------------ |
 | Left-aligned | Also left-aligned      | Data         |
 | More data    | Additional information | More content |
-```
-
-## Document Structure
-
-### Every Page Should Have
-
-1. **Title** - Clear H1 at the top
-2. **Status/Context Note** (if applicable) - Draft status, dependencies
-3. **Summary Section** - 2-3 sentence overview
-4. **Body Content** - Main sections with clear headers
-5. **Related Section** - Links to connected pages
-
-### Example Template
-
-```markdown
-# Page Title
-
-> Status note (if applicable)
-
-## Summary
-
-Brief overview of what this page covers and why it matters.
-
-## Main Section
-
-Content here...
-
-### Subsection
-
-More details...
-
-## Related
-
-- [Related Page 1](page1.md)
-- [Related Page 2](page2.md)
 ```
