@@ -15,8 +15,9 @@ working in different timezones.
 
 ## Who It’s For
 
-- In-person, hybrid, or asynchronous teams wanting predictable throughput
-- Distributed or timezone-spread teams aiming to reduce meeting load and handoff friction through stronger async collaboration (small shared design docs + visible flow)
+- Teams wanting predictable throughput
+- In-person, hybrid, or asynchronous teams aiming to reduce meeting load and handoff friction
+  through stronger async collaboration (small shared design docs + visible flow)
 - Small to medium product or platform groups (≈4–10 engineers)
 - Teams looking to do more with less while reducing incident rate and PR debates
 - Orgs seeking higher morale and faster new‑hire ramp
@@ -46,9 +47,12 @@ working in different timezones.
 
 ## Suggested Reading Path
 
+Prev/Next links at the bottom of each page will help guide you along this reading path or use the
+navigation pane on the left to jump to a specific area.
+
 1. [Why Golazo](why-golazo.md)
 2. [Principles](principles.md)
-3. [Workflow Overview](workflow-overview.md)
+3. [Task Board](workflow-overview.md)
 4. [Roles & Responsibilities](roles.md)
 5. [Tickets](tickets.md)
 6. [Design Docs](design-docs.md)
