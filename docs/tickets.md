@@ -104,10 +104,6 @@ The use of short, clearly defined tickets creates equitable access to impactful 
 - Career progression discussions map leadership expectations (technical depth, cross‑team influence)
   to Golazo artifacts (design docs authored, cross‑area pairing, backlog curation).
 
-## Related Links
+## Navigation
 
 [← Step 4: Roles & Responsibilities](roles.md) | [Step 6: Design Docs →](design-docs.md)
-
-- Design Docs - [Design Docs](design-docs.md)
-- Planning - [Meetings](meetings.md)
-- WIP and Flow - [WIP & Flow](wip-and-flow.md)

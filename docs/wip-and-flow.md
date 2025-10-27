@@ -61,9 +61,6 @@ more.
 - Hidden parallel work and side branches not visualized on the board.
 - Interrupt rail frequently with more than one active ticket.
 
-## Related Links
+## Navigation
 
 [← Step 7: Meetings](meetings.md) | [Step 9: Communication →](communication.md)
-
-- Workflow Overview - [Workflow Overview](workflow-overview.md)
-- Tickets - [Tickets & Sizing](tickets.md)

@@ -152,8 +152,6 @@ high‑count clusters first and extracts change actions. For more information, s
 - Team members skipping these meetings. If the meetings aren't a valuable use of time, discuss it in
   the retrospective meeting.
 
-## Related Links
+## Navigation
 
 [← Step 6: Design Docs](design-docs.md) | [Step 8: WIP & Flow →](wip-and-flow.md)
-
-- Communication - [Communication Patterns](communication.md)

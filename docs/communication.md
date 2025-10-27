@@ -51,10 +51,6 @@ When asking: include links (ticket, PR, logs), reproduction steps, and what you�
 - Direct message reliance creating knowledge silos.
 - Too many low‑usage channels diluting attention.
 
-## Related Links
+## Navigation
 
 [← Step 8: WIP & Flow](wip-and-flow.md) | [Step 10: Adoption Guide →](adoption-guide.md)
-
-- Design Docs - [Design Docs](design-docs.md)
-- Meetings - [Meetings](meetings.md)
-- Templates - [Templates & Examples](templates.md)

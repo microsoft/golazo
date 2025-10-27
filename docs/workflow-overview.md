@@ -78,10 +78,6 @@ an optimization signal, not blame.
 - Ticket icons/labels/tags for blocked items (e.g., ⛔) with short reason in description.
 - Avatars or initials for active collaborators beyond the Shepherd.
 
-## Related Links
+## Navigation
 
 [← Step 2: Principles](principles.md) | [Step 4: Roles & Responsibilities →](roles.md)
-
-- WIP and Flow - [WIP & Flow](wip-and-flow.md)
-- Tickets - [Tickets & Sizing](tickets.md)
-- Planning - [Meetings](meetings.md)
