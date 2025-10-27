@@ -1,4 +1,4 @@
-# Roles and Responsibilities
+# Roles and Respondsibilities
 
 ## Summary
 
@@ -9,17 +9,17 @@ flow, reinforces shared ownership, and creates space for equitable growth.
 
 ### Coach
 
-The process facilitator and quality bar champion. The Coach observes _how_ work flows and nudges the
+The process facilitator and quality bar champion. The Coach observes *how* work flows and nudges the
 team when drift appears.
 
 **Key Responsibilities**
 
-- Facilitate standup (top-right to bottom-left order on the board) and retrospectives.
-- Enforce WIP limits and highlight bottlenecks rather than silently adjusting.
-- Guard the integrity of design doc and review practices.
-- Ensure planning cadence and backlog hygiene.
-- Prompt root‑cause exploration for backward ticket movement.
-- Mentor emerging coaches to distribute facilitation skill.
+* Facilitate standup (top-right to bottom-left order on the board) and retrospectives.
+* Enforce WIP limits and highlight bottlenecks rather than silently adjusting.
+* Guard the integrity of design doc and review practices.
+* Ensure planning cadence and backlog hygiene.
+* Prompt root‑cause exploration for backward ticket movement.
+* Mentor emerging coaches to distribute facilitation skill.
 
 **Anti‑Patterns**: Owning all decisions; assigning work to specific people
 
@@ -30,11 +30,11 @@ proper response without becoming a bottleneck.
 
 **Key Responsibilities**
 
-- Triage new incidents / interrupts; create or update tickets.
-- Ensure Swarm tickets exist _before_ standup with context.
-- Perform lightweight first‑pass investigation (many items resolved in minutes).
-- Communicate status and handoff cleanly to next on call engineer.
-- Capture repetitive tasks then propose automation or documentation improvements.
+* Triage new incidents / interrupts; create or update tickets.
+* Ensure Swarm tickets exist *before* standup with context.
+* Perform lightweight first‑pass investigation (many items resolved in minutes).
+* Communicate status and handoff cleanly to next on call engineer.
+* Capture repetitive tasks then propose automation or documentation improvements.
 
 **Time Expectation**: Mature teams often spend < 30–60 mins/day on on call engineer tasks; excess
 time signals upstream quality or monitoring issues.
@@ -45,3 +45,4 @@ documentation.
 ## Navigation
 
 [← Step 3: Workflow Overview](task-board.md) | [Step 5: Tickets →](tickets.md)
+
