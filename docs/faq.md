@@ -70,3 +70,7 @@ criteria, then WSJF rank. Avoid side channels creating invisible work.
 ## Still Have Questions?
 
 Open a GitHub issue or discussion item includeing context and what you've already tried.
+
+## Related Links
+
+[← Step 10: Adoption Guide](adoption-guide.md)

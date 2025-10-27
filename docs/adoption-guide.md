@@ -47,7 +47,9 @@ maintain short validation cycles.
 - [ ] On call engineer playbook drafted
 - [ ] Meetings scheduled
 
-## Related
+## Related Links
+
+[← Step 9: Communication](communication.md) | [Step 11: FAQ →](faq.md)
 
 - Why Golazo - [Why Golazo](why-golazo.md)
 - Communication - [Communication Patterns](communication.md)

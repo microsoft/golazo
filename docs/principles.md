@@ -66,7 +66,9 @@ move is often helping someone finish, not starting something new.
 - Optimize the Whole - Swarm urgent issues collectively; idle capacity goes first to finishing, not
   starting.
 
-## Related
+## Related Links
+
+[← Step 1: Why Golazo](why-golazo.md) | [Step 3: Workflow Overview →](workflow-overview.md)
 
 - Workflow Overview - [Workflow Overview](workflow-overview.md)
 - Tickets - [Tickets & Sizing](tickets.md)

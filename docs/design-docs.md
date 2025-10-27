@@ -65,7 +65,9 @@ Keep it lean—optimize for clarity, not prose. (Full copyable version: see
 - Is the test/monitoring approach explicit?
 - Are follow‑up items clearly out of scope?
 
-## Related
+## Related Links
+
+[← Step 5: Tickets](tickets.md) | [Step 7: Meetings →](meetings.md)
 
 - Tickets - [Tickets & Sizing](tickets.md)
 - Templates - [Templates & Examples](templates.md)
