@@ -18,23 +18,21 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
+    - navigation.expand
 
 nav:
-  - Home: index.md
   - Context:
+      - Overview: index.md
       - Why Golazo: why-golazo.md
       - Principles: principles.md
   - Workflow:
-      - Workflow Overview: workflow-overview.md
-      - WIP Limits: wip-and-flow.md
-      - Tickets & Sizing: tickets.md
+      - Task Board: task-board.md
+      - Tickets: tickets.md
       - Design Docs: design-docs.md
+      - WIP Limits: wip-and-flow.md
   - Operation:
       - Roles & Responsibilities: roles.md
       - Meetings: meetings.md

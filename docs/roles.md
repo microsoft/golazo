@@ -42,8 +42,6 @@ time signals upstream quality or monitoring issues.
 **Anti‑Patterns**: Hoarding all urgent fixes, becoming the de facto operations silo, deferring
 documentation.
 
-## Related
+## Navigation
 
-- Meetings - [Meetings](meetings.md)
-- Tickets - [Tickets & Sizing](tickets.md)
-- Communication - [Communication Patterns](communication.md)
+[← Step 3: Workflow Overview](workflow-overview.md) | [Step 5: Tickets →](tickets.md)

@@ -62,24 +62,12 @@ Optional rails:
 4. Deployed under Release; monitoring shows healthy.
 5. Customer validates; feedback minor then Done.
 
-```
-Backlog to Ready to Analyze to Engineer to Release to Customer Validation to Done
-```
-
 ## Backward Movement Policy
 
 Tickets should almost never move left. When they do (e.g., from Release back to Engineer due to a
 defect) the team records it and reviews the root cause in the next retrospective. It is treated as
 an optimization signal, not blame.
 
-## Visual Cues
+## Navigation
 
-- Distinct tag or color per major workstream.
-- Ticket icons/labels/tags for blocked items (e.g., ⛔) with short reason in description.
-- Avatars or initials for active collaborators beyond the Shepherd.
-
-## Related
-
-- WIP and Flow - [WIP & Flow](wip-and-flow.md)
-- Tickets - [Tickets & Sizing](tickets.md)
-- Planning - [Meetings](meetings.md)
+[← Step 2: Principles](principles.md) | [Step 4: Roles & Responsibilities →](roles.md)

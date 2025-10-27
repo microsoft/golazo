@@ -15,14 +15,16 @@ working in different timezones.
 
 ## Who It’s For
 
-- In-person, hybrid, or asynchronous teams wanting predictable throughput
+- Teams wanting predictable throughput
+- In-person, hybrid, or asynchronous teams aiming to reduce meeting load and handoff friction
+  through stronger async collaboration (small shared design docs + visible flow)
 - Small to medium product or platform groups (≈4–10 engineers)
 - Teams looking to do more with less while reducing incident rate and PR debates
 - Orgs seeking higher morale and faster new‑hire ramp
 
 ## What Makes It Different
 
-- "Think Together Early": Lightweight design doc and 2 signoffs before implementation
+- Collaborative design upfront: Lightweight design doc and 2 signoffs before implementation
 - WIP limits to maximize focus and completion rate
 - Visual flow board with priority rails (Swarm / Interrupt / Planned) for instant situational
   awareness
@@ -34,11 +36,23 @@ working in different timezones.
   high‑fidelity context
 - Customer Validation as a distinct stage; Done means value observed, not just code merged
 
-## Choose Your Path
+## Expected Outcomes
+
+- Faster merges: upfront design eliminates architectural debate inside PRs
+- Lower defect rate: quality built in and swarm discipline
+- Adaptable planning: WSJF and small slices let you pivot as needed
+- Distributed knowledge: ticket queue and rotation fights silos
+- Predictable review latency: limited WIP and smaller changes
+- Higher morale and quicker ramp: autonomy and shared docs and pairing
+
+## Suggested Reading Path
+
+Prev/Next links at the bottom of each page will help guide you along this reading path or use the
+navigation pane on the left to jump to a specific area.
 
 1. [Why Golazo](why-golazo.md)
 2. [Principles](principles.md)
-3. [Workflow Overview](workflow-overview.md)
+3. [Task Board](workflow-overview.md)
 4. [Roles & Responsibilities](roles.md)
 5. [Tickets](tickets.md)
 6. [Design Docs](design-docs.md)
@@ -47,22 +61,3 @@ working in different timezones.
 9. [Communication](communication.md)
 10. [Adoption Guide](adoption-guide.md)
 11. [FAQ](faq.md)
-
-## Expedted Outcomes
-
-- Faster merges: upfront design eliminates architectural debate inside PRs - See
-  [Design Docs](design-docs.md)
-- Lower defect rate: quality built in and swarm discipline - See [Tickets](tickets.md) and
-  [WIP & Flow](wip-and-flow.md)
-- Adaptable planning: WSJF and small slices let you pivot as needed - See [Meetings](meetings.md)
-- Distributed knowledge: ticket queue and rotation fights silos - See
-  [Workflow Overview](workflow-overview.md)
-- Predictable review latency: limited WIP and smaller changes - See [Principles](principles.md)
-- Higher morale and quicker ramp: autonomy and shared docs and pairing - See
-  [Why Golazo](why-golazo.md)
-
-## Related
-
-- [Why Golazo](why-golazo.md)
-- [Adoption Guide](adoption-guide.md)
-- [FAQ](faq.md)

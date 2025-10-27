@@ -1,45 +1,52 @@
 # Templates and Examples
 
-> Status: Scaffold — provide copy/paste starting points.
-
-## Design Doc Template (Markdown)
+## Design Doc Template
 
 ```
 # Title
 
 ## Elevator Pitch
 (What value, for whom, why now)
+TODO
 
 ## Definition of Done
-- [ ] (TODO)
+(Bulleted list describing the exit criteria and desired end state. Should be clear how success is determined and measured)
+- TODO
 
 ## Customer / Consumer
-(TODO)
+(Who will be consuming this work? Who will validate that it is correct?)
+- TODO
 
 ## Dependencies
-- (TODO)
+(Key/major people or technology)
+- TODO
 
 ## Assumptions / Out of Scope
-- (TODO)
+(Assumptions when planning the ticket and/or related work that is not in scope for this ticket)
+- TODO
 
 ## Design and Testing Approach
-(TODO)
+(Free text/diagram/picture/etc that clearly shows your approach and considerations)
+- TODO
 
 ## Task List
+(Bulleted list of engineering work, documentation, monitors, TSGs, etc. Engineering will be complete when the list is finished.)
 - [ ] Implementation
 - [ ] Tests
 - [ ] Monitoring / Metrics
 - [ ] Documentation
 
-## Estimated Completion (95% Confidence)
-(TODO: YYYY-MM-DD)
+## Estimated Completion
+(You have 95% confidence that teh work will be completed by this date barring any enormous disaster.)
+- YYYY-MM-DD
 
 ## Signoffs
 - Reviewer 1: (Name / Date)
 - Reviewer 2: (Name / Date)
 
 ## Implementation Notes
-(TODO)
+(Optional place to include key learnings, decisions, discoveries, data sources, contact information, etc)
+TODO
 ```
 
 ## Ticket Sizing Checklist
@@ -52,28 +59,4 @@ Use before pulling a ticket from Ready or when splitting.
 - Quality signals (tests, monitoring, docs) identified.
 - Design complexity understood or a spike precedes it.
 - Dependencies known and minimal; external waiting minimized.
-- Can be shepherded by a single person (pairing allowed) without blocking others.
-
-## Retro Action Item Format
-
-```
-Action: <description>
-Owner: <name>
-Due: <date>
-Success Signal: <metric or observable change>
-```
-
-## Review Status Emojis (Accessible)
-
-State should always be mirrored with short text for assistive tech:
-
-- :eyes: Reviewing ("@channel Reviewing – expect feedback in ~30m")
-- :speech_balloon: Feedback posted ("Comments added; awaiting responses")
-- :thumbsup: Approved ("Second approval complete; ready to merge")
-
-Optional: :hourglass_flowing_sand: Waiting on external dependency / data.
-
-## Related
-
-- Design Docs - [Design Docs](design-docs.md)
-- Communication - [Communication Patterns](communication.md)
+- Can be shepherded by a single person (pairing allowed) without being blocked on others.

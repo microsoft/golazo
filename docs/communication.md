@@ -28,20 +28,19 @@ favors written, searchable, lightweight asynchronous artifacts over private chat
 Define a team culture around communicating status of reaction to posts in the Review and Release
 channels. For example, the team could use common emojis:
 
-- :eyes: "Reviewing" – Someone actively reading.
-- :speech_balloon: "Comments posted" – Feedback awaiting author response.
-- :thumbsup: "Approved" – Signoff given. If stale for more than a few hours, politely re‑ping or tag
-  a likely reviewer.
+- 👀 "Reviewing" – Someone actively reading.
+- 💬 "Comments posted" – Feedback awaiting author response.
+- 👍 "Approved" – Signoff given.
 
 ## Async Best Practices
 
-| Instead of                   | Prefer                                                  |
-| ---------------------------- | ------------------------------------------------------- |
-| "hi" (wait)                  | Immediate full question and context                     |
-| Private DM for general issue | Public channel for shared learning                      |
-| Vague bug report             | Steps, expected vs actual, logs, environment            |
-| Large design debate in chat  | Summarize options in design doc; request focused review |
-| Unstructured status update   | Board and concise delta notes                           |
+| Instead of                   | Prefer                                                                                       |
+| ---------------------------- | -------------------------------------------------------------------------------------------- |
+| "hi" (wait)                  | Immediate full question and context                                                          |
+| Private DM for general issue | Public channel for shared learning                                                           |
+| Vague bug report             | Steps, expected vs actual, logs, environment                                                 |
+| Large design debate in chat  | Summarize options in design doc; request focused review                                      |
+| Unstructured status update   | Concise learnings, blockers, and what needs to be done to move the ticket to the next column |
 
 When asking: include links (ticket, PR, logs), reproduction steps, and what you’ve already tried.
 
@@ -51,8 +50,6 @@ When asking: include links (ticket, PR, logs), reproduction steps, and what you�
 - Direct message reliance creating knowledge silos.
 - Too many low‑usage channels diluting attention.
 
-## Related
+## Navigation
 
-- Design Docs - [Design Docs](design-docs.md)
-- Meetings - [Meetings](meetings.md)
-- Templates - [Templates & Examples](templates.md)
+[← Step 8: WIP & Flow](wip-and-flow.md) | [Step 10: Adoption Guide →](adoption-guide.md)

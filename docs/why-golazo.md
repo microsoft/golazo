@@ -87,7 +87,6 @@ limits), and Agile (iterative delivery, feedback loops) while emphasizing lightw
 as a knowledge engine. It is intentionally minimal. Each practice survives only if it demonstrably
 improves flow and learning.
 
-## Related
+## Navigation
 
-- Adoption Guide - [Adoption Guide](adoption-guide.md)
-- Principles - [Principles & Mindset](principles.md)
+[Step 2: Principles →](principles.md)

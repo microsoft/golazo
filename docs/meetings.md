@@ -49,8 +49,8 @@ prevention ideas to help the team be more efficient in the future.
 
 ## Planning Session (Every 1–2 weeks – 30-60 min)
 
-Many teams pair this meeting with retro to avoid having additional meetings on the calendar, but
-that can vary depending on how long the team usually spends on the retro content.
+Teams may pair this meeting with the retrospective meeting to avoid having additional meetings on
+the calendar, but that can vary depending on how long the team usually spends on the retro content.
 
 During planning, the team should:
 
@@ -58,9 +58,8 @@ During planning, the team should:
 - Clarify acceptance criteria and effort assumptions.
 - Assign Effort, Cost of Delay, Business Value (Fibonacci scale) then compute WSJF.
 - Reorder backlog (only top items need perfect ordering).
-- Pull highest priority items into Ready (Coach gates quality).
 
-A meeting recording preserves reasoning for future reference.
+After the meeting, the coach pulls the highest priority items into the Ready column.
 
 ### Estimation Dimensions
 
@@ -152,6 +151,6 @@ high‑count clusters first and extracts change actions. For more information, s
 - Team members skipping these meetings. If the meetings aren't a valuable use of time, discuss it in
   the retrospective meeting.
 
-## Related
+## Navigation
 
-- Communication - [Communication Patterns](communication.md)
+[← Step 6: Design Docs](design-docs.md) | [Step 8: WIP & Flow →](wip-and-flow.md)

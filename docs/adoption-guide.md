@@ -3,8 +3,7 @@
 ## Summary
 
 A deliberate 90‑day, "by the book" trial lets a team experience full benefits—improved flow,
-quality, and learning—before deciding what to tailor. Partial adoption early almost always
-underdelivers.
+quality, and learning—before deciding what to tailor. Partial adoption almost always underdelivers.
 
 ## Team Size and Suitability
 
@@ -47,7 +46,6 @@ maintain short validation cycles.
 - [ ] On call engineer playbook drafted
 - [ ] Meetings scheduled
 
-## Related
+## Navigation
 
-- Why Golazo - [Why Golazo](why-golazo.md)
-- Communication - [Communication Patterns](communication.md)
+[← Step 9: Communication](communication.md) | [Step 11: FAQ →](faq.md)
