@@ -13,6 +13,8 @@ and finished with real validation. It trades batch size and premature isolation 
 context, and adaptability—yielding fewer surprises, faster merges, and happier engineers even when
 working in different timezones.
 
+_TODO: A ~10 min embedded video will be added here to summarize these docs_
+
 ## Who It’s For
 
 - Teams wanting predictable throughput
@@ -53,11 +55,11 @@ navigation pane on the left to jump to a specific area.
 1. [Why Golazo](why-golazo.md)
 2. [Principles](principles.md)
 3. [Task Board](task-board.md)
-4. [Roles \& Responsibilities](roles.md)
+4. [Roles & Responsibilities](roles.md)
 5. [Tickets](tickets.md)
 6. [Design Docs](design-docs.md)
 7. [Meetings](meetings.md)
-8. [WIP \& Flow](wip-and-flow.md)
+8. [WIP & Flow](wip-and-flow.md)
 9. [Communication](communication.md)
 10. [Adoption Guide](adoption-guide.md)
 11. [FAQ](faq.md)
