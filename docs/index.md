@@ -1,12 +1,13 @@
-# Golazo: Lean Team Flow
+# Golazo
 
 ## Summary
 
 Golazo is a lightweight engineering methodology for small and mid-sized teams that attacks common
-delivery friction: rework hidden in PRs, slow feedback loops, knowledge silos, multitasking
-overload, and fragile ownership patterns. It constrains WIP, front‑loads shared understanding with
-tiny design docs, prioritizes by economic value (WSJF), and closes the loop with explicit customer
-validation. Regular retrospectives ensure that every piece of the process has a net positive ROI.
+delivery friction: rework hidden in code reviews, slow feedback loops, knowledge silos, multitasking
+overload, and fragile ownership patterns. It constrains the amount of parallel tasks, front‑loads
+shared understanding with tiny design docs, prioritizes by value, and closes the loop with explicit
+customer validation. Regular retrospectives ensure that every piece of the process has a net
+positive return on investment.
 
 Golazo keeps teams fast and sane by making work small, visible, collaboratively understood early,
 and finished with real validation. It trades batch size and premature isolation for flow, shared
@@ -21,31 +22,26 @@ _TODO: A ~10 min embedded video will be added here to summarize these docs_
 - In-person, hybrid, or asynchronous teams aiming to reduce meeting load and handoff friction
   through stronger async collaboration (small shared design docs + visible flow)
 - Small to medium product or platform groups (≈4–10 engineers)
-- Teams looking to do more with less while reducing incident rate and PR debates
+- Teams looking to do more with less while reducing incident rate and code review debates
 - Orgs seeking higher morale and faster new‑hire ramp
 
 ## What Makes It Different
 
 - Collaborative design upfront: Lightweight design doc and 2 signoffs before implementation
-- WIP limits to maximize focus and completion rate
+- Work In Progress limits to maximize focus and completion rate
 - Visual flow board with priority rails (Swarm / Interrupt / Planned) for instant situational
   awareness
-- Small, value‑sliced tickets and WSJF planning enable rapid adaptation mid-cycle
-- Integrated review loop: smaller PRs focused on detail, not architecture debates
+- Small, value‑sliced tickets and Weighted Shortest Job First planning enable rapid adaptation
+  mid-cycle
+- Integrated review loop: smaller code reviews focused on detail, not architecture debates
 - Shared ownership: Anyone can pull any Ready ticket—knowledge spreads naturally
-- Living library of concise design docs builds durable, searchable team context which accelerates
-  onboarding, informs future decisions, reduces single‑expert risk, and powers AI assistants with
-  high‑fidelity context
+- Lower defect rates through quality gates: Design review catches issues early, Work In Progress
+  limits enable swarm response to incidents, and small batch sizes reduce integration risks
+- Higher morale and faster onboarding: Autonomy to pull work, pairing for knowledge transfer,
+  collaborative design, and shared ownership reduce frustration and accelerate new-hire productivity
+- Living library of concise design docs builds durable, searchable team context which informs future
+  decisions, reduces single‑expert risk, and powers AI assistants with high‑fidelity context
 - Customer Validation as a distinct stage; Done means value observed, not just code merged
-
-## Expected Outcomes
-
-- Faster merges: upfront design eliminates architectural debate inside PRs
-- Lower defect rate: quality built in and swarm discipline
-- Adaptable planning: WSJF and small slices let you pivot as needed
-- Distributed knowledge: ticket queue and rotation fights silos
-- Predictable review latency: limited WIP and smaller changes
-- Higher morale and quicker ramp: autonomy and shared docs and pairing
 
 ## Suggested Reading Path
 
