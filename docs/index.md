@@ -14,7 +14,8 @@ and finished with real validation. It trades batch size and premature isolation 
 context, and adaptability—yielding fewer surprises, faster merges, and happier engineers even when
 working in different timezones.
 
-_TODO: A ~10 min embedded video will be added here to summarize these docs_
+_TODO: A ~10 min embedded video will be added here to summarize these docs_ ➡ Preview the planned
+outline: [Golazo Overview Video Plan](video-overview.md)
 
 ## Who It’s For
 
