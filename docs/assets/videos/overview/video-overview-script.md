@@ -2,12 +2,11 @@
 
 ## Hook & Pain Framing
 
-(Opening, direct eye contact) If your team ideates fast but ships slow, if reviews feel like
-surprise architecture debates, if work vanishes into silos, and 'done' secretly means 'merged but
-not validated' then you're in the right place. Golazo is built to remove those friction points and
-more. We’ve all lived the slow review queue, the chat interruptions, the multitasking drag, and the
-fragile single-owner pattern. Golazo focuses on flow, quality from the start, and shared
-understanding early.
+If your team ideates fast but ships slow, if reviews feel like surprise architecture debates, if
+work vanishes into silos, and 'done' secretly means 'merged but not validated' then you're in the
+right place. Golazo is built to remove those friction points and more. We’ve all lived the slow
+review queue, the chat interruptions, the multitasking drag, and the fragile single-owner pattern.
+Golazo focuses on flow, quality from the start, and shared understanding early.
 
 In the next few minutes I’ll show you the few lightweight habits that change the feel of delivery
 without adding process bloat.
