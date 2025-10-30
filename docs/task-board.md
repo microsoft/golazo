@@ -34,6 +34,32 @@ Columns reflect state changes in learning and validation—not just coding steps
    loop.
 7. Done – Definition of Done fully met; learnings captured for retrospective.
 
+### Column Exit Criteria
+
+Before a ticket moves to the next column, it must pass a set of exit criteria.
+
+- Backlog
+  - Consensus that ticket represents most immediate business value
+  - Acceptance criteria defined
+- Ready
+  - Has shepherd and start date
+- Analyze
+  - Design document written
+  - Design document signed off by two people
+- Engineer
+  - All required tests pass
+  - Code review signed off by two people
+- Released
+  - Passed Coach/PM acceptance review
+  - Code checked in
+  - Code integrated into solution without mocks
+  - Code officially released to production
+- Customer Validation
+  - Customer validated as Done
+  - New backlog items if needed
+- Done
+  - Relevant team learnings captured at retrospective
+
 ## Rails
 
 Rails (aka swimlanes) categorize tickets by urgency or intent without mixing them visually.

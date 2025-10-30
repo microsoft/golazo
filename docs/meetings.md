@@ -21,9 +21,9 @@ then help finish work before starting new.
 
 All team members (but especially the Coach) should speak up if they observe:
 
-- Long design debates
-- Standard status report content such as what I did yesterday
+- Standard status report content such as what the engineer did yesterday
 - Tickets being picked up out of order (swarms > interrupts > help existing tickets > planned)
+- Long design debates within the standup meeting
 
 ## Retrospective (Every 1–2 weeks – 30-60 min)
 
