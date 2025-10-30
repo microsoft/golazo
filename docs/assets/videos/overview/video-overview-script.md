@@ -20,17 +20,16 @@ Golazo is a lightweight engineering methodology for small to mid-sized teams—t
 engineers—designed to keep batch sizes small, make status instantly visible, and define 'done' by
 observed value.
 
-Five pillars hold it up:
+Four key artifacts support the process:
 
 1. Small, value-focused tickets.
 2. Targeted, collaborative design docs with two signoffs.
 3. A visual task board with priority rails and ticket stage columns.
-4. An explicit customer validation stage so 'done' means value observed, not just code merged.
-5. Regular lightweight team touchpoints (retros + joint planning) to tune flow, eliminate waste, and
-   adapt priorities together.
+4. Regular lightweight team touchpoints (like standups, retros, and joint planning) to tune flow,
+   eliminate waste, and adapt priorities together.
 
-Think of the lifecycle as: clarify together early → build small → streamline reviews → validate
-outcomes → share learnings.
+Think of the lifecycle as: clarify together early → build small → streamline reviews → share
+learnings.
 
 ## Mapping Pains to Practices
 
@@ -39,12 +38,14 @@ Each practice is there for a reason, not for ceremony.
 - Do you see a lot of rework happening late in reviews? We shift architectural alignment earlier
   with design docs.
 - Are feedback loops too slow? We slice value small and visualize flow so blockers surface quickly.
-- Are there knowledge silos on the team? Anyone can pick up any Ready ticket. Pairing is encouraged.
-  Reviews and design docs help spread and create fluid context.
+- Are there knowledge silos on the team? With Golazo, anyone can pick up any Ready ticket. Pairing
+  is encouraged. Reviews and design docs help spread and create fluid context.
 - Do team members suffer from multitasking overload? WIP limits cap active work so attention isn’t
   spread too thin.
-- Does finished work circle around to come back as bug reports? The validation stage demands that
-  value be observed before the ticket is closed.
+- Does finished work circle around to come back as bug reports or rough on call shifts? The
+  validation stage demands that value be observed and confirmed before the ticket is closed.
+- Are your standup meetings status reports? Golazo standups focus on what has been learned and what
+  the team can do to help move the ticket to the next stage.
 
 So Golazo is targeted at reducing friction — it's not a new layer of meetings.
 
@@ -67,13 +68,13 @@ The task board is our shared instrumentation panel. It's a window into team flow
 emerging bottlenecks.
 
 Columns trace the journey: Backlog ideas, Ready, Design, Engineering, Release, Validation, Done.
-Rails help dedicate funding: Swarm, Interrupt, Planned. Swarm is for urgent collaborative focus,
-Interrupt to allow changes in flight without consuming all the team's resources, Planned for normal
-flow. A quick glance tells you: Are we waiting for reviews? Is the Interrupt rail growing? Is a
-specific work item struggling? Are we running too fast and creating too many swarms? And because
-team members can see a variety of projects for them to select from the Ready column, knowledge
-spreads naturally. You’re not waiting for assignment which increases autonomy increases and shrinks
-knowledge bottlenecks.
+Rails help dedicate funding and visually separate urgency: Swarm, Interrupt, Planned. Swarm is for
+urgent collaborative focus, Interrupt to allow changes in flight without consuming all the team's
+resources, Planned for normal flow. A quick glance tells you: Are we waiting for reviews? Is the
+Interrupt rail growing? Is a specific work item struggling? Are we running too fast and creating too
+many swarms? And because team members can see a variety of projects for them to select from the
+Ready column, knowledge spreads naturally. You’re not waiting for assignment which increases
+autonomy increases and shrinks knowledge bottlenecks.
 
 ## WIP Limits & Flow
 
@@ -110,6 +111,16 @@ Validation examples include: stakeholder signoff, the is feature actually used, 
 verified, internal dogfooding success, or pilot user feedback. If validation fails, the ticket moves
 backward so there is no hidden post-merge churn. The board tells the truth. This reframes success:
 we shipped impact, not just artifacts.
+
+## Team Morale
+
+Golazo lifts morale by pairing autonomy with safety and support. Engineers are empowered to pick up
+any ticket from any workstream in the Ready column and they can gain or share context through design
+documents and discussions. Tiny pairs and micro‑swarms emerge: a 15‑minute exploration of an edge
+case, an early shared look at a design choice, or a second set of eyes before code hardens. Each
+prevents late churn and transfers context. Public channels of discussion and review checkpoints turn
+quiet observers into helpers. If you see that the chat is silent it’s a prompt to lean in, not proof
+that everything is green. And if a ticket does slip, the conversation is systemic, not personal.
 
 ## Closing & Call to Action
 
