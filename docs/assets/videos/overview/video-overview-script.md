@@ -74,7 +74,7 @@ resources, Planned for normal flow. A quick glance tells you: Are we waiting for
 Interrupt rail growing? Is a specific work item struggling? Are we running too fast and creating too
 many swarms? And because team members can see a variety of projects for them to select from the
 Ready column, knowledge spreads naturally. You’re not waiting for assignment which increases
-autonomy increases and shrinks knowledge bottlenecks.
+autonomy and shrinks knowledge bottlenecks.
 
 ## WIP Limits & Flow
 
