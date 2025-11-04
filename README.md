@@ -27,7 +27,18 @@ documentation is used by multiple teams across Microsoft.
 
 This repository uses mkdocs to generate static documentation websites from the markdown files.
 
-## Contributing
+## Inspiration
+
+Golazo builds on many great industry ideas including these specific books:
+
+- "Implementing Lean Software Development: From Concept to Cash" by Mary and Tom Poppendieck
+- "The Principles of Product Development Flow: Second Generation Lean Product Development" by Donald
+  G. Reinertsen
+- "Kanban: Successful Evolutionary Change for Your Technology Business" by David J. Anderson
+- "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically
+  Successful Businesses" by Eric Ries
+
+    ## Contributing
 
 See [Contributing](CONTRIBUTING.md) for more information.
 

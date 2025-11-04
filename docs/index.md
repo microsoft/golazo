@@ -49,6 +49,17 @@ working in different timezones.
   decisions, reduces single‑expert risk, and powers AI assistants with high‑fidelity context
 - Customer Validation as a distinct stage; Done means value observed, not just code merged
 
+## Inspiration
+
+Golazo builds on many great industry ideas including these specific books:
+
+- "Implementing Lean Software Development: From Concept to Cash" by Mary and Tom Poppendieck
+- "The Principles of Product Development Flow: Second Generation Lean Product Development" by Donald
+  G. Reinertsen
+- "Kanban: Successful Evolutionary Change for Your Technology Business" by David J. Anderson
+- "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically
+  Successful Businesses" by Eric Ries
+
 ## Suggested Reading Path
 
 Prev/Next links at the bottom of each page will help guide you along this reading path or use the
