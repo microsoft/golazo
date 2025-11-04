@@ -25,7 +25,7 @@ validated. It includes clear acceptance criteria and a definition of done coveri
 
 ## Example
 
-![Sample ticket showing title, shepherd, start date, finish date, effort, tags, and color](assets/images/ticket-example.png)
+![Sample ticket showing title, shepherd, start date, finish date, effort, tags, and color](assets/ticket-example.png)
 
 ## Colors
 
