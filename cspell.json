@@ -5,9 +5,11 @@
     "esbenp",
     "github",
     "golazo",
+    "Kusto",
     "mkdocs",
     "opensource",
     "pwsh",
+    "runbook",
     "signoffs",
     "standups",
     "timebox",
@@ -19,8 +21,25 @@
     "workstreams",
     "zizmor"
   ],
-  "ignorePaths": ["node_modules", ".git", "package-lock.json", ".vscode", "*.log"],
-  "ignoreRegExpList": ["/\\b[A-Z]{2,}\\b/g", "/\\b[a-f0-9]{32,}\\b/gi"],
-  "dictionaries": ["typescript", "node", "npm", "html", "css", "bash", "en-gb"],
+  "ignorePaths": [
+    "node_modules",
+    ".git",
+    "package-lock.json",
+    ".vscode",
+    "*.log"
+  ],
+  "ignoreRegExpList": [
+    "/\\b[A-Z]{2,}\\b/g",
+    "/\\b[a-f0-9]{32,}\\b/gi"
+  ],
+  "dictionaries": [
+    "typescript",
+    "node",
+    "npm",
+    "html",
+    "css",
+    "bash",
+    "en-gb"
+  ],
   "useGitignore": true
 }

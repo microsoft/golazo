@@ -129,9 +129,6 @@ Risk Mitigations:
 - [ ] Integration tests (cold then warm sequence, forced Redis failure)
 - [ ] Load test & record results (attach summary)
 -- [ ] Observability: custom metrics (hit/miss, evictions), dependency telemetry, dashboard workbook, Azure Monitor alert rule
-- [ ] Documentation updates (README + runbook + TSG)
-- [ ] Config flag & validation in staging
-- [ ] Production rollout & post‑launch metrics review
 
 ## Estimated Completion
 2025-11-14
