@@ -60,10 +60,10 @@ unclear algorithm feasibility). Characteristics:
 - Output: documented findings and follow‑on concrete tickets.
 - Time‑boxed: small (often 2 to 3 days or less). If answers expand scope, create a new spike rather
   than sprawling.
-- Closure: team reviews answers; confirms next steps.
+- Closure: team reviews answers and confirms next steps.
 
 Scope spikes tightly. "Research database options" is weak, but "Compare 3 time‑series storage
-options across ingest cost, retention, query latency; recommend one" is actionable.
+options across ingest cost, retention, and query latency then recommend one" is actionable.
 
 ## Anti‑Patterns
 

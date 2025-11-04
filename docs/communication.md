@@ -10,7 +10,7 @@ favors written, searchable, lightweight asynchronous artifacts over private chat
 - Default to Public Conversation: Use shared team channels so others can learn passively.
 - Context over Pings: Provide enough detail so someone returning later can answer without a
   back‑and‑forth.
-- Async Friendly: Assume recipients may respond hours later; batch questions.
+- Async Friendly: Assume recipients may respond hours later and batch questions.
 - Signal Review States: Make design / PR status legible at a glance.
 - Avoid Notification Fatigue: Thread conversations and avoid tagging the entire channel.
 
@@ -39,7 +39,7 @@ channels. For example, the team could use common emojis:
 | "hi" (wait)                  | Immediate full question and context                                                          |
 | Private DM for general issue | Public channel for shared learning                                                           |
 | Vague bug report             | Steps, expected vs actual, logs, environment                                                 |
-| Large design debate in chat  | Summarize options in design doc; request focused review                                      |
+| Large design debate in chat  | Summarize options in the design doc and request a focused review                             |
 | Unstructured status update   | Concise learnings, blockers, and what needs to be done to move the ticket to the next column |
 
 When asking: include links (ticket, PR, logs), reproduction steps, and what you’ve already tried.

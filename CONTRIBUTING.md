@@ -52,8 +52,8 @@ If you need to store a new large binary type (e.g., `.png`, `.mov`, `.zip`):
 
 - Avoid committing generated or easily reproducible binaries.
 - Prefer compressing videos and images when reasonable.
-- If you accidentally commit a large file without LFS, alert maintainers—history rewriting may be
-  required.
+- If you accidentally commit a large file without LFS, alert the maintainers. History rewriting may
+  be required.
 
 For more detail, refer to:
 

@@ -17,7 +17,7 @@ expensive late PR debates with quick, high‑quality implementation and review c
 
 ## Minimal Template
 
-Keep it lean—optimize for clarity, not prose. (Full copyable version: see
+Keep it lean. Optimize for clarity, not prose. (Full copyable version: see
 [Templates & Examples](templates.md).)
 
 1. Elevator Pitch (value, for whom, why now)
@@ -37,7 +37,7 @@ Keep it lean—optimize for clarity, not prose. (Full copyable version: see
 - Questions resolved asynchronously; doc updated to reflect any changes. Multiple rounds of updates
   may warrant a meeting to discuss.
 - Only after two signoffs does engineering begin (unless a time‑critical swarm demands
-  parallelization—rare and deliberate).
+  parallelization. This is rare and deliberate).
 
 ## During Implementation
 
@@ -50,7 +50,7 @@ Keep it lean—optimize for clarity, not prose. (Full copyable version: see
 
 | Pitfall                                  | Consequence                           | Mitigation                                      |
 | ---------------------------------------- | ------------------------------------- | ----------------------------------------------- |
-| Skipping docs for "small" changes        | Hidden coupling, repeated fixes       | Keep even smaller docs—maybe 5 bullet points    |
+| Skipping docs for "small" changes        | Hidden coupling, repeated fixes       | Keep even smaller docs, perhaps 5 bullet points |
 | Writing essays                           | Slow to author and review, goes stale | Favor bullet lists and diagrams over paragraphs |
 | Signoff theater (“LGTM” without reading) | False confidence                      | Rotate reviewers; ask clarifying questions      |
 | Letting divergences accumulate           | PR surprises                          | Update doc immediately on direction changes     |

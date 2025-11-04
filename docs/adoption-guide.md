@@ -2,8 +2,8 @@
 
 ## Summary
 
-A deliberate 90‑day, "by the book" trial lets a team experience full benefits—improved flow,
-quality, and learning—before deciding what to tailor. Partial adoption almost always underdelivers.
+A deliberate 90‑day, "by the book" trial lets a team experience improved flow, quality, and learning
+before deciding what to tailor. Partial adoption almost always underdelivers.
 
 ## Team Size and Suitability
 
@@ -22,19 +22,19 @@ maintain short validation cycles.
 
 ## Handling Downsides and Concerns
 
-| Concern                                | Response                                                                                                                               |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| "Too much ceremony"                    | Ceremonies are intentionally short; measure time spent—should be a small fraction compared to regained flow.                           |
-| "Hard boundary with other teams"       | Use Ready gate and clear acceptance criteria to collaborate; share design docs early with dependents.                                  |
-| Career progression for senior IC scope | Seniors lead architectural alignment, backlog shaping, and mentoring—document leadership contributions in design rationale and retros. |
-| "Design docs slow us down"             | Track PR churn before and after; most teams see net reduction in total time to deliver.                                                |
+| Concern                                | Response                                                                                                                                     |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| "Too much ceremony"                    | Ceremonies are intentionally short. Measure the time spent so it stays a small fraction compared to regained flow.                           |
+| "Hard boundary with other teams"       | Use Ready gate and clear acceptance criteria to collaborate; share design docs early with dependents.                                        |
+| Career progression for senior IC scope | Seniors lead architectural alignment, backlog shaping, and mentoring. They document leadership contributions in design rationale and retros. |
+| "Design docs slow us down"             | Track PR churn before and after; most teams see net reduction in total time to deliver.                                                      |
 
 ## Common Anti‑Patterns
 
 - Cherry‑picking only "visible" practices like standup while skipping design docs or reviews.
 - Ignoring WIP limits when pressure rises with a "just this once" mentality.
 - Letting spikes grow into hidden implementation work.
-- Delaying customer validation—tickets linger in Release/Done without confirmation.
+- Delaying customer validation means tickets linger in Release/Done without confirmation.
 - Premature customization such as adding extra columns before baseline flow is stable.
 
 ## Adoption Checklist

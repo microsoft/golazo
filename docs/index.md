@@ -11,7 +11,7 @@ positive return on investment.
 
 Golazo keeps teams fast and sane by making work small, visible, collaboratively understood early,
 and finished with real validation. It trades batch size and premature isolation for flow, shared
-context, and adaptability—yielding fewer surprises, faster merges, and happier engineers even when
+context, and adaptability, yielding fewer surprises, faster merges, and happier engineers even when
 working in different timezones.
 
 <figure>
@@ -40,7 +40,7 @@ working in different timezones.
 - Small, value‑sliced tickets and Weighted Shortest Job First planning enable rapid adaptation
   mid-cycle
 - Integrated review loop: smaller code reviews focused on detail, not architecture debates
-- Shared ownership: Anyone can pull any Ready ticket—knowledge spreads naturally
+- Shared ownership: Anyone can pull any Ready ticket so knowledge spreads naturally
 - Lower defect rates through quality gates: Design review catches issues early, Work In Progress
   limits enable swarm response to incidents, and small batch sizes reduce integration risks
 - Higher morale and faster onboarding: Autonomy to pull work, pairing for knowledge transfer,
