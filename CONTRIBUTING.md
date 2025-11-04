@@ -296,9 +296,9 @@ For the best development experience, install these VS Code extensions:
 - **Install**: Search for "Code Spell Checker" in VS Code Extensions or
   [view in marketplace](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - **Benefits**:
-  - Real-time spell checking with squiggly underlines
-  - Quick fixes to add words to the project dictionary
-  - Automatically uses the project's `cspell.json` configuration
+    - Real-time spell checking with squiggly underlines
+    - Quick fixes to add words to the project dictionary
+    - Automatically uses the project's `cspell.json` configuration
 
 #### Prettier - Code Formatter
 
@@ -306,9 +306,9 @@ For the best development experience, install these VS Code extensions:
 - **Install**: Search for "Prettier - Code formatter" in VS Code Extensions or
   [view in marketplace](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - **Benefits**:
-  - Format on save (configure in VS Code settings)
-  - Consistent formatting across all contributors
-  - Matches the project's formatting rules
+    - Format on save (configure in VS Code settings)
+    - Consistent formatting across all contributors
+    - Matches the project's formatting rules
 
 **To enable format on save:**
 
@@ -316,8 +316,8 @@ Add to your VS Code settings (`.vscode/settings.json` or user settings):
 
 ```json
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
 ```
 
