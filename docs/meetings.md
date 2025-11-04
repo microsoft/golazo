@@ -111,7 +111,7 @@ in to the Ready column.
 - Gaming numbers to force a pet project upward.
 - Huge tickets that resist relative sizing. Split them first.
 - Carrying stale, never‑revisited items for months.
-- Treating WSJF as absolute truth. It’s a heuristic—sanity check occasionally.
+- Treating WSJF as absolute truth. It’s a heuristic. Sanity check it occasionally.
 - Skipping Cost of Delay because it “feels subjective”.
 
 ### After Planning

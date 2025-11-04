@@ -19,7 +19,7 @@ debates without data, manual repetition). Every visible step should earn its kee
 
 ### Defer Commitment
 
-Decide at the last responsible moment—not earlier, not later. Avoid speculative work that might
+Decide at the last responsible moment, not earlier and not later. Avoid speculative work that might
 never be needed while still preparing enough to move fast when the time comes.
 
 ### Build Quality In

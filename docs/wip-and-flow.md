@@ -7,10 +7,10 @@ finishing the most valuable work sooner instead of diluting focus across many pa
 
 ## Why Limit WIP
 
-- Faster Completion: Partially done work delivers zero value; finishing earlier accelerates feedback
-  loops.
-- Lower Context Switching Cost: Humans pay a heavy cognitive tax when juggling many threads; fewer
-  active tickets = higher sustained quality.
+- Faster Completion: Partially done work delivers zero value and finishing earlier accelerates
+  feedback loops.
+- Lower Context Switching Cost: Humans pay a heavy cognitive tax when juggling many threads, and
+  fewer active tickets equals higher sustained quality.
 - Expose Bottlenecks: When a column hits its limit you must _improve flow_ (help upstream) instead
   of silently starting more work.
 - Enable Swarming: Reserved capacity makes it cheap to swarm critical incidents without derailing
@@ -23,7 +23,7 @@ finishing the most valuable work sooner instead of diluting focus across many pa
 - Column Limits: All intermediate columns have numeric limits sized to team capacity. If the next
   column is full you _stop_ and help a ticket ahead of you finish. The execution columns should sum
   to 1.5 \* Team Size as a starting point.
-- Interrupt Rail Limit: Only one active Interrupt at a time. Others wait in Ready; protects the
+- Interrupt Rail Limit: Only one active Interrupt at a time. Others wait in Ready which protects the
   Planned rail from interruptions.
 - Swarm Handling: Swarm items temporarily override individual limits. Once stabilized, excess
   helpers peel off.

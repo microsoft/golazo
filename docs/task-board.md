@@ -17,7 +17,7 @@ urgent? What's blocked? Who needs help next?
 
 ## Columns
 
-Columns reflect state changes in learning and validation—not just coding steps. Suggested baseline:
+Columns reflect state changes in learning and validation, not just coding steps. Suggested baseline:
 
 1. Backlog – Candidate items with potential value but not yet committed. Anyone can propose.
    Acceptance criteria not guaranteed complete.
@@ -28,11 +28,11 @@ Columns reflect state changes in learning and validation—not just coding steps
    obtains 2 or more peer signoffs.
 4. Engineer – Implementation and tests and instrumentation. Peer reviews (2 or more) required before
    moving forward.
-5. Release – Code merges/deploys; feature flags or incremental rollout if applicable.
-   Monitoring/observability verified.
+5. Release – Code merges and deploys with feature flags or incremental rollout if applicable.
+   Monitoring/observability is verified.
 6. Customer Validation – Stakeholder / user confirms value delivered or provides immediate feedback
    loop.
-7. Done – Definition of Done fully met; learnings captured for retrospective.
+7. Done – Definition of Done fully met and learnings captured for the retrospective.
 
 ### Column Exit Criteria
 

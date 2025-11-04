@@ -40,7 +40,7 @@ investigate the cause whether technical or procedural.
 ### Planning Rigidity
 
 Interruptions and plan changes are inevitable. WSJF plus short tickets means new high‑value work can
-enter the flow within days—not semesters—without derailing existing commitments.
+enter the flow within days rather than semesters without derailing existing commitments.
 
 ### On Call Engineer Overload
 

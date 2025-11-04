@@ -58,7 +58,7 @@ Use before pulling a ticket from Ready or when splitting.
 - Acceptance criteria are concrete and testable.
 - Quality signals (tests, monitoring, docs) identified.
 - Design complexity understood or a spike precedes it.
-- Dependencies known and minimal; external waiting minimized.
+- Dependencies are known and minimal and external waiting is minimized.
 - Can be shepherded by a single person (pairing allowed) without being blocked on others.
 
 ---
@@ -88,13 +88,13 @@ Frequent unauthenticated requests for the product catalog (top sellers, categori
 
 ## Dependencies
 - Azure Cache for Redis (existing Enterprise cluster capacity confirmed with SRE: <5% projected memory increase)
-- Application Insights / Azure Monitor (SDK already integrated; adding custom metrics + Kusto queries)
-- Azure API Management (exposure layer; feature flag passed via configuration)
+- Application Insights / Azure Monitor (SDK already integrated and adding custom metrics plus Kusto queries)
+- Azure API Management (exposure layer and the feature flag is passed via configuration)
 
 ## Assumptions / Out of Scope
 - Write‑path optimizations (separate ticket if needed)
 - No per‑user personalization in cache entries (future extension)
-- Staleness within TTL acceptable; business rules do not require real‑time updates
+- Staleness within the TTL is acceptable and business rules do not require real‑time updates
 - Multi‑region active/active routing handled by traffic manager (cache consistency not cross‑region for now)
 
 ## Design and Testing Approach
@@ -107,9 +107,9 @@ Client -> API Handler -> CacheLookup(key) ->
 Key Points:
 - Keys namespaced (catalog:top, catalog:categories, catalog:deals) to avoid collisions.
 - Single‑flight (in‑process mutex + short lock TTL fallback) prevents thundering herd (using a memory cache + RedLock fallback only if needed for distributed coordination later).
-- Serialization: JSON stored directly; payload size avg <25KB (validated from sample Query + Azure Application Insights sampling).
+- Serialization: JSON stored directly and payload size averages <25KB (validated from sample Query + Azure Application Insights sampling).
 - Observability: OpenTelemetry + Application Insights exporter wrap cache operations (dependency telemetry + custom metrics).
-- Warm strategy: first 10 requests naturally populate; no pre‑warm complexity.
+- Warm strategy: the first 10 requests naturally populate and there is no pre‑warm complexity.
 - Failure mode: if Azure Cache unavailable, system logs warning, emits dependency failure metric, and transparently falls back to Azure SQL (circuit breaker after 5 consecutive connection failures to reduce repeated attempts).
 - Load test with Azure Load Testing (1k RPS mixed distribution) verifies latency improvements and observes hit ratio after initial warm.
 
@@ -139,8 +139,7 @@ Risk Mitigations:
 
 ## Implementation Notes
 - Baseline p95 (2025-11-03, Kusto query in Application Insights) collected: top=420ms, categories=390ms, deals=450ms.
-- Initial Azure Load Testing prototype showed 68% hit ratio with default TTLs; tuning deals TTL from 60s to 120s projected to exceed 70%.
+- Initial Azure Load Testing prototype showed a 68% hit ratio with default TTLs. Tuning the deals TTL from 60s to 120s is projected to exceed 70%.
 - Consider future enhancement: background refresh (async refresh just before expiry) using Azure Functions timer trigger.
-- Azure Cache for Redis connection pool sized (max 50); estimated peak concurrent cache ops ~20.
-- If hit ratio <50% after 24h, investigate key churn (possibly dynamic deals query parameters) and consider normalizing inputs; Kusto workbook slice by key.
+- Azure Cache for Redis connection pool sized (max 50). Estimated peak concurrent cache ops ~20.
 ```
