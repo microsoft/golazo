@@ -22,6 +22,45 @@ On all platforms, the minimum requirements are:
 
 - Git client and command line tools
 
+### Large Files (Git LFS)
+
+We use [Git Large File Storage (Git LFS)](https://git-lfs.com/) to manage large binary assets (e.g.,
+videos). If you will add or modify any files matched by the repository's tracking rules, you need
+Git LFS configured locally before committing. For current tracking patterns see `.gitattributes`:
+
+#### Setup (one-time per machine)
+
+1. Install Git LFS:
+
+- Windows: Use the official installer or `winget install Git.LFS`
+- macOS: `brew install git-lfs`
+- Linux (Debian/Ubuntu): `sudo apt install git-lfs` (see distro docs if this fails)
+- Or follow the official instructions: https://github.com/git-lfs/git-lfs#installing.
+
+2. Run: `git lfs install`
+3. (Optional) Verify: `git lfs env` and `git lfs track`.
+
+#### Adding New Large File Types
+
+If you need to store a new large binary type (e.g., `.png`, `.mov`, `.zip`):
+
+1. Discuss first (Issue or Discussion) if the asset is large or could impact clone size.
+2. Add a pattern to `.gitattributes` via a PR rather than committing the file untracked.
+3. Run `git lfs track "<pattern>"` locally, commit the updated `.gitattributes`, then add the file.
+
+#### Tips
+
+- Avoid committing generated or easily reproducible binaries.
+- Prefer compressing videos and images when reasonable.
+- If you accidentally commit a large file without LFS, alert maintainers—history rewriting may be
+  required.
+
+For more detail, refer to:
+
+- Official docs: https://git-lfs.com/
+- GitHub guide:
+  https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage
+
 ## Pull Requests
 
 ### How to create pull requests

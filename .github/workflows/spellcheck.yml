@@ -4,10 +4,6 @@ on:
   pull_request:
     branches:
       - main
-    paths:
-      - "**.md"
-      - "**.yml"
-      - "**.yaml"
 
 jobs:
   spellcheck:
