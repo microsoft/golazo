@@ -14,8 +14,13 @@ and finished with real validation. It trades batch size and premature isolation 
 context, and adaptability—yielding fewer surprises, faster merges, and happier engineers even when
 working in different timezones.
 
-_TODO: A ~10 min embedded video will be added here to summarize these docs_ ➡ Preview the planned
-outline: [Golazo Overview Video Plan](video-overview.md)
+<figure>
+<video controls preload="metadata" width="720">
+  <source src="assets/video-overview.mp4" type="video/mp4" />
+  Your browser does not support embedded videos. You can download it instead: <a href="assets/video-overview.mp4">Golazo Overview (MP4)</a>.
+</video>
+<figcaption>Golazo overview: quick walk-through of goals and core practices.</figcaption>
+</figure>
 
 ## Who It’s For
 

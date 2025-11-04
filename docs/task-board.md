@@ -13,7 +13,7 @@ urgent? What's blocked? Who needs help next?
 
 ## Board Diagram
 
-![Sample board showing the columns and rails described below along with tickets of various colors indicating which workstream they belong to](assets/images/board-example.png)
+![Sample board showing the columns and rails described below along with tickets of various colors indicating which workstream they belong to](assets/board-example.png)
 
 ## Columns
 
