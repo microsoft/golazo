@@ -38,7 +38,7 @@ Golazo builds on many great industry ideas including these specific books:
 - "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically
   Successful Businesses" by Eric Ries
 
-    ## Contributing
+## Contributing
 
 See [Contributing](CONTRIBUTING.md) for more information.
 
