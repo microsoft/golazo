@@ -7,5 +7,6 @@
   },
   "prettier.proseWrap": "always",
   "cSpell.enabled": true,
-  "cSpell.showAutocompleteSuggestions": true
+  "cSpell.showAutocompleteSuggestions": true,
+  "sarif-viewer.connectToGithubCodeScanning": "off"
 }

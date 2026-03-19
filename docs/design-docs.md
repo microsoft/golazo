@@ -2,68 +2,81 @@
 
 ## Summary
 
-Short design docs align intent, surface risks early, and create durable knowledge. They replace
-expensive late PR debates with quick, high‑quality implementation and review cycles.
+Golazo uses short design documents to align on approach before implementation. The goal is not to
+produce formal specification documents. The goal is to reduce avoidable rework, surface risks while
+changes are still cheap, and leave behind enough context that future readers can understand why a
+decision was made.
+
+Design docs work best when they are short, specific, and current.
 
 ## Purpose and Benefits
 
-- Shared Context Before Code: Ensures reviewers agree on approach, preventing rework.
-- Higher Quality Implementation: Edge cases and test strategy considered upfront.
-- Faster Reviews: PR feedback focuses on details, not fundamental direction changes.
-- Knowledge Base: Future maintainers can reconstruct why decisions were made.
-- Onboarding Accelerator: New contributors read similar docs to ramp and confidently propose work.
-- Metrics and Predictability: Early sizing and estimated completion date highlight mismatches in
-  understanding.
+- Shared Context Before Code: reviewers can react to the intended approach before implementation is
+  expensive to change.
+- Higher Quality Implementation: edge cases, dependencies, and testing concerns are more likely to
+  be noticed early.
+- Faster Reviews: pull requests can focus more on execution details and less on first-principles
+  design debate.
+- Knowledge Base: future maintainers can reconstruct reasoning without relying on memory.
+- Onboarding Support: new contributors can read earlier docs to understand local patterns.
+- Predictability: early sizing and an estimated completion date can expose mismatched assumptions.
+
+The benefit is usually cumulative rather than dramatic on any single ticket.
 
 ## Minimal Template
 
-Keep it lean. Optimize for clarity, not prose. (Full copyable version: see
-[Templates & Examples](templates.md).)
+Keep the template lean. Optimize for clarity rather than polish. A copyable version lives in
+[Templates & Examples](templates.md).
 
-1. Elevator Pitch (value, for whom, why now)
-2. Definition of Done (quality and outcome bullets)
-3. Customer / Consumer (validator role)
+1. Elevator Pitch
+2. Definition of Done
+3. Customer / Consumer
 4. Dependencies and Assumptions
 5. Design and Testing Approach
-6. Task List (implementation, tests, monitoring, docs, rollout)
-7. Estimated Completion (95% confidence date)
-8. Signoffs (2 peers)
-9. Implementation Notes (filled as work proceeds)
+6. Task List
+7. Estimated Completion
+8. Signoffs
+9. Implementation Notes
+
+That is enough structure for most tickets. If the work is genuinely small, each section may only
+need a few bullets.
 
 ## Signoff Process
 
-- Draft ready when all sections above have initial content.
-- Two peers review and either approve or request clarifications.
-- Questions resolved asynchronously; doc updated to reflect any changes. Multiple rounds of updates
-  may warrant a meeting to discuss.
-- Only after two signoffs does engineering begin (unless a time‑critical swarm demands
-  parallelization. This is rare and deliberate).
+- The draft is ready for review when each section has initial content.
+- Two peers review it and either sign off or ask for changes.
+- Most clarifications should happen asynchronously, with the document updated as decisions change.
+- Implementation normally starts after two signoffs.
+
+There are exceptions for urgent swarm work, but those should remain exceptions. If the team skips
+design review frequently, it should expect more swarms and pull request churn later.
 
 ## During Implementation
 
-- Keep doc open; append key discoveries, changed assumptions, data sources.
-- If a major pivot emerges (e.g., architectural change), pause and re‑review. Treat it like a micro
-  design revision.
-- Mark any deferred follow‑ups explicitly instead of silently expanding scope.
+- Keep the document current as important assumptions change.
+- Add discoveries, data sources, and implementation notes that are likely to matter later.
+- If the design changes materially, pause and re-review rather than letting the pull request become
+  the place where the new design is first introduced.
+- Record follow-up work explicitly instead of silently growing the current scope.
 
 ## Common Pitfalls and Avoidance
 
-| Pitfall                                  | Consequence                           | Mitigation                                      |
-| ---------------------------------------- | ------------------------------------- | ----------------------------------------------- |
-| Skipping docs for "small" changes        | Hidden coupling, repeated fixes       | Keep even smaller docs, perhaps 5 bullet points |
-| Writing essays                           | Slow to author and review, goes stale | Favor bullet lists and diagrams over paragraphs |
-| Signoff theater (“LGTM” without reading) | False confidence                      | Rotate reviewers; ask clarifying questions      |
-| Letting divergences accumulate           | PR surprises                          | Update doc immediately on direction changes     |
+| Pitfall                           | Consequence                   | Mitigation                                    |
+| --------------------------------- | ----------------------------- | --------------------------------------------- |
+| Skipping docs for "small" changes | Hidden repeated rework        | Use a smaller doc instead of no doc           |
+| Writing essays                    | Slow review and stale content | Prefer bullets, diagrams, and direct language |
+| Signoff theater                   | False confidence              | Expect real questions, not just approval text |
+| Letting drift accumulate          | Pull request surprises        | Update the doc when the approach changes      |
 
 ## Reviewer Checklist
 
-- Does the Definition of Done capture validation and quality signals?
-- Are major risks and dependencies acknowledged?
-- Does the planned design fit with the existing architecture?
-- Are there existing tools or resources that the author is unaware of?
-- Can one person reasonably finish this within the SLA?
-- Is the test/monitoring approach explicit?
-- Are follow‑up items clearly out of scope?
+- Does the definition of done include quality and validation expectations?
+- Are important dependencies, risks, and assumptions visible?
+- Does the design fit existing architecture and local patterns?
+- Are there relevant existing tools, helpers, or prior decisions to reference?
+- Is the work still small enough to fit the team SLA?
+- Is the testing or monitoring plan explicit enough to evaluate?
+- Are follow-up items clearly separated from current scope?
 
 ## Navigation
 

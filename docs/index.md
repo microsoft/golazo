@@ -2,56 +2,49 @@
 
 ## Summary
 
-Golazo is a lightweight engineering methodology for small and mid-sized teams that attacks common
-delivery friction: rework hidden in code reviews, slow feedback loops, knowledge silos, multitasking
-overload, and fragile ownership patterns. It constrains the amount of parallel tasks, front‑loads
-shared understanding with tiny design docs, prioritizes by value, and closes the loop with explicit
-customer validation. Regular retrospectives ensure that every piece of the process has a net
-positive return on investment.
+Golazo is a lightweight engineering methodology for small and mid-sized teams. It is designed to
+reduce the kinds of delivery friction that are common in real environments: code reviews that reopen
+basic design questions, too much parallel work, unclear ownership, slow feedback loops, and teams
+that rely too heavily on private context.
 
-Golazo keeps teams fast and sane by making work small, visible, collaboratively understood early,
-and finished with real validation. It trades batch size and premature isolation for flow, shared
-context, and adaptability, yielding fewer surprises, faster merges, and happier engineers even when
-working in different timezones.
+Golazo asks teams to keep work small, agree on the approach before implementation, limit work in
+progress, and treat customer validation as part of completion rather than as a separate concern. The
+goal is to produce a system that is easier to reason about and easier to improve.
 
 <figure>
 <video controls preload="metadata" width="720">
   <source src="assets/video-overview.mp4" type="video/mp4" />
   Your browser does not support embedded videos. You can download it instead: <a href="assets/video-overview.mp4">Golazo Overview (MP4)</a>.
 </video>
-<figcaption>Golazo overview: quick walk-through of goals and core practices.</figcaption>
+<figcaption>Golazo overview: a short introduction to the method and its core practices.</figcaption>
 </figure>
 
 ## Who It’s For
 
-- Teams wanting predictable throughput
-- In-person, hybrid, or asynchronous teams aiming to reduce meeting load and handoff friction
-  through stronger async collaboration (small shared design docs + visible flow)
-- Small to medium product or platform groups (≈4–10 engineers)
-- Teams looking to do more with less while reducing incident rate and code review debates
-- Orgs seeking higher morale and faster new‑hire ramp
+- Teams that want more predictable flow and less hidden work
+- Teams working in person, hybrid, or across time zones
+- Product or platform groups that are small enough to benefit from shared context
+- Teams that need a practical way to reduce review churn and operational drag
+- Organizations trying to improve delivery reliability without adding heavy process overhead
+
+In practice, the model tends to fit teams of roughly 4 to 10 engineers best, though parts of it can
+be adapted outside that range.
 
 ## What Makes It Different
 
-- Collaborative design upfront: Lightweight design doc and 2 signoffs before implementation
-- Work In Progress limits to maximize focus and completion rate
-- Visual flow board with priority rails (Swarm / Interrupt / Planned) for instant situational
-  awareness
-- Small, value‑sliced tickets and Weighted Shortest Job First planning enable rapid adaptation
-  mid-cycle
-- Integrated review loop: smaller code reviews focused on detail, not architecture debates
-- Shared ownership: Anyone can pull any Ready ticket so knowledge spreads naturally
-- Lower defect rates through quality gates: Design review catches issues early, Work In Progress
-  limits enable swarm response to incidents, and small batch sizes reduce integration risks
-- Higher morale and faster onboarding: Autonomy to pull work, pairing for knowledge transfer,
-  collaborative design, and shared ownership reduce frustration and accelerate new-hire productivity
-- Living library of concise design docs builds durable, searchable team context which informs future
-  decisions, reduces single‑expert risk, and powers AI assistants with high‑fidelity context
-- Customer Validation as a distinct stage; Done means value observed, not just code merged
+- Design alignment happens before implementation through a short design document and peer signoff
+- Work in progress is constrained deliberately rather than informally
+- The task board is treated as the shared model of reality, not as an after-the-fact reporting tool
+- Tickets are kept small enough that planning can adapt without large sunk-cost debates
+- Review is part of flow, not a separate bottleneck management problem
+- Shared ownership is built into the process by allowing engineers to pull from a common Ready queue
+- Customer validation is explicit, which makes "done" stricter than "merged"
+
+This is technically simple. The harder part is behavioral consistency.
 
 ## Inspiration
 
-Golazo builds on many great industry ideas including these specific books:
+Golazo builds on ideas found in several books:
 
 - "Implementing Lean Software Development: From Concept to Cash" by Mary and Tom Poppendieck
 - "The Principles of Product Development Flow: Second Generation Lean Product Development" by Donald
@@ -60,10 +53,13 @@ Golazo builds on many great industry ideas including these specific books:
 - "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically
   Successful Businesses" by Eric Ries
 
+The documents in this repository describe one practical synthesis of those ideas. They are not meant
+to imply that the underlying sources agree on every detail or that Golazo is a formal standard.
+
 ## Suggested Reading Path
 
-Prev/Next links at the bottom of each page will help guide you along this reading path or use the
-navigation pane on the left to jump to a specific area.
+The navigation links at the bottom of each page follow a suggested reading order. You can also use
+the left navigation in the rendered site.
 
 1. [Why Golazo](why-golazo.md)
 2. [Principles](principles.md)

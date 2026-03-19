@@ -2,64 +2,71 @@
 
 ## Summary
 
-Limiting Work In Progress (WIP) increases throughput, improves predictability, and reduces stress by
-finishing the most valuable work sooner instead of diluting focus across many partially‑done items.
+Work in progress limits are one of the central control mechanisms in Golazo. They exist because too
+much parallel work slows the system even when individual engineers appear busy. The immediate goal
+is not discipline for its own sake. It is to increase the rate at which valuable work is actually
+finished.
 
 ## Why Limit WIP
 
-- Faster Completion: Partially done work delivers zero value and finishing earlier accelerates
-  feedback loops.
-- Lower Context Switching Cost: Humans pay a heavy cognitive tax when juggling many threads, and
-  fewer active tickets equals higher sustained quality.
-- Expose Bottlenecks: When a column hits its limit you must _improve flow_ (help upstream) instead
-  of silently starting more work.
-- Enable Swarming: Reserved capacity makes it cheap to swarm critical incidents without derailing
-  weeks of in‑flight work.
-- Reduce Stress: Predictable small queues beat long hidden backlogs of half‑finished tasks.
+- Faster Completion: partially finished work does not deliver value, and finishing earlier shortens
+  the feedback loop.
+- Lower Context Switching Cost: fewer active threads generally means fewer mistakes and less mental
+  overhead.
+- Expose Bottlenecks: when a column reaches its limit, the team is forced to notice the constraint.
+- Enable Swarming: keeping some capacity free makes urgent shared work possible.
+- Reduce Stress: small, visible queues are easier to reason about than a large collection of hidden
+  half-finished tasks.
+
+This is one of the places where the theory and the lived experience usually match fairly well.
 
 ## Policies
 
-- Individual Limit: A person’s name should appear as active Shepherd on at most 2 tickets.
-- Column Limits: All intermediate columns have numeric limits sized to team capacity. If the next
-  column is full you _stop_ and help a ticket ahead of you finish. The execution columns should sum
-  to 1.5 \* Team Size as a starting point.
-- Interrupt Rail Limit: Only one active Interrupt at a time. Others wait in Ready which protects the
-  Planned rail from interruptions.
-- Swarm Handling: Swarm items temporarily override individual limits. Once stabilized, excess
-  helpers peel off.
-- Ticket Size: Tickets must be small enough to fit under the SLA (commonly < 2 weeks) so WIP
-  represents near‑term deliverables, not projects. Small tickets mean that someone is frequently
-  becoming idle and free to work on Swarms, etc.
+- Individual Limit: one person should usually shepherd no more than 2 active tickets.
+- Column Limits: intermediate columns should have explicit limits sized to team capacity. If the
+  next column is full, the team helps work ahead move instead of starting more.
+- Interrupt Rail Limit: only one active Interrupt should exist at a time unless the team has a very
+  specific reason to break that rule.
+- Swarm Handling: Swarm work can temporarily override normal limits, but people should peel off once
+  the urgent situation is stable.
+- Ticket Size: tickets need to remain small enough that WIP reflects near-term work rather than
+  disguised projects.
+
+The exact numbers should be adapted to the team, but the discipline should remain real.
 
 ## Managing Flow in Practice
 
-Look for columns consistently at or over limit, aging tickets compared to neighbors, repeated
-backward movement, and spikes in blocked markers.
+Watch for a few common signals:
+
+- columns that are regularly at or above their limit
+- tickets aging much longer than nearby peers
+- repeated backward movement
+- recurring blocked markers or dependency waiting
 
 When a limit blocks movement:
 
-1. Highlight the blockage in standup.
-2. Redirect available capacity to tickets closest to Done.
-3. If this is a chronic condition, adjust the process and culture not just the WIP number.
+1. Call it out in standup.
+2. Send available capacity toward work closest to completion.
+3. If the pattern persists, inspect the underlying cause instead of only raising the number.
 
 ## Flow Theory (Lightweight)
 
-[Little’s Law](https://www.bing.com/search?q=little%27s+law):
+[Little’s Law](https://www.bing.com/search?q=little%27s+law) gives a useful mental model:
 
 ```
 Average Throughput ≈ WIP / Average Cycle Time
 ```
 
-For a fixed WIP, reducing cycle time increases throughput. For a fixed cycle time, excess WIP only
-increases delay. Therefore we cap WIP intentionally and focus on finishing work rather than starting
-more.
+In plain terms, if cycle time is fixed, adding more WIP mainly increases delay. If WIP is kept
+stable and cycle time falls, throughput improves. Real systems are messier than the formula, but the
+direction of the tradeoff is still useful.
 
 ## Anti‑Patterns
 
-- Increasing WIP limits instead of solving root causes.
-- Large tickets that “camp” in Engineer for weeks.
-- Hidden parallel work and side branches not visualized on the board.
-- Interrupt rail frequently with more than one active ticket.
+- Raising WIP limits instead of fixing the reason work is getting stuck
+- Allowing large tickets to remain in Engineer for long periods
+- Doing parallel work that never appears on the board
+- Normalizing multiple active Interrupts as routine behavior
 
 ## Navigation
 
