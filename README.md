@@ -47,8 +47,8 @@ including the following books:
 - "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically
   Successful Businesses" by Eric Ries
 
-Golazo is not a direct restatement of any one of these sources. It is a practical synthesis shaped
-around small engineering teams and day-to-day operating constraints.
+Golazo is not a direct restatement of any one of these sources. It is a practical application of
+these ideas shaped for small engineering teams.
 
 ## Contributing
 
