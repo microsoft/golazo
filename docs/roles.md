@@ -2,45 +2,50 @@
 
 ## Summary
 
-Golazo keeps formal roles to a minimum. A small set of clearly defined responsibilities sustains
-flow, reinforces shared ownership, and creates space for equitable growth.
+Golazo uses a small number of explicit roles. The intent is not to create hierarchy inside the team.
+It is to make a few recurring responsibilities visible so that important process work does not
+happen accidentally or get concentrated in one person by default.
 
 ## Core Roles
 
 ### Coach
 
-The process facilitator and quality bar champion. The Coach observes _how_ work flows and nudges the
-team when drift appears.
+The coach is responsible for the health of the workflow rather than for directing the content of the
+work. In practice, this means watching for drift, bottlenecks, and weak process discipline.
 
 **Key Responsibilities**
 
-- Facilitate standup (top-right to bottom-left order on the board) and retrospectives.
-- Enforce WIP limits and highlight bottlenecks rather than silently adjusting.
-- Guard the integrity of design doc and review practices.
-- Ensure planning cadence and backlog hygiene.
-- Prompt root‑cause exploration for backward ticket movement.
-- Mentor emerging coaches to distribute facilitation skill.
+- Facilitate standup and retrospectives
+- Enforce WIP limits and call out bottlenecks explicitly
+- Protect the design doc and review expectations from erosion
+- Maintain planning cadence and backlog hygiene
+- Push for root-cause analysis when tickets move backward or age unexpectedly
+- Help other team members learn the coaching role over time
 
-**Anti‑Patterns**: Owning all decisions; assigning work to specific people
+The coach should influence how the team works, not become the person who decides who does what.
+
+**Anti-Patterns**: assigning work to individuals by habit, owning every process decision, silently
+relaxing standards when pressure rises
 
 ### On Call Engineer
 
-Rotating role (often weekly) monitoring inbound signals (incidents, urgent asks) and initiating the
-proper response without becoming a bottleneck.
+The on-call engineer is a rotating role that handles the first response to incidents and other
+unexpected work. The role exists to coordinate urgent intake, not to absorb all urgent execution.
 
 **Key Responsibilities**
 
-- Triage new incidents / interrupts; create or update tickets.
-- Ensure Swarm tickets exist _before_ standup with context.
-- Perform lightweight first‑pass investigation (many items resolved in minutes).
-- Communicate status and handoff cleanly to next on call engineer.
-- Capture repetitive tasks then propose automation or documentation improvements.
+- Triage new incidents and interrupts and ensure they are represented on the board
+- Create or update Swarm tickets before standup when urgent work already exists
+- Perform lightweight initial investigation where fast resolution is possible
+- Communicate status clearly and hand off cleanly at rotation boundaries
+- Identify repetitive operational work and propose automation or documentation improvements
 
-**Time Expectation**: Mature teams often spend < 30–60 mins/day on on call engineer tasks; excess
-time signals upstream quality or monitoring issues.
+**Time Expectation**: on mature teams, on-call work is often measured in minutes per day rather than
+hours. If it consistently consumes much more time, that usually points to upstream quality,
+observability, or ownership issues.
 
-**Anti‑Patterns**: Hoarding all urgent fixes, becoming the de facto operations silo, deferring
-documentation.
+**Anti-Patterns**: hoarding urgent fixes, becoming the default operations silo, letting important
+context stay in chat instead of on the board or in documentation
 
 ## Navigation
 

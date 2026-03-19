@@ -2,26 +2,33 @@
 
 ## Summary
 
-A ticket is the smallest independently valuable slice of work that a single person can shepherd from
-idea to validated outcome within the team’s SLA (commonly < 2 weeks). Every ticket must produce
-demonstrable business or user value.
+In Golazo, a ticket is the smallest unit of work that can produce a meaningful outcome and move
+through the full system, from shaping to validation, within the team service-level expectation. On
+many teams that means less than two weeks, and often much less.
+
+The size constraint matters because most of the other practices depend on it. Reviews are easier,
+planning is more adaptable, and customer feedback is cheaper when the unit of work is small.
 
 ## Ticket Definition
 
-Each ticket represents a cohesive change that, when complete, can be reviewed, released, and
-validated. It includes clear acceptance criteria and a definition of done covering quality signals
-(tests, monitoring, docs) so the team can support it afterward.
+A ticket should represent one coherent change that can be reviewed, released, and validated without
+depending on a large unresolved bundle of adjacent work. It should also include acceptance criteria
+and a definition of done that covers quality expectations such as tests, monitoring, and relevant
+documentation.
+
+If the work cannot be described that way, it is probably not a ticket yet. It may be a larger body
+of work that still needs to be split.
 
 ## Core Fields
 
-| Field               | Purpose                                                     | Notes                                             |
-| ------------------- | ----------------------------------------------------------- | ------------------------------------------------- |
-| Title               | Crisp outcome phrased as value ("Enable X so Y")            | Avoid vague verbs ("improve", "handle stuff")     |
-| Shepherd            | Primary facilitator ensuring flow and quality               | Not required to do all implementation             |
-| Acceptance Criteria | Observable conditions proving value delivered               | Written before significant engineering starts     |
-| Cost Estimate       | Effort assuming focused work (e.g., ideal days / Fibonacci) | Used to spot outliers, not to micromanage         |
-| Start / End Dates   | Actual flow timing for metrics and retros                   | Set explicitly when leaving Ready / entering Done |
-| Tags / Color        | Group by workstream/domain                                  | Avoid over‑tagging; see notes below               |
+| Field               | Purpose                                             | Notes                                           |
+| ------------------- | --------------------------------------------------- | ----------------------------------------------- |
+| Title               | States the outcome in concrete terms                | Avoid vague verbs and generic cleanup language  |
+| Shepherd            | Owns the flow of the ticket through the system      | Does not need to do all implementation          |
+| Acceptance Criteria | Defines what success looks like                     | Should exist before major implementation starts |
+| Cost Estimate       | Gives a relative or focused-effort size signal      | Useful for spotting outliers, not for control   |
+| Start / End Dates   | Records actual timing for review and retrospective  | Helps with cycle-time analysis                  |
+| Tags / Color        | Associates the ticket with a workstream or category | Keep this simple enough to stay readable        |
 
 ## Example
 
@@ -29,80 +36,83 @@ validated. It includes clear acceptance criteria and a definition of done coveri
 
 ## Colors
 
-Teams should establish 5-10 primary workstreams and assign each a distinct color for related
-tickets. This visual system creates clarity and balance across the team's efforts.
+Many teams benefit from assigning a small set of colors to major workstreams. The value is mostly
+visual.
 
-- Progress Visibility: At a glance, team members and stakeholders can see which workstreams are
-  actively moving forward and which may be stalled or underrepresented.
-- Balanced Work Distribution: Color coding naturally encourages team members to pull tickets across
-  different workstreams rather than clustering in a single area, promoting knowledge sharing and
-  reducing bottlenecks.
-- Retrospective Insights: Color patterns reveal whether the team is over-indexing on certain types
-  of work (e.g., all technical debt, no new features) and guide rebalancing discussions.
+- It helps the team see whether work is concentrated in one area or spread more evenly.
+- It makes it easier to notice when an important workstream has stopped moving.
+- It gives retrospectives another lightweight signal about how time was actually spent.
+
+The system should stay simple. Too many categories reduce the benefit.
 
 ## Ticket Readiness
 
-All must be true:
+Before work starts, all of the following should be true:
 
-- Delivers standalone value. Stakeholder can validate it in isolation.
-- Fits within 2 week SLA.
-- Acceptance criteria and DoD can be unambiguously verified.
-- Minimal design complexity. Excess ambiguity means consider spike.
+- the ticket delivers a standalone outcome that someone can validate
+- it fits within the team SLA
+- the acceptance criteria and definition of done are concrete enough to verify
+- the design complexity is understood well enough that the work is not mostly discovery
 
-If any item fails, break the ticket down _before_ starting.
+If one of these is missing, split the ticket or create a spike first.
 
 ## Spike Tickets
 
-Use a "Spike" ticket when uncertainty prevents meaningful acceptance criteria (e.g., unfamiliar API,
-unclear algorithm feasibility). Characteristics:
+Use a spike when uncertainty is high enough that normal acceptance criteria would be mostly
+guesswork. That might mean an unfamiliar API, an unresolved technical constraint, or an unclear
+feasibility question.
 
-- Goal: answer specific, enumerated questions.
-- Output: documented findings and follow‑on concrete tickets.
-- Time‑boxed: small (often 2 to 3 days or less). If answers expand scope, create a new spike rather
-  than sprawling.
-- Closure: team reviews answers and confirms next steps.
+Characteristics of a good spike:
 
-Scope spikes tightly. "Research database options" is weak, but "Compare 3 time‑series storage
-options across ingest cost, retention, and query latency then recommend one" is actionable.
+- it answers a specific set of questions
+- it produces documented findings and follow-up tickets
+- it is time-boxed, usually to a few days or less
+- it ends with a decision or a clearer next step
+
+The goal is not to hide implementation work inside research. A spike should reduce uncertainty. If
+it starts becoming a delivery ticket, split it.
 
 ## Anti‑Patterns
 
-- Tickets as mini‑projects spanning multiple weeks.
-- Vague titles ("Clean up code", "Handle edge cases").
-- Doing work not on the board.
-- Large refactors without articulated value (performance, reliability, clarity).
-- Spikes that implement code instead of answering questions.
+- Tickets that are really small projects
+- Titles such as "clean up code" or "handle edge cases"
+- Work happening off the board
+- Broad refactors without a stated reason or measurable benefit
+- Spikes that quietly turn into implementation
 
 ## Healthy Behaviors
 
-- Split early when you detect dual outcomes emerging.
-- Pair frequently on risky or novel tickets for faster learning and fewer surprises.
-- Reference prior design docs for similar areas to maintain consistency.
+- Split work early when two distinct outcomes begin to emerge
+- Pair on risky or unfamiliar tickets to reduce rework later
+- Reuse earlier design docs when they provide relevant precedent
 
 ## Ownership Model
 
-Golazo optimizes for _team_ ownership. Any engineer can pick any Ready ticket. The Shepherd listed
-on the ticket is the facilitator ensuring:
+Golazo is built around team ownership rather than fixed personal territory. Any engineer can pull a
+ticket from Ready.
 
-- Design doc prepared and signed off.
-- Reviews happen promptly.
-- Definition of Done fully met (tests, monitoring, docs).
-- Customer validation step closes the loop.
+The shepherd is responsible for keeping the ticket moving and making sure critical steps happen:
 
-"Shepherd" does not mean "solo implementer". Pairing and micro‑swarming encouraged. Knowledge
-rotates naturally as interests vary and coaches watch for area monopolies.
+- the design doc exists when needed and receives signoff
+- reviews happen in time to keep the ticket flowing
+- the definition of done is actually met
+- customer validation closes the loop
+
+That does not imply solo execution. Pairing and short swarms are expected when they improve flow or
+reduce risk.
 
 ## Growth and Equity
 
-The use of short, clearly defined tickets creates equitable access to impactful work:
+Short, well-formed tickets can support more equitable access to meaningful work.
 
-- Rotating on call engineer and open ticket selection prevents gatekeeping.
-- Junior engineers gain confidence through design doc signoffs with shared responsibility, not
-  isolation.
-- Senior engineers demonstrate leadership by refining backlog items, mentoring during Analyze,
-  enforcing quality fundamentals, and shaping architectural consistency.
-- Career progression discussions map leadership expectations (technical depth, cross‑team influence)
-  to Golazo artifacts (design docs authored, cross‑area pairing, backlog curation).
+- Open ticket selection reduces gatekeeping
+- Junior engineers can contribute in new areas with clearer support structures
+- Senior engineers can demonstrate leadership through shaping, review, and architectural guidance
+- Career conversations can point to concrete artifacts such as authored design docs, cross-area
+  pairing, and backlog refinement
+
+This is one of the more important cultural side effects of the model. It is also one of the easier
+ones to lose if the team quietly reintroduces strong ownership silos.
 
 ## Navigation
 

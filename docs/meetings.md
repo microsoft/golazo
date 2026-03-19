@@ -2,91 +2,92 @@
 
 ## Summary
 
-Golazo favors a minimal set of tightly focused meetings. Each exists to unblock flow, amplify
-learning, or adapt priorities. It is a non-goal to recite status already visible on the board.
+Golazo keeps the list of meetings intentionally small. Each meeting should have a clear operational
+reason to exist: unblock work, inspect the system, or adjust priorities. A meeting that only repeats
+what is already visible on the board is usually a sign that the format needs work.
 
-## Standup (Daily – 10–15 min)
+## Standup (Daily - 10 to 15 min)
 
-Order: board right to left, top (Swarm) to bottom (Planned). Discussion is by _ticket_, not by
-person.
+Standup is run by ticket rather than by person. The team walks the board from right to left and from
+highest-urgency rail to lowest.
 
-For each in‑progress ticket the Shepherd answers:
+For each active ticket, the shepherd should be able to answer:
 
-1. What is needed to move it to the next column?
-2. Any blockers or risks?
-3. Critical learning worth sharing?
+1. What is needed to move the ticket forward?
+2. Are there blockers or risks?
+3. Is there any learning the team should know now?
 
-After discussing all active tickets, if anyone is idle, staff Swarms first, then Interrupts, and
-then help finish work before starting new.
+After active tickets are discussed, available capacity should go first to Swarm work, then to
+Interrupts, then to helping finish work already in flight before starting something new.
 
-All team members (but especially the Coach) should speak up if they observe:
+The coach should interrupt gently when the conversation drifts into:
 
-- Standard status report content such as what the engineer did yesterday
-- Tickets being picked up out of order (swarms > interrupts > help existing tickets > planned)
-- Long design debates within the standup meeting
+- individual status recitation
+- work being picked up out of priority order
+- design debates that need a smaller follow-up conversation
 
-## Retrospective (Every 1–2 weeks – 30-60 min)
+## Retrospective (Every 1 to 2 weeks - 30 to 60 min)
 
-Goal: celebrate wins and identify waste and choose improvement experiments.
+The retrospective exists to inspect the system and choose improvements. It should not become a vague
+complaint session or a ritual celebration detached from the actual work.
 
-Suggested Agenda:
+Suggested agenda:
 
-1. Celebrate and list successes
-2. Review Change notes from previous retro
-3. Review ticket data from previous weeks. Look for categories of swarms, unexpectedly long tickets,
-   tickets that moved backward or were thrown away, etc.
-4. Suggest actionable changes or renewed focus on specific Golazo process points
+1. Review what went well.
+2. Review action items from the previous retrospective.
+3. Inspect recent ticket data and notable outliers.
+4. Choose specific changes or experiments.
 
 ### Value Stream Mapping
 
-Prior to the retrospective meeting, the coach should identify the ticket where the actual time taken
-for the ticket most exceeded the expected time. Prior to the meeting, the Shepherd can review what
-was done each day on the ticket. During the meeting, the Shepherd narrates a neutral, day‑by‑day
-timeline. Team treats Shepherd as _innocent_ and instead the team focuses on what they could have
-done to help the ticket close on time.. Discussions often revolve around system factors such as
-dependencies, multitasking, and unclear definition of done). The goal of the discussion are concrete
-prevention ideas to help the team be more efficient in the future.
+One useful practice is to examine the ticket that exceeded expectations most significantly. Before
+the meeting, the coach identifies the ticket and the shepherd reconstructs a simple timeline.
 
-## Planning Session (Every 1–2 weeks – 30-60 min)
+During the discussion, the team should assume good intent and look for system causes: unclear scope,
+dependency waiting, late review, excessive multitasking, missing validation, or similar patterns.
+The point is to identify preventable delay, not to litigate personal performance.
 
-Teams may pair this meeting with the retrospective meeting to avoid having additional meetings on
-the calendar, but that can vary depending on how long the team usually spends on the retro content.
+## Planning Session (Every 1 to 2 weeks - 30 to 60 min)
+
+Some teams combine planning with the retrospective to avoid creating another meeting block. That is
+reasonable if both discussions still have enough focus.
 
 During planning, the team should:
 
-- Review unestimated backlog items.
-- Clarify acceptance criteria and effort assumptions.
-- Assign Effort, Cost of Delay, Business Value (Fibonacci scale) then compute WSJF.
-- Reorder backlog (only top items need perfect ordering).
+- review backlog items that are likely to matter soon
+- clarify acceptance criteria and assumptions
+- estimate effort, cost of delay, and business value
+- reorder the top of the backlog
 
-After the meeting, the coach pulls the highest priority items into the Ready column.
+After planning, the coach moves the highest-priority items into Ready.
 
 ### Estimation Dimensions
 
-The estimation process is based on the
+Golazo often uses
 [Weighted Shortest Job First (WSJF)](https://www.bing.com/search?q=weighted%20shortest%20job%20first)
-method.
+for prioritization.
 
-All estimates are given using the Fibonacci scale. For each of the dimensions below, teams calibrate
-the extremes by finding a "1" (low) and "21" (high) for each dimension. Then other items are placed
-relatively. Generally this is simply a matter of discussing the numbers for the new items, but
-periodically it is necessary to recalibrate the whole list.
+The idea is simple:
 
-| Dimension      | Question                           | Guidance                                                     |
-| -------------- | ---------------------------------- | ------------------------------------------------------------ |
-| Effort         | How much focused engineering time? | Can represent ideal days or complexity proxy. Keep relative. |
-| Cost of Delay  | How painful is waiting?            | Deadlines, risk exposure, expiring certs, opportunity cost.  |
-| Business Value | How much value when delivered?     | Customer impact, revenue, strategic leverage.                |
+1. Estimate the cost of waiting.
+2. Estimate the value of delivery.
+3. Divide that by the effort required.
 
-Once the three numbers are collected for each ticket, they are plugged into the WSJF formula:
+The common formula is:
 
 ```
 WSJF = (Cost of Delay + Business Value) / Effort
 ```
 
-A Higher WSJF result means the ticket is higher priority. The goal is to focus on getting more value
-per unit of effort sooner. The Coach will use this prioritization to determine which tickets to pull
-in to the Ready column.
+Teams often use Fibonacci values as a relative scale for each dimension.
+
+| Dimension      | Question                           | Guidance                                                    |
+| -------------- | ---------------------------------- | ----------------------------------------------------------- |
+| Effort         | How much focused engineering time? | Use a relative scale. Ideal days or complexity both work.   |
+| Cost of Delay  | How painful is waiting?            | Consider deadlines, exposure, opportunity cost, or risk.    |
+| Business Value | How much value arrives if we ship? | Consider customer impact, strategy, revenue, or efficiency. |
+
+Higher WSJF scores suggest higher priority. That is directionally useful, but not precise.
 
 ### Example
 
@@ -96,60 +97,56 @@ in to the Ready column.
 | B: New usage dashboard slice    | 5      | 8             | 13             | 4.2  | 2     |
 | C: Refactor shared util         | 8      | 3             | 5              | 1.0  | 3     |
 
+This model is useful because it makes tradeoffs explicit. It should not be mistaken for a precise
+economic forecast.
+
 ### Facilitation Tips
 
-- Silent estimate first to avoid anchoring and then reveal.
-  [Planning poker](https://www.bing.com/search?q=planning%20poker) is a good way to achieve this.
-- Discuss widest outliers when voting. Hear from the high and low estimate and then converge
-  quickly.
-- Capture assumption differences.
-- Re‑estimate only when key knowledge changed.
-- Keep only the top of the backlog perfectly ordered; lower items can be approximate.
+- Estimate silently first to reduce anchoring bias
+- Discuss the widest outliers rather than every number
+- Capture assumption differences when they explain disagreement
+- Re-estimate only when something material changes
+- Keep only the top of the backlog tightly ordered
 
 ### Anti‑Patterns
 
-- Gaming numbers to force a pet project upward.
-- Huge tickets that resist relative sizing. Split them first.
-- Carrying stale, never‑revisited items for months.
-- Treating WSJF as absolute truth. It’s a heuristic. Sanity check it occasionally.
-- Skipping Cost of Delay because it “feels subjective”.
+- Manipulating estimates to force a preferred outcome
+- Trying to size tickets that are obviously too large
+- Keeping stale backlog items indefinitely
+- Treating WSJF as objective truth
+- Avoiding cost-of-delay discussion because it is imperfect
 
 ### After Planning
 
-- Coach moves top items into Ready.
-- Update tickets with a link to the planning meeting recording to easily review context in the
-  future.
-- Track any deferred but promising ideas separately in an idea backlog to avoid noise.
-- On some teams, individual engineers may not have a lot of insight into Cost of Delay or Business
-  Value. While it's helpful to share this context, teams may find it more efficient for the Coach to
-  fill these values in after the meeting and share the results with the team. The time with the
-  whole team can focus on the effort estimation.
+- The coach moves the next set of items into Ready
+- Tickets may be updated with links to notes or recordings if that helps later review
+- Promising but deferred ideas should stay visible without cluttering the near-term backlog
+- On some teams, business value and cost of delay are better filled in by a smaller group after the
+  meeting if the broader team lacks the right context
 
 ### Tooling
 
-Note that if teams are using Azure Dev Ops to run their Golazo process, this planning meeting can
-benefit from using the
-[Estimate](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.estimate) tool and then
-tickets can be bulk edited for WJSF calculation using the "Open in Excel" option from an ADO query
-result.
+Teams using Azure DevOps may find the
+[Estimate](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.estimate) extension useful
+for planning and bulk editing.
 
 ## Starfish Retrospective (Quarterly)
 
-This is a broader health check where team members privately fill out a series of notes using
-categories: Start Doing, Stop Doing, Keep Doing, Do More, Do Less. The inputs are collected
-anonymously and then in the meeting, the notes are clustered into themes. The team discusses
-high‑count clusters first and extracts change actions. For more information, search the internet for
-"[starfish retrospective](https://www.bing.com/search?q=starfish+retrospective)".
+This is a broader health check that asks the team to categorize observations under Start Doing, Stop
+Doing, Keep Doing, Do More, and Do Less. Inputs are usually collected privately, then clustered into
+themes for discussion.
+
+The format is useful when the team needs a wider lens than the normal ticket-by-ticket
+retrospective.
 
 ## Meeting Anti‑Patterns
 
-- Status recital especially if it covers info already visible on board.
-- Design debates in standup instead of small focused follow‑ups.
-- Silent standup. A lack of questions means missed collaboration.
-- Carrying unresolved retro actions from session to session.
-- Planning inflation wars where team members are arguing numbers instead of clarifying assumptions.
-- Team members skipping these meetings. If the meetings aren't a valuable use of time, discuss it in
-  the retrospective meeting.
+- Reciting status already visible on the board
+- Running design debates inside standup
+- Allowing standup to go silent when help is needed
+- Carrying unresolved retrospective actions from cycle to cycle
+- Arguing numbers in planning instead of clarifying assumptions
+- Keeping meetings that the team no longer finds useful without inspecting why
 
 ## Navigation
 

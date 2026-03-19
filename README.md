@@ -1,35 +1,44 @@
 # Golazo Documentation
 
-This is a comprehensive documentation repository for the Golazo development methodology - a minimal
-team development process that excels in hybrid, asynchronous work environments while maximizing
-value delivery and team morale.
+This repository contains the source documentation for Golazo.
 
-You're at the main GitHub location hosting the unrendered markdownTelemetry. If you'd prefer to read
-more polished, rendered HTML, please visit https://microsoft.github.io/golazo/.
+Golazo is a lightweight engineering operating model intended for teams that need to keep work moving
+without relying on constant meetings, heroics, or heavy process overhead. The material here is
+written for teams evaluating whether the approach is practical, what tradeoffs it introduces, and
+how to adopt it without overcomplicating local workflows.
+
+If you would rather read the rendered site than the raw Markdown, use
+https://microsoft.github.io/golazo/.
 
 ## Purpose
 
-This repository contains the complete documentation for **Golazo**, a streamlined software
-development methodology that enables teams to:
+The goal of this repository is to document the Golazo methodology clearly enough that a team can:
 
-- Deliver value quickly through small, iterative work items
-- Operate efficiently in hybrid and remote work environments
-- Maintain high team morale and shared accountability
-- Eliminate waste while building quality in from the start
-- Foster knowledge sharing and collaborative ownership
+- understand the core practices and the reasoning behind them
+- evaluate whether those practices fit its environment
+- adopt the model with a shared vocabulary and a common baseline
+- modify it later from an informed position rather than from first impressions
+
+The repository is documentation-first. It is not a software product, sample implementation, or
+formal framework.
 
 ## Repository State
 
-This repository contains the authoritative documentation for the Golazo methodology. This
-documentation is used by multiple teams across Microsoft.
+This repository is the canonical source for the published Golazo documentation. It is intended to be
+read both in GitHub and through the generated site.
+
+The documents describe a specific way of working, but they should not be read as universal truth.
+Some recommendations will fit certain teams better than others. Where the guidance is prescriptive,
+that is usually because the process depends on internal consistency.
 
 ## Documentation Generation
 
-This repository uses mkdocs to generate static documentation websites from the markdown files.
+The site is generated from the Markdown content in this repository by using `mkdocs`.
 
 ## Inspiration
 
-Golazo builds on many great industry ideas including these specific books:
+Golazo draws from several well-established ideas in software delivery and product development,
+including the following books:
 
 - "Implementing Lean Software Development: From Concept to Cash" by Mary and Tom Poppendieck
 - "The Principles of Product Development Flow: Second Generation Lean Product Development" by Donald
@@ -37,6 +46,9 @@ Golazo builds on many great industry ideas including these specific books:
 - "Kanban: Successful Evolutionary Change for Your Technology Business" by David J. Anderson
 - "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically
   Successful Businesses" by Eric Ries
+
+Golazo is not a direct restatement of any one of these sources. It is a practical application of
+these ideas shaped for small engineering teams.
 
 ## Contributing
 
@@ -49,4 +61,4 @@ Microsoft trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion
 or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those
-third-party's policies.
+third party's policies.

@@ -2,42 +2,45 @@
 
 ## Design Doc Template
 
+Use this template as a starting point. The goal is to capture enough information to align the team,
+not to produce a polished specification.
+
 ```
 # Title
 
 ## Elevator Pitch
-(What value, for whom, why now)
+(What value is being delivered, for whom, and why now?)
 TODO
 
 ## Definition of Done
-(Bulleted list describing the exit criteria and desired end state. Should be clear how success is determined and measured)
+(List the conditions that must be true before the work can be considered complete.)
 - TODO
 
 ## Customer / Consumer
-(Who will be consuming this work? Who will validate that it is correct?)
+(Who is affected by the work, and who will validate it?)
 - TODO
 
 ## Dependencies
-(Key/major people or technology)
+(Important people, systems, services, or external conditions.)
 - TODO
 
 ## Assumptions / Out of Scope
-(Assumptions when planning the ticket and/or related work that is not in scope for this ticket)
+(Assumptions being made and adjacent work that is intentionally excluded.)
 - TODO
 
 ## Design and Testing Approach
-(Free text/diagram/picture/etc that clearly shows your approach and considerations)
+(Describe the intended approach clearly enough that peers can review it.)
 - TODO
 
 ## Task List
-(Bulleted list of engineering work, documentation, monitors, TSGs, etc. Engineering will be complete when the list is finished.)
+(List the implementation, test, monitoring, documentation, and rollout work.)
 - [ ] Implementation
 - [ ] Tests
 - [ ] Monitoring / Metrics
 - [ ] Documentation
 
 ## Estimated Completion
-(You have 95% confidence that teh work will be completed by this date barring any enormous disaster.)
+(A high-confidence date, not a best-case guess.)
 - YYYY-MM-DD
 
 ## Signoffs
@@ -45,101 +48,92 @@ TODO
 - Reviewer 2: (Name / Date)
 
 ## Implementation Notes
-(Optional place to include key learnings, decisions, discoveries, data sources, contact information, etc)
+(Optional notes about discoveries, follow-up work, or references.)
 TODO
 ```
 
 ## Ticket Sizing Checklist
 
-Use before pulling a ticket from Ready or when splitting.
+Use this checklist before pulling a ticket from Ready or when deciding whether to split it.
 
-- Delivers standalone, demonstrable value (stakeholder can say ✅ / ❌).
-- Fits within SLA (less than 2 weeks, ideally a few days).
-- Acceptance criteria are concrete and testable.
-- Quality signals (tests, monitoring, docs) identified.
-- Design complexity understood or a spike precedes it.
-- Dependencies are known and minimal and external waiting is minimized.
-- Can be shepherded by a single person (pairing allowed) without being blocked on others.
+- The ticket delivers a standalone outcome that someone can validate.
+- The scope fits within the team SLA.
+- Acceptance criteria are specific enough to test.
+- Required quality work such as tests, monitoring, and documentation is understood.
+- The design complexity is known well enough, or a spike exists to reduce uncertainty.
+- Dependencies are limited enough that the ticket is not mostly waiting.
+- One shepherd can keep the ticket moving even if the implementation is paired.
 
 ---
 
 ## Example Design Doc (Filled)
 
-Below is a realistic example using the template for a small, high‑value improvement. It demonstrates
-lean structure, explicit quality signals, and alignment with Golazo principles (deliver quickly,
-build quality in, create knowledge, optimize the whole).
+This example is intentionally concise. It shows the level of detail needed for a small but real
+engineering improvement without turning the document into an essay.
 
 ```
 # Title
-Server‑Side Read Cache for Product Catalog Endpoints
+Server-Side Read Cache for Product Catalog Endpoints
 
 ## Elevator Pitch
-Frequent unauthenticated requests for the product catalog (top sellers, categories, daily deals) account for ~42% of API traffic and create avoidable database load and p95 latency (~420ms). Introducing a lightweight server‑side cache using Azure Cache for Redis in front of .NET 8 minimal API endpoints will cut average response times, reduce Azure SQL read pressure, and improve user perceived performance. This is valuable now because traffic is seasonally spiking and latency‑sensitive features (personalized deals) are preparing to launch.
+Unauthenticated catalog requests currently account for about 42% of API traffic and are creating unnecessary database load. Recent telemetry shows p95 latency between 390 ms and 450 ms across the highest-volume read endpoints. This change introduces a lightweight server-side cache in front of those endpoints to reduce read pressure and improve response time before the next seasonal traffic increase.
 
 ## Definition of Done
-- Cache layer in front of existing read endpoints: /catalog/top, /catalog/categories, /catalog/deals
-- Cache TTLs tuned: top (300s), categories (3600s), deals (120s)
-- Cache hit ratio >= 70% after first warm period (24h) with monitoring dashboard
-- Feature can be toggled off/on via config flag without redeploy
+- A cache layer exists for `/catalog/top`, `/catalog/categories`, and `/catalog/deals`
+- Initial TTLs are set to 300s, 3600s, and 120s respectively
+- Cache hit ratio is at least 70% after 24 hours of steady production traffic
+- The cache can be disabled through configuration without redeployment
 
 ## Customer / Consumer
-- External users (faster perceived load times)
-- Internal stakeholders: Product Owner validates latency and experience
+- External users consuming catalog endpoints
+- Product owner validating latency and overall user experience
 
 ## Dependencies
-- Azure Cache for Redis (existing Enterprise cluster capacity confirmed with SRE: <5% projected memory increase)
-- Application Insights / Azure Monitor (SDK already integrated and adding custom metrics plus Kusto queries)
-- Azure API Management (exposure layer and the feature flag is passed via configuration)
+- Existing Azure Cache for Redis cluster with confirmed spare capacity
+- Application Insights and Azure Monitor for telemetry and alerting
+- API Management configuration path for rollout and feature control
 
 ## Assumptions / Out of Scope
-- Write‑path optimizations (separate ticket if needed)
-- No per‑user personalization in cache entries (future extension)
-- Staleness within the TTL is acceptable and business rules do not require real‑time updates
-- Multi‑region active/active routing handled by traffic manager (cache consistency not cross‑region for now)
+- Write-path optimization is not included
+- Per-user personalization is not part of the cache key design
+- A small amount of staleness within the TTL window is acceptable
+- Cross-region cache consistency is not required for the first version
 
 ## Design and Testing Approach
-High‑level flow:
+Request flow:
 
-Client -> API Handler -> CacheLookup(key) ->
-	Hit: return cached payload
-	Miss: acquire single‑flight lock -> DB queries -> hydrate response -> store -> release -> return
+Client -> API handler -> cache lookup -> hit returns cached payload
+Client -> API handler -> cache lookup -> miss reads from database, stores result, returns payload
 
-Key Points:
-- Keys namespaced (catalog:top, catalog:categories, catalog:deals) to avoid collisions.
-- Single‑flight (in‑process mutex + short lock TTL fallback) prevents thundering herd (using a memory cache + RedLock fallback only if needed for distributed coordination later).
-- Serialization: JSON stored directly and payload size averages <25KB (validated from sample Query + Azure Application Insights sampling).
-- Observability: OpenTelemetry + Application Insights exporter wrap cache operations (dependency telemetry + custom metrics).
-- Warm strategy: the first 10 requests naturally populate and there is no pre‑warm complexity.
-- Failure mode: if Azure Cache unavailable, system logs warning, emits dependency failure metric, and transparently falls back to Azure SQL (circuit breaker after 5 consecutive connection failures to reduce repeated attempts).
-- Load test with Azure Load Testing (1k RPS mixed distribution) verifies latency improvements and observes hit ratio after initial warm.
-
-Risk Mitigations:
-- Stampede -> Single‑flight lock & short TTL choices
-- Memory growth -> Sample average size * expected key count fits comfortably (<50MB) in Azure Cache for Redis
-- Silent degradation -> Alerts for miss surge & Azure Cache dependency failures (Application Insights Kusto query + alert rule)
-- Regional outage -> Falls back to DB + feature flag toggle via Azure App Configuration
+Notes:
+- Cache keys are namespaced by endpoint
+- A single-flight guard is used to reduce duplicate load on misses
+- Payloads are stored as JSON without extra transformation layers
+- Cache operations emit dependency telemetry plus hit and miss counters
+- If Redis is unavailable, the API falls back to the database and records the failure
+- Load testing is used to validate latency improvement and warm-cache behavior
 
 ## Task List
-- [ ] Baseline metrics capture (current p95, QPS, payload sizes)
-- [ ] Define cache key & TTL constants
--- [ ] Implement cache client wrapper + health check (Azure Cache for Redis .NET client)
-- [ ] Add single‑flight guard
-- [ ] Integrate endpoints (top, categories, deals)
-- [ ] Unit tests (key generation, TTL logic, fallback behavior)
-- [ ] Integration tests (cold then warm sequence, forced Redis failure)
-- [ ] Load test & record results (attach summary)
--- [ ] Observability: custom metrics (hit/miss, evictions), dependency telemetry, dashboard workbook, Azure Monitor alert rule
+- [ ] Capture baseline latency and traffic metrics
+- [ ] Define cache keys and TTL constants
+- [ ] Implement cache wrapper and health check
+- [ ] Add single-flight guard for misses
+- [ ] Integrate the three target endpoints
+- [ ] Add unit tests for key generation, TTL logic, and fallback behavior
+- [ ] Add integration tests for cold cache, warm cache, and Redis failure
+- [ ] Run load test and attach summary
+- [ ] Add dashboard, hit or miss metrics, and alert rules
 
 ## Estimated Completion
-2025-11-14
+- 2025-11-14
 
 ## Signoffs
 - Reviewer 1: TBD (Date)
 - Reviewer 2: TBD (Date)
 
 ## Implementation Notes
-- Baseline p95 (2025-11-03, Kusto query in Application Insights) collected: top=420ms, categories=390ms, deals=450ms.
-- Initial Azure Load Testing prototype showed a 68% hit ratio with default TTLs. Tuning the deals TTL from 60s to 120s is projected to exceed 70%.
-- Consider future enhancement: background refresh (async refresh just before expiry) using Azure Functions timer trigger.
-- Azure Cache for Redis connection pool sized (max 50). Estimated peak concurrent cache ops ~20.
+- Baseline p95 on 2025-11-03 was 420 ms for `top`, 390 ms for `categories`, and 450 ms for `deals`
+- An early prototype reached 68% cache hit ratio before TTL tuning
+- Background refresh is a possible follow-up if miss spikes remain high
+- Current connection pool sizing appears sufficient for projected peak load
 ```

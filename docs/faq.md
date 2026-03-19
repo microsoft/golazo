@@ -2,74 +2,80 @@
 
 ## Team Operation
 
-**How big should a team be?** 6–8 engineers is a sweet spot: enough diversity for collaboration,
-small enough for shared context. Larger groups can split boards and sync leads periodically.
+**How big should a team be?** Golazo tends to work best with roughly 6 to 8 engineers. That is
+usually enough diversity for pairing and review without losing shared context. Larger groups can use
+multiple boards with explicit coordination between leads or coaches.
 
-**Can a single engineer use Golazo practices?** Yes! It's a great way to visualize work, draft mini
-design docs, enforce personal WIP, and request external peer reviews for key changes.
+**Can a single engineer use Golazo practices?** Yes, at least in part. A single engineer can still
+use small tickets, lightweight design notes, personal WIP limits, and explicit review requests. Some
+of the benefits are smaller without a team, but the discipline can still be useful.
 
-**What if a ticket stalls?** Raise in standup immediately. If aging continues, Value Stream Map it
-to identify hidden dependencies, over‑sizing, or unclear definition of done.
+**What if a ticket stalls?** Raise it in standup immediately. If it continues to age, inspect it as
+an outlier. Common causes include hidden dependencies, oversized scope, unclear validation, and
+review delays.
 
 ## Adoption and Transition
 
-**How long is the trial?** A focused 90‑day period (see [Adoption Guide](adoption-guide.md)).
-Shorter trials rarely expose the compounding benefits.
+**How long is the trial?** Usually about 90 days. That is long enough for the team to experience the
+process under more than one planning cycle and to see whether early costs are offset by lower churn.
 
-**Do we customize Golazo early?** Resist customization unless there is a real blocker. Give it a
-full try first and only change with explicit rationale and rollback criteria. Consider discussing
-the change with someone more experienced with Golazo. Teams changing the core process is one of the
-biggest reasons for process failure.
+**Do we customize Golazo early?** Usually no. Change it only when there is a real blocker and the
+reason is explicit. Early customization often removes the parts that make the system internally
+coherent.
 
-**What if leadership pressures for more simultaneous work?** Show impact projections: increasing WIP
-tends to increase cycle time. Discuss relative priority of projects. Show metrics to demonstrate
-high ticket throughput, no bug backlog, and higher team morale.
+**What if leadership pressures for more simultaneous work?** Show the tradeoff directly. Higher WIP
+usually means longer cycle time and more partial work. If the business needs more work in flight,
+the team should make that cost visible rather than quietly absorbing it.
 
 ## Roles and Ownership
 
-**What happens if someone picks a ticket beyond their current expertise?** That's encouraged! Pair
-early. Slower single ticket now accelerates future velocity via knowledge spread.
+**What happens if someone picks a ticket beyond their current expertise?** That is usually good for
+the team, provided they pair early enough and ask for review before the work gets too far ahead.
+Short-term slowdown can be a rational trade for broader long-term capability.
 
-**How do senior engineers show growth?** Through architectural stewardship (design reviews), backlog
-shaping, mentoring, quality bar leadership, and cross‑team influence recorded in design docs and
-retros.
+**How do senior engineers show growth?** Through shaping work, reviewing design, mentoring,
+improving system quality, and influencing how the team operates across boundaries. Golazo does not
+remove senior scope. It changes the artifacts through which that scope becomes visible.
 
 ## Quality and Design Docs
 
-**Aren't design docs overhead for tiny changes?** Keep them proportional. Even a 5‑bullet doc for a
-small change catches missing tests or existing abstractions to reuse. Five or ten minutes spent
-writing a design doc while the context is fresh can pay enormous dividends in the future.
+**Aren't design docs overhead for tiny changes?** They should be proportional. For genuinely small
+changes, a few bullets may be enough. The point is to externalize the key assumptions, not to force
+full prose.
 
-**What if reviewers disagree?** Capture the options and trade‑offs succinctly in the doc; if
-consensus still fails, timebox a focused huddle, then document the decision and reasoning.
+**What if reviewers disagree?** Capture the options and tradeoffs in the design doc, then resolve
+the decision in a focused follow-up conversation if needed. After that, update the document so the
+outcome is visible to later readers.
 
-**Why require two design AND two PR reviews?** Redundancy spreads knowledge, reduces blind spots,
-and maintains consistency; small tickets keep review load reasonable.
+**Why require two design and two PR reviews?** The redundancy helps spread knowledge and catch blind
+spots. The requirement is easier to sustain when tickets stay small.
 
 ## Metrics and Success
 
-**How do we know it’s working?** Improvements in cycle time, reduced interrupt ratio, lower incident
-frequency, broader Shepherd distribution, and positive pulse survey trends. Mature Golazo teams will
-also fight hard to keep the Golazo process because they've lived the benefits both for productivity
-and morale.
+**How do we know it’s working?** Look for directionally healthier signals: lower cycle time, fewer
+interrupts overwhelming planned work, fewer incidents, broader ownership across workstreams, and a
+team that is less dependent on private context.
 
-**What if metrics improve but morale drops?** Re‑examine WIP pressure, review load, and meeting
-hygiene. Principle application may have become dogmatic; engage team in a Starfish Retro.
+**What if metrics improve but morale drops?** That suggests the team may be optimizing the visible
+numbers while ignoring workload, review burden, or meeting quality. In that case, inspect the system
+again rather than assuming the process is working simply because one metric improved.
 
-**Is velocity story point tracking needed?** No. Cycle time and throughput and quality metrics
-provide richer insight; story points often devolve into negotiation games.
+**Is velocity or story point tracking required?** No. Throughput, cycle time, review delay, and
+quality signals usually provide more useful insight.
 
 ## Miscellaneous
 
-**Can we use sprints?** You can, but Golazo does not require timeboxed iterations; continuous flow
-and periodic planning typically yields smoother delivery.
+**Can we use sprints?** Yes, but Golazo does not depend on timeboxed delivery. Continuous flow with
+periodic planning is usually the simpler default.
 
-**How do we manage external stakeholder asks?** Capture as backlog items, clarify acceptance
-criteria, then WSJF rank. Avoid side channels creating invisible work.
+**How do we manage external stakeholder asks?** Put them on the board, define acceptance criteria,
+and prioritize them with the rest of the work. Side channels create invisible work and make the
+system harder to trust.
 
 ## Still Have Questions?
 
-Open a GitHub issue or discussion item including context and what you've already tried.
+Open a GitHub issue or discussion with enough context to explain what you are trying to do and where
+the current guidance is unclear.
 
 ## Navigation
 
