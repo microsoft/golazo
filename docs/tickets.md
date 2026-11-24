@@ -2,31 +2,24 @@
 
 ## Summary
 
-In Golazo, a ticket is the smallest unit of work that can produce a meaningful outcome and move
-through the full system, from shaping to validation, within the team service-level expectation. On
-many teams that means less than two weeks, and often much less.
-
-The size constraint matters because most of the other practices depend on it. Reviews are easier,
-planning is more adaptable, and customer feedback is cheaper when the unit of work is small.
+A ticket covers one outcome the team can plan, build, release, and validate within its agreed time
+limit (SLA). For many teams that's less than two weeks. Small tickets are easier to review and let
+you get feedback before committing to the rest of a feature.
 
 ## Ticket Definition
 
-A ticket should represent one coherent change that can be reviewed, released, and validated without
-depending on a large unresolved bundle of adjacent work. It should also include acceptance criteria
-and a definition of done that covers quality expectations such as tests, monitoring, and relevant
-documentation.
-
-If the work cannot be described that way, it is probably not a ticket yet. It may be a larger body
-of work that still needs to be split.
+Can you review, release, and validate this change on its own? If it depends on several other
+unfinished changes, look for a smaller piece to deliver first. Write acceptance criteria and note
+what tests, monitoring, and documentation the ticket needs before it's done.
 
 ## Core Fields
 
 | Field               | Purpose                                             | Notes                                           |
 | ------------------- | --------------------------------------------------- | ----------------------------------------------- |
 | Title               | States the outcome in concrete terms                | Avoid vague verbs and generic cleanup language  |
-| Shepherd            | Owns the flow of the ticket through the system      | Does not need to do all implementation          |
+| Shepherd            | Keeps the ticket moving                             | Can share the implementation with others        |
 | Acceptance Criteria | Defines what success looks like                     | Should exist before major implementation starts |
-| Cost Estimate       | Gives a relative or focused-effort size signal      | Useful for spotting outliers, not for control   |
+| Cost Estimate       | Estimates effort, using a relative size or time     | Helps spot tickets that may need splitting      |
 | Start / End Dates   | Records actual timing for review and retrospective  | Helps with cycle-time analysis                  |
 | Tags / Color        | Associates the ticket with a workstream or category | Keep this simple enough to stay readable        |
 
@@ -36,14 +29,11 @@ of work that still needs to be split.
 
 ## Colors
 
-Many teams benefit from assigning a small set of colors to major workstreams. The value is mostly
-visual.
+Use a few colors to make the major workstreams easy to spot.
 
-- It helps the team see whether work is concentrated in one area or spread more evenly.
-- It makes it easier to notice when an important workstream has stopped moving.
-- It gives retrospectives another lightweight signal about how time was actually spent.
-
-The system should stay simple. Too many categories reduce the benefit.
+- See whether most active tickets belong to the same workstream.
+- Notice when no tickets in an important workstream are moving.
+- Use the colors in retrospectives to see where the team spent its time.
 
 ## Ticket Readiness
 
@@ -58,9 +48,8 @@ If one of these is missing, split the ticket or create a spike first.
 
 ## Spike Tickets
 
-Use a spike when uncertainty is high enough that normal acceptance criteria would be mostly
-guesswork. That might mean an unfamiliar API, an unresolved technical constraint, or an unclear
-feasibility question.
+Use a spike when you need an answer before you can write acceptance criteria. For example, test
+whether an unfamiliar API can handle the operation the ticket requires.
 
 Characteristics of a good spike:
 
@@ -69,8 +58,7 @@ Characteristics of a good spike:
 - it is time-boxed, usually to a few days or less
 - it ends with a decision or a clearer next step
 
-The goal is not to hide implementation work inside research. A spike should reduce uncertainty. If
-it starts becoming a delivery ticket, split it.
+Keep the spike focused on finding an answer. Open a separate ticket for implementation.
 
 ## Anti‑Patterns
 
@@ -88,22 +76,20 @@ it starts becoming a delivery ticket, split it.
 
 ## Ownership Model
 
-Golazo is built around team ownership rather than fixed personal territory. Any engineer can pull a
-ticket from Ready.
+Any engineer can pull a ticket from Ready, including work outside their usual area.
 
 The shepherd is responsible for keeping the ticket moving and making sure critical steps happen:
 
 - the design doc exists when needed and receives signoff
 - reviews happen in time to keep the ticket flowing
 - the definition of done is actually met
-- customer validation closes the loop
+- the customer or stakeholder validates the change
 
-That does not imply solo execution. Pairing and short swarms are expected when they improve flow or
-reduce risk.
+The shepherd can pair or ask the team to work on the ticket together when it's risky or stuck.
 
 ## Growth and Equity
 
-Short, well-formed tickets can support more equitable access to meaningful work.
+Small tickets give more people a chance to work in areas they haven't touched before.
 
 - Open ticket selection reduces gatekeeping
 - Junior engineers can contribute in new areas with clearer support structures
@@ -111,8 +97,8 @@ Short, well-formed tickets can support more equitable access to meaningful work.
 - Career conversations can point to concrete artifacts such as authored design docs, cross-area
   pairing, and backlog refinement
 
-This is one of the more important cultural side effects of the model. It is also one of the easier
-ones to lose if the team quietly reintroduces strong ownership silos.
+If unfamiliar tickets always go back to the same expert, check whether other engineers have the
+context and support to pick them up.
 
 ## Navigation
 

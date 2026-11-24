@@ -2,22 +2,14 @@
 
 ## Summary
 
-The board is the shared model of current work. Whether it is physical or digital matters less than
-whether the team actually trusts it. If the board is incomplete or out of date, the rest of the
-process becomes harder to reason about.
-
-Golazo uses the board to show state, priority, and collaboration needs in one place. A useful board
-should make it possible for an observer to answer a few basic questions quickly: what matters most
-right now, what is blocked, and where extra capacity would help.
+Keep the board current so anyone can see what matters now, what's blocked, and where to help. A wall
+of sticky notes works as well as a digital board if the whole team can see it and keep it up to
+date.
 
 ## Board Concept
 
-Tickets move from left to right through a small number of columns. Each column should represent a
-meaningful change in state, usually in understanding, implementation, or validation. Horizontal
-rails separate work by urgency or intent so that exceptional work does not disappear inside the
-normal flow.
-
-The board is not meant to capture every detail. It is meant to make the important details visible.
+Tickets move from left to right as the team designs, builds, releases, and validates a change.
+Horizontal rails keep urgent and unexpected work visible alongside planned work.
 
 ## Board Diagram
 
@@ -25,25 +17,23 @@ The board is not meant to capture every detail. It is meant to make the importan
 
 ## Columns
 
-The baseline column model below is intentionally simple. Teams may adjust names, but changes should
-be made carefully because every extra state adds coordination cost.
+Start with these columns. Rename them if it helps your team. If you add a column, agree on when a
+ticket enters and leaves it.
 
-1. Backlog: candidate work with potential value, not yet committed and not necessarily fully shaped.
+1. Backlog: work the team might do but hasn't committed to yet. Some items still need details.
 2. Ready: the highest-priority work that is clear enough to start. The coach usually replenishes
    this column from the backlog.
 3. Analyze: the shepherd prepares or updates the design doc, clarifies assumptions, and obtains peer
    signoff.
 4. Engineer: implementation, tests, and instrumentation are completed and reviewed.
 5. Release: the change is merged and deployed, with rollout and monitoring handled as needed.
-6. Customer Validation: the stakeholder or user confirms that the intended value was actually
-   delivered.
-7. Done: the work is complete by the team definition of done and any relevant learning has been
-   captured.
+6. Customer Validation: the stakeholder or user checks that the change solves the intended problem.
+7. Done: the ticket meets the team's definition of done, and the team has recorded anything worth
+   keeping.
 
 ### Column Exit Criteria
 
-Each column needs exit criteria. Without that, movement on the board becomes subjective and the data
-becomes noisy.
+Agree on what must be true before a ticket can leave each column.
 
 - Backlog
     - the team agrees the item is worth keeping visible
@@ -56,7 +46,7 @@ becomes noisy.
     - at least two peers have signed off on the current approach
 - Engineer
     - required tests pass
-    - the code review has the required approvals
+    - the pull request has at least two approvals
 - Release
     - the change has passed the relevant acceptance checks
     - it has been integrated and released through the normal path
@@ -66,8 +56,8 @@ becomes noisy.
 - Done
     - the ticket is actually closed and any important learning is available for retrospective review
 
-Teams should expect some local variation, especially around release and validation, but the core
-idea should remain stable: movement requires evidence, not optimism.
+Your release and validation steps may look different. Whatever checks you agree on, finish them
+before moving the ticket.
 
 ## Rails
 
@@ -82,12 +72,12 @@ Rails, also called swimlanes, separate work by urgency or type.
 Optional rails may also be useful:
 
 - Time Off: used to make capacity changes explicit.
-- Tracking: used for work mostly waiting on external parties. This can be useful, but it can also
-  hide dependency debt if overused.
+- Tracking: work that's mostly waiting on someone outside the team. If too many tickets end up here,
+  it's easy to lose track of what's blocked.
 - Lead or Manager: used when certain role-specific tasks would otherwise distort normal WIP and flow
   expectations.
 
-The complexity should not be underestimated. Extra rails are easy to add and hard to keep useful.
+Before adding a rail, ask who will use it and what it will help them see.
 
 ## Flow Example
 
@@ -97,17 +87,14 @@ The complexity should not be underestimated. Extra rails are easy to add and har
 4. The change is released and monitored.
 5. The customer or stakeholder validates the result, and the ticket moves to Done.
 
-This is the happy path. Real work is often messier. The point of the model is not to deny that, but
-to make deviations visible.
+If a ticket stalls or moves backward, leave that visible on the board.
 
 ## Backward Movement Policy
 
 Tickets should rarely move backward.
 
-When backward movement does happen, the team should record it and review the cause in the next
-retrospective. Moving from Release back to Engineer, for example, is usually a sign that something
-earlier in the process did not hold. That is useful information. It should be treated as an input to
-process improvement, not as a blame event.
+Record backward moves and discuss them at the next retrospective. If a ticket moved from Release
+back to Engineer, ask what the team could have caught earlier.
 
 ## Navigation
 

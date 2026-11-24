@@ -2,41 +2,35 @@
 
 ## Summary
 
-Golazo is easiest to evaluate through a deliberate trial rather than through partial adoption. Teams
-that keep the visible parts while skipping the harder coordination practices usually conclude that
-the method provides little value. In most cases, that is an observation about the partial adoption,
-not about the full system.
-
-A 90-day trial is usually long enough to give an idea about the strengths and explore the friction.
+Start with a trial of about 90 days. Use the board and standup alongside design reviews,
+work-in-progress limits, and customer validation. When you assess the trial, note which practices
+the team used and where work still got stuck.
 
 ## Team Size and Suitability
 
-Golazo tends to fit best for teams with roughly 6 to 8 engineers, though smaller teams can often use
-it effectively and larger teams can split into multiple boards with explicit coordination.
+For a first trial, start with 6 to 8 engineers if you can. Golazo generally works for teams of 4
+to 10. Larger teams can use multiple boards and agree on how to handle work that crosses them.
 
-Research-heavy or platform-heavy teams may need to adapt how they define tickets, but they should
-still preserve short validation cycles where possible. If the work routinely takes too long to
-validate, the rest of the process gets weaker.
+Teams that do a lot of research or platform work may need to define tickets differently. Look for an
+intermediate result someone can check instead of waiting until the whole effort is finished.
 
 ## Prerequisites
 
-| Area                 | Requirement                                                       | Notes                              |
-| -------------------- | ----------------------------------------------------------------- | ---------------------------------- |
-| Leadership Support   | Agreement not to override core practices mid-trial                | Prevents early erosion             |
-| Coach                | Access to an experienced coach for at least the first 4 weeks     | Internal or borrowed is fine       |
-| Tooling              | Visual board, design doc space, and shared communication channels | Keep tooling lightweight           |
-| Psychological Safety | Retrospectives must be safe enough for honest discussion          | Otherwise the feedback loop breaks |
+| Area                 | Requirement                                                            | Notes                             |
+| -------------------- | ---------------------------------------------------------------------- | --------------------------------- |
+| Leadership Support   | Agreement to keep the core practices in place during the trial         | Agree on this before starting     |
+| Coach                | Access to an experienced coach for at least the first 4 weeks          | A coach from another team is fine |
+| Tooling              | Visual board, design doc space, and shared communication channels      | Keep tooling lightweight          |
+| Psychological Safety | People can say what went wrong in retrospectives without fear of blame | The team needs candid feedback    |
 
 ## Handling Downsides and Concerns
 
-| Concern                                | Response                                                                                                            |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| "Too much ceremony"                    | Measure the actual time spent. The overhead should be small relative to the rework it prevents.                     |
-| "Hard boundary with other teams"       | Use the Ready gate and early design sharing to coordinate dependencies rather than relying on informal handoffs.    |
-| Career progression for senior IC scope | Senior engineers still lead through shaping, review, architectural guidance, and mentoring.                         |
-| "Design docs slow us down"             | They add a small upfront cost, but many teams find the total delivery time falls because late-stage churn is lower. |
-
-These concerns are legitimate. They should be tested against actual team experience, not dismissed.
+| Concern                                | Response                                                                                                                  |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| "Too much ceremony"                    | Track time spent on the new practices and check whether you're spending less time on rework.                              |
+| "Hard boundary with other teams"       | Check dependencies before a ticket goes into Ready, and share the design early with the teams involved.                   |
+| Career progression for senior IC scope | Senior engineers still lead by shaping work, reviewing designs, guiding architecture, and mentoring.                      |
+| "Design docs slow us down"             | They take time up front. During the trial, check whether reviews reopen fewer design decisions and tickets finish sooner. |
 
 ## Common Anti‑Patterns
 
