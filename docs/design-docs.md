@@ -2,31 +2,22 @@
 
 ## Summary
 
-Golazo uses short design documents to align on approach before implementation. The goal is not to
-produce formal specification documents. The goal is to reduce avoidable rework, surface risks while
-changes are still cheap, and leave behind enough context that future readers can understand why a
-decision was made.
-
-Design docs work best when they are short, specific, and current.
+Write down the approach before coding so peers can spot risks while it's still easy to change. Leave
+enough detail for someone to understand why you made the decision later.
 
 ## Purpose and Benefits
 
-- Shared Context Before Code: reviewers can react to the intended approach before implementation is
-  expensive to change.
-- Higher Quality Implementation: edge cases, dependencies, and testing concerns are more likely to
-  be noticed early.
-- Faster Reviews: pull requests can focus more on execution details and less on first-principles
-  design debate.
-- Knowledge Base: future maintainers can reconstruct reasoning without relying on memory.
-- Onboarding Support: new contributors can read earlier docs to understand local patterns.
-- Predictability: early sizing and an estimated completion date can expose mismatched assumptions.
-
-The benefit is usually cumulative rather than dramatic on any single ticket.
+- Give reviewers a chance to question the approach before you build it.
+- Catch missing tests, tricky cases, and dependencies while you can still change the plan.
+- Make it easier for pull request reviewers to focus on the code.
+- Give future maintainers a record of what you decided and why.
+- Show new contributors how the team has solved similar problems.
+- Use the estimate and expected completion date to spot differences in what people think the ticket
+  includes.
 
 ## Minimal Template
 
-Keep the template lean. Optimize for clarity rather than polish. A copyable version lives in
-[Templates & Examples](templates.md).
+Copy the template from [Templates & Examples](templates.md).
 
 1. Elevator Pitch
 2. Definition of Done
@@ -38,8 +29,7 @@ Keep the template lean. Optimize for clarity rather than polish. A copyable vers
 8. Signoffs
 9. Implementation Notes
 
-That is enough structure for most tickets. If the work is genuinely small, each section may only
-need a few bullets.
+For a small ticket, a few bullets per section may be enough.
 
 ## Signoff Process
 
@@ -48,15 +38,15 @@ need a few bullets.
 - Most clarifications should happen asynchronously, with the document updated as decisions change.
 - Implementation normally starts after two signoffs.
 
-There are exceptions for urgent swarm work, but those should remain exceptions. If the team skips
-design review frequently, it should expect more swarms and pull request churn later.
+Urgent Swarm work can be an exception. If the team often skips design review, look for decisions
+that keep getting reopened in pull requests or problems that end up back in Swarm.
 
 ## During Implementation
 
 - Keep the document current as important assumptions change.
 - Add discoveries, data sources, and implementation notes that are likely to matter later.
-- If the design changes materially, pause and re-review rather than letting the pull request become
-  the place where the new design is first introduced.
+- If the approach changes in a way that affects earlier decisions, pause and ask peers to review the
+  design again before bringing it to the pull request.
 - Record follow-up work explicitly instead of silently growing the current scope.
 
 ## Common Pitfalls and Avoidance

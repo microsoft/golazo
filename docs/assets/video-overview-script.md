@@ -1,132 +1,100 @@
 # Golazo Overview – Full Narration Script (≈10 Minutes)
 
+_This script has been edited for reading. It isn't a verbatim transcript of the video._
+
 ## Hook & Pain Framing
 
-We’ve all lived the slow review queue, the chat interruptions, the multitasking drag, and the
-fragile single-owner pattern. Golazo focuses on flow, quality from the start, and shared
-understanding early.
+Picture a pull request that's been waiting all week. A reviewer finally opens it and asks whether
+the team should take a different approach. Now the author has to redo work they thought was done.
 
-In the next few minutes I’ll show you the few lightweight habits that change the feel of delivery
-without adding process bloat.
-
-Golazo gives you less friction, faster flow, happier customers, and happier teams.
+I'll show you how Golazo brings that conversation forward and helps teammates see where they can
+help finish work.
 
 ## What Is Golazo
 
-Golazo is a lightweight engineering methodology for small to mid-sized teams—think four to ten
-engineers—designed to keep batch sizes small, make status instantly visible, and define 'done' by
-observed value.
+Golazo is a way for small and midsize engineering teams to organize their work. Think four to ten
+engineers. Work in small pieces, make it easy to see how each ticket is doing, and check that the
+change helped before calling it done.
 
-Four key artifacts support the process:
+Here's what the team uses:
 
-1. Small, value-focused tickets.
-2. Targeted, collaborative design docs with two signoffs.
-3. A visual task board with priority rails and ticket stage columns.
-4. Regular lightweight team touchpoints (like standups, retros, and joint planning) to tune flow,
-   eliminate waste, and adapt priorities together.
+1. Small tickets with an outcome someone can check.
+2. Short design docs that two peers sign off on.
+3. A board that shows where each ticket is and which work takes priority.
+4. Standups, retrospectives, and planning to unblock work and decide what to do next.
 
-Think of the lifecycle as: clarify together early → build small → streamline reviews → share
-learnings.
+Agree on the approach, build a small change, review it, and check that it worked.
 
 ## Mapping Pains to Practices
 
-Each practice is there for a reason, not for ceremony.
-
-- Do you see a lot of rework happening late in reviews? We shift architectural alignment earlier
-  with design docs.
-- Are feedback loops too slow? We slice value small and visualize flow so blockers surface quickly.
-- Are there knowledge silos on the team? With Golazo, anyone can pick up any Ready ticket. Pairing
-  is encouraged. Reviews and design docs help spread and create fluid context.
-- Do team members suffer from multitasking overload? WIP limits cap active work so attention isn’t
-  spread too thin.
-- Does finished work circle around to come back as bug reports or rough on call shifts? The
-  validation stage demands that value be observed and confirmed before the ticket is closed.
-- Are your standup meetings status reports? Golazo standups focus on what has been learned and what
-  the team can do to help move the ticket to the next stage.
-
-So Golazo is targeted at reducing friction — it's not a new layer of meetings.
+- If reviewers keep asking for a different design, use the design doc to discuss it before coding.
+- If feedback comes late, deliver a smaller change and show on the board where it's waiting.
+- If only one person knows an area, someone else can pull a Ready ticket there, pair with them, and
+  read past design docs.
+- If everyone is juggling tickets, limit work in progress so they can finish one.
+- If a merged change still hasn't fixed the problem, customer validation gives the team a chance to
+  find that out before closing the ticket.
+- If standup is just a status report, ask what the team learned and what would move each ticket
+  forward.
 
 ## Design Docs (Core Mechanism)
 
-Design docs are deliberately focused. They’re scaffolding for alignment, not novels.
+Keep the design doc short. Explain the problem, the goal, the constraints, the approach, and the
+work it will take.
 
-The sections convey Context, Goal, Constraints, Design, and Task List. That’s enough to catch
-mismatched assumptions early. Two signoffs ensure ideas aren’t isolated and invite fast asynchronous
-clarification, so by the time you start coding you’re not guessing. And when the ticket is done,
-that doc persists which creates a searchable context library to reduce single‑expert risk and power
-AI tools.
-
-The result is that code reviews focus on implementation quality, not big-picture debates at the last
-minute.
+Ask two peers to sign off before you start. They can leave questions in the doc, where there's still
+time to change the plan. Keep the doc after the ticket is done so the next person can find out why
+you chose that approach.
 
 ## Task Board & Priority Rails
 
-The task board is our shared instrumentation panel. It's a window into team flow, focus, and
-emerging bottlenecks.
+Look at the task board to see what's waiting for a review, what's blocked, and what needs help.
 
-Columns trace the journey: Backlog ideas, Ready, Design, Engineering, Release, Validation, Done.
-Rails help dedicate funding and visually separate urgency: Swarm, Interrupt, Planned. Swarm is for
-urgent collaborative focus, Interrupt to allow changes in flight without consuming all the team's
-resources, Planned for normal flow. A quick glance tells you: Are we waiting for reviews? Is the
-Interrupt rail growing? Is a specific work item struggling? Are we running too fast and creating too
-many swarms? And because team members can see a variety of projects for them to select from the
-Ready column, knowledge spreads naturally. You’re not waiting for assignment which increases
-autonomy and shrinks knowledge bottlenecks.
+The columns show how far a ticket has come. An idea starts in Backlog. Once it's Ready, an engineer
+can pull it without waiting for someone to assign it. The ticket goes through design, engineering,
+release, and validation before it reaches Done.
+
+The rails show priority. Use Swarm for urgent work that needs the team's attention, Interrupt for
+unexpected work that can't wait for the usual queue, and Planned for work the team picked ahead of
+time.
 
 ## WIP Limits & Flow
 
-Work In Progress limits are the discipline that focuses effort where it adds the most team value.
-
-High WIP looks busy but finishes slowly. Low WIP looks calmer but finishes consistently with higher
-quality. By capping active items per engineer or team, we force unblock behavior: finish or free
-someone before pulling new work. This enables rapid swarm response when an incident hits—because
-people aren’t juggling five half-started tasks. Starting less equals finishing more!
+When you hit a work-in-progress limit, help finish a ticket before pulling another. If tickets are
+piling up in review, you might be able to review one. With fewer things in progress, it's also
+easier to help when an incident needs a Swarm.
 
 ## Small Tickets & Slicing
 
-Small tickets are the fuel of flow.
+Before pulling a ticket, ask: What will a user get from this? Can we build it in under two weeks?
+How will we check that it helped? Is anything blocking us from starting?
 
-Our guidelines when creating a ticket are clear user value, less than two weeks to implement,
-explicit validation plan, and nothing blocking the work. Instead of a giant feature implemented
-bottom-up, we slice by value. Each slice delivers something observable. This compresses feedback
-cycles and lowers integration risk. You make small course corrections early instead of bolting
-changes onto a large unstable branch.
+For a larger feature, find a piece someone can try on its own. Use that feedback to decide what to
+build next.
 
 ## Integrated Review & Knowledge Spread
 
-Because alignment happened earlier, code reviews narrow in scope.
-
-Now reviewers concentrate on correctness, clarity, and edge cases—not whether the approach should
-exist at all. Design docs provide enough context for anyone to participate in a code review and add
-their own unique value while also learning more about other areas of the code.
+Link the design doc in the pull request so reviewers can see what the team agreed on. They can focus
+on whether the code works and which cases it might miss. That context also helps someone review code
+outside their usual area.
 
 ## Customer Validation Stage
 
-Golazo treats observed value as the finish line, not just when code is merged into the main branch.
-
-Validation examples include: stakeholder signoff, the is feature actually used, metric improvement
-verified, internal dogfooding success, or pilot user feedback. If validation fails, the ticket moves
-backward so there is no hidden post-merge churn. The board tells the truth. This reframes success:
-we shipped impact, not just artifacts.
+Once the code is merged, check whether the change did what you intended. Ask a stakeholder to try
+it, check whether people are using it, or see if the metric you expected to change has moved.
+Feedback from a pilot or your own team's use of the feature can help too. If the check fails, move
+the ticket backward so the remaining work is visible.
 
 ## Team Morale
 
-Golazo lifts morale by pairing autonomy with safety and support. Engineers are empowered to pick up
-any ticket from any workstream in the Ready column and they can gain or share context through design
-documents and discussions. Tiny pairs and micro‑swarms emerge: a 15‑minute exploration of an edge
-case, an early shared look at a design choice, or a second set of eyes before code hardens. Each
-prevents late churn and transfers context. Public channels of discussion and review checkpoints turn
-quiet observers into helpers. If you see that the chat is silent it’s a prompt to lean in, not proof
-that everything is green. And if a ticket does slip, the conversation is systemic, not personal.
+Picking up an unfamiliar ticket is easier when you know who to ask for help. Spend 15 minutes
+looking at an edge case together, or ask someone to read a design choice before you code it. Use
+shared channels so anyone with an answer can join in. If nobody responds or a ticket slips, find out
+what support the team can offer.
 
 ## Closing & Call to Action
 
-All this comes together in a mindset shift: we succeed and fail together. A missed edge case isn’t
-one engineer’s lapse—it’s shared learning because many eyes were invited early. Every clarified
-assumption, simpler design suggestion, or surfaced risk accelerates our delivery. Reviews become a
-brief moment of collective ownership, eroding hero bottlenecks and expanding safe entry into any
-part of the codebase. We are walking forward together as a team.
+When the team misses an edge case, ask where you could have caught it: in design, in review, or when
+testing the release. Then decide together what to change next time.
 
-That's Golazo: Scoped work items with defined value, early alignment, distributed knowledge, and
-shared success. It's simple, but it works. Start your reading with the 'Why Golazo' doc for more
-context and keep reading for deeper details.
+Start with "Why Golazo" for more examples of the problems these practices are meant to solve.

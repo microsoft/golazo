@@ -2,18 +2,18 @@
 
 ## Design Doc Template
 
-Use this template as a starting point. The goal is to capture enough information to align the team,
-not to produce a polished specification.
+Use this template to show peers what you plan to do and what you still need to decide. For a small
+change, a few bullets per section may be enough.
 
 ```
 # Title
 
 ## Elevator Pitch
-(What value is being delivered, for whom, and why now?)
+(What are you changing, who will it help, and why now?)
 TODO
 
 ## Definition of Done
-(List the conditions that must be true before the work can be considered complete.)
+(What will you check before calling the ticket done?)
 - TODO
 
 ## Customer / Consumer
@@ -25,11 +25,11 @@ TODO
 - TODO
 
 ## Assumptions / Out of Scope
-(Assumptions being made and adjacent work that is intentionally excluded.)
+(What are you assuming? What won't this ticket cover?)
 - TODO
 
 ## Design and Testing Approach
-(Describe the intended approach clearly enough that peers can review it.)
+(How will you make the change, and how will you test it?)
 - TODO
 
 ## Task List
@@ -40,7 +40,7 @@ TODO
 - [ ] Documentation
 
 ## Estimated Completion
-(A high-confidence date, not a best-case guess.)
+(Give a date you're confident you can meet.)
 - YYYY-MM-DD
 
 ## Signoffs
@@ -60,16 +60,16 @@ Use this checklist before pulling a ticket from Ready or when deciding whether t
 - The scope fits within the team SLA.
 - Acceptance criteria are specific enough to test.
 - Required quality work such as tests, monitoring, and documentation is understood.
-- The design complexity is known well enough, or a spike exists to reduce uncertainty.
-- Dependencies are limited enough that the ticket is not mostly waiting.
+- You know enough about the design to start, or there's a spike to answer what's unclear.
+- The ticket won't spend most of its time waiting on other work.
 - One shepherd can keep the ticket moving even if the implementation is paired.
 
 ---
 
 ## Example Design Doc (Filled)
 
-This example is intentionally concise. It shows the level of detail needed for a small but real
-engineering improvement without turning the document into an essay.
+This example shows how to plan a small cache change, including what to measure and how to turn it
+off if needed.
 
 ```
 # Title
